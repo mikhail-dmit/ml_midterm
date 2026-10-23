@@ -1,0 +1,6 @@
+split,user_id,tv_show_id,overlap_airings,watched_airings,total_watched_seconds,first_overlap,last_overlap,qualified_watched_seconds,last_qualified_overlap,rank,title_airing_id,tv_show_title,tv_show_category,title_source_file,title_source_csv_record,unseen_in_training_interactions
+validation,127680364314713816,700389,1,1,6752,1594915648,1594922400,6752,1594922400,1,9156,"Кто сверху?, 7 сезон, 3 эп.",Развлечения,export_arh_21-30-final.csv,7021,False
+validation,127680364314713816,2400480,2,1,6020,1594744200,1595007000,3600,1595007000,2,2101,ТСН.,Инфо,export_arh_21-30-final.csv,1199,False
+validation,127680364314713816,6700482,4,1,3536,1594742400,1595434265,1800,1594744200,3,2046,'Секретные материалы'.,Другое,export_arh_21-30-final.csv,1129,False
+validation,127680364314713816,12001682,1,1,1500,1595160000,1595161500,1500,1595161500,4,24252,М/с 'Губка Боб Квадратные Штаны'.,Детям,export_arh_21-30-final.csv,31434,False
+validation,127680364314713816,12002355,1,1,1500,1595161500,1595163000,1500,1595163000,5,24253,М/с 'Кунг-фу панда: Удивительные легенды'.,Детям,export_arh_21-30-final.csv,31435,False

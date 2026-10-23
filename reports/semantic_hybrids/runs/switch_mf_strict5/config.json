@@ -1,0 +1,6 @@
+{
+  "id": "switch_mf_strict5",
+  "type": "switch",
+  "warm_method": "implicit_mf",
+  "max_sparse_history": 5
+}

@@ -1,0 +1,18 @@
+{
+  "paths": {
+    "truth": "reports/interactions/validation_ground_truth.csv",
+    "user_cohorts": "reports/interactions/validation_users.csv",
+    "candidate_pool": "reports/popularity/validation_candidates.csv",
+    "original_protocol": "reports/popularity/protocol.json",
+    "content_vectors": "artifacts/content_rules/cbf_title_tfidf_count/item_vectors.npz",
+    "content_item_ids": "artifacts/content_rules/cbf_title_tfidf_count/item_ids.npy"
+  },
+  "sha256": {
+    "truth": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3",
+    "user_cohorts": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30",
+    "candidate_pool": "87e4c234140161cc68546490ecdc57a4b4eca909ffc08a77e8e8401c9263cb26",
+    "original_protocol": "047091c2ce248a61666ea740111c2fee4f1029a215b5887859795c885bc20d7a",
+    "content_vectors": "8eccdae675f13c6973c570fba9b18ea32730cb59c6258cd319db4728daa06cca",
+    "content_item_ids": "793c8d231a71b67cefec340bd822fccfdeb8d184099d2f40ab1b3cd0a3f48fcb"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "competition": "sweettv-tv-program-recommender",
+  "allowance": {"reported_max_submissions": 100, "source": "User checked Kaggle and reported the allowance; not queried through an API"},
+  "best_reported_public": {"submission_id": "submission_007", "public_score": 0.43707, "private_score": 0.42472},
+  "current_step": "final_check_passed_report_ready_experiments_closed",
+  "prepared_submission": null,
+  "experiments_closed": true,
+  "final_selection": "submissions/final_selection.json",
+  "report_examples": {"directory": "reports/final_examples", "heavy_user": "13866173795451203812", "light_user": "1026253314001693311", "independent_checks_passed": 71, "selection": "Maximum/minimum nonzero strict training-airing count within the fixed validation cohort; no selection by model performance"},
+  "final_check": {"directory": "reports/final_check", "fresh_run": "reports/final_check/rebuild_001", "status": "passed", "submission_byte_identical": true, "changed_users": 0, "logical_stage_comparisons": 40, "logical_stage_differences": [], "old_derived_artifact_accesses_during_fitting": 0, "hand_AP_exact": "29/60", "manual_join_positive": "6752/7200 qualifies", "manual_join_negative": "5172/6900 does not qualify"},
+  "observed_order_public": ["submission_007", "submission_006", "submission_002", "submission_001", "submission_005", "submission_003", "submission_004"],
+  "observed_order_private": ["submission_007", "submission_006", "submission_002", "submission_001", "submission_003", "submission_005", "submission_004"],
+  "latest_reported_result": {"submission_id": "submission_007", "public_score": 0.43707, "private_score": 0.42472},
+  "remaining_sequence": [],
+  "original_plan": "scripts/kaggle_comparison_plan.json",
+  "refinement_ideas_evaluated": [
+    "Small auxiliary-budget study around 002: hold MF/PPR and total auxiliary weight fixed, vary the rules/popularity split.",
+    "RRF retrieval-depth ablation: compare Top-5 and Top-20 component lists with declared offsets/weights.",
+    "Gradual recency weighting over all training weeks; compare to full-history counts rather than discarding older history."
+  ],
+  "refinement_study": {"plan": "scripts/refinement_plan.json", "report": "reports/refinement/README.md", "new_configurations": 11, "fixed_controls": 2, "selected": "recency_h8", "selection_metric": "all_primary local MAP@5 only", "local_primary_MAP": 0.376010752688172, "local_template_MAP": 0.4109942028985507, "local_checks_passed": 161, "unit_tests_passed": 3},
+  "extension_study": {"plan": "scripts/recency_extension_plan.json", "report": "reports/recency_extension/README.md", "new_configurations": 13, "fixed_controls": 1, "selected": "h8_rules01875_pop00625", "selection_metric": "all_primary local MAP@5 only", "local_primary_MAP": 0.3765277088502895, "local_template_MAP": 0.41177101449275366, "local_checks_passed": 408, "unit_tests_passed": 2, "gain_vs_006_uncertainty": "Both conditional paired intervals include zero; small descriptive gain, not a clear improvement."},
+  "later_idea_status": "Experiments stopped by user; 007 is final. Work proceeds to report examples and evidence only."
+}

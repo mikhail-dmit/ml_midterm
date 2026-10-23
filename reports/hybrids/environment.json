@@ -1,0 +1,6 @@
+{
+  "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
+  "platform": "macOS-15.7.3-arm64-arm-64bit",
+  "numpy": "1.26.4",
+  "pandas": "2.2.2"
+}

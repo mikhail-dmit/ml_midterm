@@ -1,0 +1,15 @@
+{
+  "id": "cbf_title_tfidf_count",
+  "method": "content_based",
+  "family_weights": {
+    "category": 1.0,
+    "genre": 1.0,
+    "decade": 0.25,
+    "director": 0.5,
+    "actor": 0.5,
+    "title": 1.0
+  },
+  "idf": true,
+  "family_balance": true,
+  "history_weighting": "count"
+}

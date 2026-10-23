@@ -1,0 +1,14 @@
+{
+  "renderer_sha256": "afe779efc128a0261b675d3197f72dd84323eb7334d8764eaf2265101ee6bb82",
+  "comments_sha256": "ff6862cd96925472118e1f83303c7916ea15859e36a0826e4a627a59d83230c4",
+  "verification_sha256": "6891077f8780c97072cf1da658e7c5d47f375015618039d26e39378d7dcc8d5f",
+  "outputs_sha256": {
+    "README.md": "bfc2705f5d9cd31b1e9e7146341cfa8d0c8fb13cca5967c840b6b8a3314da157",
+    "compact_tables.md": "f06fea829c8d039bf0893d75baae77720195c679da202c11393a919a490c59be",
+    "side_by_side.md": "b12157b9dd58c4295bed096d27d9301fd42f141e7fc6de1c95e4e92cd52a3049",
+    "short_comments.md": "41be871fd156899d63150b93cb7a460f4714f873930c1d2fc59813e69c8afcc4",
+    "examples.html": "e1c7b4da21be7abfb3fbedc24ac6314bbb58bcbf15f65b37d3e4081e5e88b66e",
+    "compact_cells.csv": "f259c6401225adf295e6ea34bfc087c47dae8ffda392767e6770018057714963",
+    "programme_legend.csv": "ee16470423e03dc9d7ff87e18bb00837c0eecf477693525527d272159d98906b"
+  }
+}

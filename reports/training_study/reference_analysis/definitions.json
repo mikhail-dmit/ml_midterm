@@ -1,0 +1,7 @@
+{
+  "familiar": "At least one original >=80% qualifying training airing over full weeks 11-20",
+  "new": "No such qualifying training watch; may still have partial recorded exposure",
+  "history_bins": "Fixed original strict/full history, not redefined after soft/recent experiments",
+  "AP_decomposition": "Credit from original AP@5 assigned to the true hit's type; retain all hit precisions and denominator five",
+  "overlap": "Separate any-hit user overlap, correct (user,programme) pair overlap and recommendation-list overlap; no hybrid trained"
+}

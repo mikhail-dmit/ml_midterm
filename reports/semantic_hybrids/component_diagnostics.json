@@ -1,0 +1,12 @@
+{
+  "ppr_solver": {
+    "solver": "Dense LU solve of I-alpha*P.T, then exact dangling normalization",
+    "max_L1_fixed_point_residual": 1.0116068961037194e-15,
+    "max_mass_error": 4.440892098500626e-16,
+    "min_mass": 3.141196155720799e-08,
+    "max_dangling_mass": 0.0,
+    "users_above_1e_9_residual": 0
+  },
+  "component_refitting": false,
+  "queue_preparation_seconds": 11.528672083000856
+}

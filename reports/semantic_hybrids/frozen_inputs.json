@@ -1,0 +1,32 @@
+{
+  "paths": {
+    "plan": "scripts/semantic_hybrid_plan.json",
+    "truth": "reports/interactions/validation_ground_truth.csv",
+    "primary": "reports/popularity/cohort_primary.csv",
+    "template": "reports/popularity/cohort_template_primary.csv",
+    "candidates": "reports/popularity/validation_candidates.csv",
+    "features": "reports/training_study/reference_analysis/user_features.csv",
+    "truth_types": "reports/training_study/reference_analysis/true_answer_attributes.csv",
+    "rrf_predictions": "reports/hybrids/runs/rrf_mf_ppr_rules_k0/predictions.csv",
+    "counts_full10_t50": "artifacts/training_study/full10_t50/training_counts.parquet",
+    "counts_full10_t80": "artifacts/training_study/full10_t80/training_counts.parquet",
+    "MF": "artifacts/training_study/full10_t50/implicit_mf/factors.npz",
+    "PPR": "artifacts/training_study/full10_t50/ppr/transition.npz",
+    "rules": "artifacts/training_study/full10_t80/association_rules/rule_weights.npz"
+  },
+  "sha256": {
+    "plan": "498fa478c462f4529bf492197e081dcd67118ab7ac9a7c41422141e524a1ca57",
+    "truth": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3",
+    "primary": "9bf0c57d96c4b8d3e610db23873da6240743b3157d62523f877b61fd38dad60d",
+    "template": "779497f932241f100f495aa9a1b90155ced72b32bd6ab572ef3bcd9fcc2c96cd",
+    "candidates": "87e4c234140161cc68546490ecdc57a4b4eca909ffc08a77e8e8401c9263cb26",
+    "features": "bd99b7b2c5b26c364d3aaac98ad65ae8bf413171c51a142d0d0aad89aaa179a0",
+    "truth_types": "b939c402a10f1324d07b37c1a10dbd1eefb725f7c17cff663b73d6fcf419fb22",
+    "rrf_predictions": "482d80ba3ce2e2612a9d275583c7626f58ae8273c1bb7b88ad210fb5f7713c13",
+    "counts_full10_t50": "7b1e85fdd7573c0b5afdff349845c09b94e66cbbd8c2da5328dbc89f5c86d64a",
+    "counts_full10_t80": "ba76502000ded8966d6617757f416d9d754b5461223622b10a4b4e7979af94eb",
+    "MF": "b6e179a6db5849b4727db027d7960b221a100eddf57125518f3894b6fc96e108",
+    "PPR": "0955fdf281ab60714c14d601c0271cb7192a5669873f1fc803931c48b04820c4",
+    "rules": "6824f0066cd5cb66367ef499d5110c763a480ae210ca715c81fee77791579dee"
+  }
+}

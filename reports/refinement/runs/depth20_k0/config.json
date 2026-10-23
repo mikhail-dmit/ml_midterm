@@ -1,0 +1,12 @@
+{
+  "id": "depth20_k0",
+  "half_life_weeks": null,
+  "depth": 20,
+  "offset": 0,
+  "weights": {
+    "implicit_mf": 0.5,
+    "ppr": 0.5,
+    "association_rules": 0.125,
+    "popularity": 0.125
+  }
+}

@@ -1,0 +1,11 @@
+cohort,method,hit_users,correct_pairs,exclusive_hit_users,exclusive_correct_pairs
+all_primary,popularity,3524,7207,44,400
+all_primary,implicit_mf,3546,8272,22,408
+all_primary,ppr,3611,8447,25,442
+all_primary,content_based,3063,5645,6,189
+all_primary,association_rules,3531,7768,11,240
+template_primary,popularity,1046,2227,6,122
+template_primary,implicit_mf,1043,2548,8,128
+template_primary,ppr,1065,2614,8,134
+template_primary,content_based,934,1754,1,57
+template_primary,association_rules,1044,2352,0,64

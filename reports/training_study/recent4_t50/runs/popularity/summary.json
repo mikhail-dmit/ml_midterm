@@ -1,0 +1,74 @@
+{
+  "config": {
+    "id": "recent4_t50__popularity",
+    "method": "popularity",
+    "shared_setting": {
+      "id": "recent4_t50",
+      "window": "recent4",
+      "start_local": "2020-04-20 00:00:00",
+      "end_local": "2020-05-18 00:00:00",
+      "threshold_percent": 50
+    },
+    "hyperparameters": "Frozen original selected configuration; no per-setting tuning"
+  },
+  "metrics": [
+    {
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.2793912324234905,
+      "precision_at_5": 0.35766749379652607,
+      "recall_at_5": 0.35766749379652607,
+      "hit_rate_at_5": 0.8744416873449131,
+      "users_with_hits": 3524,
+      "total_hits": 7207
+    },
+    {
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.3053072463768116,
+      "precision_at_5": 0.38730434782608697,
+      "recall_at_5": 0.38730434782608697,
+      "hit_rate_at_5": 0.9095652173913044,
+      "users_with_hits": 1046,
+      "total_hits": 2227
+    }
+  ],
+  "diagnostics": {
+    "active_training_users": 4640,
+    "trained_items": 1704,
+    "trained_positive_pairs": 109364,
+    "training_events": 210729,
+    "cold_users_in_setting": 100,
+    "recommended_slots": 20150,
+    "share_slots_previously_watched": 0.48208436724565756,
+    "mean_training_popularity_of_recommendations": 12033.2,
+    "median_training_distinct_viewers_of_recommendations": 1889.0,
+    "unique_recommended_programmes": 5,
+    "zero_training_support_recommendations": 0,
+    "cold_fallback_users": 100,
+    "mean_top5_overlap_with_popularity": 5.0,
+    "max_share_users_receiving_one_item": 1.0,
+    "users_better_than_popularity": 0,
+    "users_worse_than_popularity": 0,
+    "users_equal_to_popularity": 4030
+  },
+  "runtime": {
+    "total_seconds": 0.013607957998829079
+  },
+  "artifact_directory": "artifacts/training_study/recent4_t50/popularity",
+  "source_hashes": {
+    "interactions": "4670d72c0b811f459bbc67ab5f2a034e4e1c9f5e1b9c6f2602f333930f85a26d",
+    "truth": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3",
+    "users": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30",
+    "candidates": "9cb4f6ceec27c2a06dcce544de9dc067a0784ac319aa7a7498841f1c9b05e604",
+    "baseline": "8e54268d8e457b512e71c87942ce4fd8baf536fc7d1f05e2799e8309d0908dda",
+    "protocol": "047091c2ce248a61666ea740111c2fee4f1029a215b5887859795c885bc20d7a",
+    "training_events": "761483d0497c6bdee1215055ac42aade806a1a3be81c5b058d857d0ab4d031f6",
+    "content_vectors": "8eccdae675f13c6973c570fba9b18ea32730cb59c6258cd319db4728daa06cca"
+  },
+  "code_hashes": {
+    "collaborative_models.py": "ed848c68bddd732bb5faff3658432163395a4b624ee85dec65a324715933ef4d",
+    "run_model_experiments.py": "315a953261e0b73d6fd802025f9d78f05767bb49a9bc66883e4b1fed88206bcd",
+    "training_study.py": "1fb559c9fe11a82a0cb144170b4b2985883fc012ad1b6d254615c65955fe6124"
+  }
+}

@@ -1,0 +1,3 @@
+role,user_id,is_template_user,train_airings_80pct,train_programmes_80pct,train_airings_50pct,train_programmes_50pct,validation_airings_80pct,validation_programmes_80pct,validation_fifth_sixth_count_tie
+heavy,13866173795451203812,False,1845,408,2607,609,477,210,True
+light,1026253314001693311,False,1,1,14,5,8,5,False

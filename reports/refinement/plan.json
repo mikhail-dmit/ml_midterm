@@ -1,0 +1,170 @@
+{
+  "purpose": "Small local-validation refinement after the five planned uploads. No public/private score is loaded by the experiment selector.",
+  "selection": "Highest all_primary MAP@5 among the eleven new configurations, excluding configurations whose complete validation lists duplicate a previous upload. Ties use config ID. Controls 001 and 002 are reported, not re-uploaded. Template MAP and paired intervals are diagnostics only. Freeze the selected configuration before all-weeks inference; no grid expansion after seeing results.",
+  "protocol": "Original >=80% truth, 4030 primary and 1150 nested template users, 6384 eligible IDs, repeats allowed, denominator five.",
+  "seed": 20261023,
+  "bootstrap_resamples": 2000,
+  "component_parameters": "Existing MF/PPR50, weekly rules80; original 16 factors, confidence1/log-count target, reg1, 15 epochs; raw PPR alpha .5/log restart; weekly rules joint5/confidence .1/lift>1.",
+  "recency": "Only collaborative MF counts and PPR restart counts change. Each >=50%-qualified airing has raw weight 2^(-age_weeks/half_life), age from last_overlap to the applicable training cutoff. Multiply all raw weights by one training-only scale preserving the total qualifying-airing mass. All positive pairs remain, so the raw binary co-view graph is unchanged. Rules, popularity, cold fallback and strict-history diagnostics stay fixed. Same age/cutoff rule for validation and final training.",
+  "depth": "Each contributing component supplies its first depth eligible IDs, including its original popularity backfill if positive scores run out. Absent IDs contribute zero; tie order is original 50%-training popularity. All actual cold users keep original Top-5.",
+  "controls": [
+    {
+      "id": "control_001",
+      "half_life_weeks": null,
+      "depth": 5,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.25
+      }
+    },
+    {
+      "id": "control_002",
+      "half_life_weeks": null,
+      "depth": 5,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.125,
+        "popularity": 0.125
+      }
+    }
+  ],
+  "runs": [
+    {
+      "id": "split_rules00625_pop01875",
+      "half_life_weeks": null,
+      "depth": 5,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.0625,
+        "popularity": 0.1875
+      }
+    },
+    {
+      "id": "split_rules01875_pop00625",
+      "half_life_weeks": null,
+      "depth": 5,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.1875,
+        "popularity": 0.0625
+      }
+    },
+    {
+      "id": "aux0125_balanced",
+      "half_life_weeks": null,
+      "depth": 5,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.0625,
+        "popularity": 0.0625
+      }
+    },
+    {
+      "id": "aux0375_balanced",
+      "half_life_weeks": null,
+      "depth": 5,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.1875,
+        "popularity": 0.1875
+      }
+    },
+    {
+      "id": "rules025_pop0125",
+      "half_life_weeks": null,
+      "depth": 5,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.25,
+        "popularity": 0.125
+      }
+    },
+    {
+      "id": "depth10_k0",
+      "half_life_weeks": null,
+      "depth": 10,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.125,
+        "popularity": 0.125
+      }
+    },
+    {
+      "id": "depth20_k0",
+      "half_life_weeks": null,
+      "depth": 20,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.125,
+        "popularity": 0.125
+      }
+    },
+    {
+      "id": "depth10_k10",
+      "half_life_weeks": null,
+      "depth": 10,
+      "offset": 10,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.125,
+        "popularity": 0.125
+      }
+    },
+    {
+      "id": "depth20_k10",
+      "half_life_weeks": null,
+      "depth": 20,
+      "offset": 10,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.125,
+        "popularity": 0.125
+      }
+    },
+    {
+      "id": "recency_h4",
+      "half_life_weeks": 4,
+      "depth": 5,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.125,
+        "popularity": 0.125
+      }
+    },
+    {
+      "id": "recency_h8",
+      "half_life_weeks": 8,
+      "depth": 5,
+      "offset": 0,
+      "weights": {
+        "implicit_mf": 0.5,
+        "ppr": 0.5,
+        "association_rules": 0.125,
+        "popularity": 0.125
+      }
+    }
+  ],
+  "interpretation": "The original temporal hold-out has been used repeatedly. Paired-user intervals are conditional and do not correct for selection or temporal drift. No Kaggle result is used to rank these configurations. One selected new CSV is prepared, with all trials retained."
+}

@@ -1,0 +1,41 @@
+stage,logical_values_identical,new_rows,old_rows,note,max_abs_difference
+interactions_airings,True,237118,237118,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+interactions_airing_interactions,True,3014908,3014908,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+interactions_user_programme_interactions,True,1516807,1516807,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+validation_ground_truth,True,4030,4030,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+validation_users,True,4914,4914,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+full_window_events,True,3014157,3014157,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+validation_raw_counts50,True,199036,199036,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+validation_raw_counts80,True,114851,114851,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+validation_weighted_counts,True,199036,199036,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+validation_user_factors,True,4789,4789,,0.0
+validation_item_factors,True,2704,2704,,0.0
+validation_scores_implicit_mf,True,4030,4030,,0.0
+validation_scores_ppr,True,4030,4030,,0.0
+validation_scores_association_rules,True,4030,4030,,0.0
+validation_items_implicit_mf,True,2704,2704,,0.0
+validation_items_ppr,True,2704,2704,,0.0
+validation_items_association_rules,True,2490,2490,,0.0
+validation_transition,True,2704,2704,Sparse mathematical entries compared,0.0
+validation_rules,True,2490,2490,Sparse mathematical entries compared,0.0
+final_raw_counts50,True,367883,367883,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+final_raw_counts80,True,228573,228573,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+final_weighted_counts,True,367883,367883,"Compare values/dtypes/order, not Parquet/JSON container timestamps",
+final_user_factors,True,4871,4871,,0.0
+final_item_factors,True,4071,4071,,0.0
+final_scores_implicit_mf,True,1260,1260,,0.0
+final_scores_ppr,True,1260,1260,,0.0
+final_scores_association_rules,True,1260,1260,,0.0
+final_items_implicit_mf,True,4071,4071,,0.0
+final_items_ppr,True,4071,4071,,0.0
+final_items_association_rules,True,3866,3866,,0.0
+final_transition,True,4071,4071,Sparse mathematical entries compared,0.0
+final_rules,True,3866,3866,Sparse mathematical entries compared,0.0
+CBF_vectors,True,5842,5842,Sparse mathematical entries compared,0.0
+CBF_profiles,True,3971,3971,Sparse mathematical entries compared,0.0
+validation_predictions_popularity,True,4030,4030,All users and ordered Top-5s compared,
+validation_predictions_implicit_mf,True,4030,4030,All users and ordered Top-5s compared,
+validation_predictions_ppr,True,4030,4030,All users and ordered Top-5s compared,
+validation_predictions_association_rules,True,4030,4030,All users and ordered Top-5s compared,
+validation_predictions_content_based,True,4030,4030,All users and ordered Top-5s compared,
+validation_predictions_hybrid_007,True,4030,4030,All users and ordered Top-5s compared,

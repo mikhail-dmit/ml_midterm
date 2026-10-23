@@ -1,0 +1,10 @@
+{
+  "id": "rrf_mf_ppr_rules_k0",
+  "type": "rrf",
+  "offset": 0,
+  "weights": {
+    "implicit_mf": 0.5,
+    "ppr": 0.5,
+    "association_rules": 0.25
+  }
+}

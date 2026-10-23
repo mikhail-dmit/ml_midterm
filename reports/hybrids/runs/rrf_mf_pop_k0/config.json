@@ -1,0 +1,9 @@
+{
+  "id": "rrf_mf_pop_k0",
+  "type": "rrf",
+  "offset": 0,
+  "weights": {
+    "implicit_mf": 1,
+    "popularity": 0.25
+  }
+}

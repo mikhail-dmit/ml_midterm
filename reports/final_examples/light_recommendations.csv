@@ -1,0 +1,31 @@
+role,user_id,method,method_label,predicted_rank,tv_show_id,title,category,hit_marker,hit_true_top5,qualified_validation_airings,actual_frequency_rank,validation_observed_seconds,train_airings_80pct,train_airings_50pct,train_weighted_airings_h8,model_score,user_AP_at_5,label_source
+light,1026253314001693311,popularity,Popularity,1,2400480,ТСН. Неделя.,Инфо,✓,True,2,2,35885,0,1,0.6788869046178502,57181.0,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,popularity,Popularity,2,240081,Факты. День.,Инфо,✓,True,1,3,5845,0,0,0.0,41458.0,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,popularity,Popularity,3,12001682,"М/с 'Губка Боб Квадратные Штаны', 92 с. 'Губка Боб Атлантические Штаны'.",Детям,—,False,0,0,0,0,0,0.0,32790.0,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,popularity,Popularity,4,20088,'Завтрак с 1+1'. Информационно-развлекательная программа.,Развлечения,~,False,0,0,13162,0,0,0.0,18947.0,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,popularity,Popularity,5,2400508,Сегодня. Итоги с Олегом Панютой.,Инфо,✓,True,3,1,12347,0,2,2.111897912387232,18008.0,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,cbf,CBF,1,200402,Дом на зависть всем.,Развлечения,—,False,0,0,0,1,1,0.813829702846331,1.0,0.0,pre-cutoff catalogue representative
+light,1026253314001693311,cbf,CBF,2,400426,'Меняю жену'.,Развлечения,~,False,0,0,6288,0,0,0.0,0.6166277353164286,0.0,pre-cutoff catalogue representative
+light,1026253314001693311,cbf,CBF,3,6600490,'Смотреть всем!'.,Развлечения,—,False,0,0,0,0,0,0.0,0.5721318825973383,0.0,pre-cutoff catalogue representative
+light,1026253314001693311,cbf,CBF,4,400335,"'Хата на тата', 6 сезон, 5 эп.",Развлечения,~,False,0,0,2217,0,0,0.0,0.5600987518808659,0.0,pre-cutoff catalogue representative
+light,1026253314001693311,cbf,CBF,5,500314,"'Вечерний Ургант'. Настя Ивлеева, Максим Фадеев, Валерия и Иосиф Пригожин.",Развлечения,—,False,0,0,0,0,0,0.0,0.5599815088842972,0.0,pre-cutoff catalogue representative
+light,1026253314001693311,association_rules,Association rules,1,2400480,ТСН. Неделя.,Инфо,✓,True,2,2,35885,0,1,0.6788869046178502,0.46629901237669047,0.4833333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,association_rules,Association rules,2,20088,'Завтрак с 1+1'. Информационно-развлекательная программа.,Развлечения,~,False,0,0,13162,0,0,0.0,0.28986154823415894,0.4833333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,association_rules,Association rules,3,240081,Факты. День.,Инфо,✓,True,1,3,5845,0,0,0.0,0.2646561962137973,0.4833333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,association_rules,Association rules,4,2400508,Сегодня. Итоги с Олегом Панютой.,Инфо,✓,True,3,1,12347,0,2,2.111897912387232,0.2520535202036165,0.4833333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,association_rules,Association rules,5,200344,'ЧистоNews'.,Развлечения,~,False,0,0,158,0,0,0.0,0.20164281616289317,0.4833333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,mf,MF,1,2400467,'Викна-Новости'.,Инфо,~,False,0,0,4402,0,1,0.9367914628574999,1.3670150551915157,0.2333333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,mf,MF,2,400357,"'Холостяк', 10 сезон, 11 эп.",Развлечения,✓,True,1,4,21336,0,9,9.007497798953658,0.9157793333541836,0.2333333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,mf,MF,3,2400508,Сегодня. Итоги с Олегом Панютой.,Инфо,✓,True,3,1,12347,0,2,2.111897912387232,0.8569510226719553,0.2333333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,mf,MF,4,400361,"'МастерШеф. Профессионалы', 2 сезон, 12 эп.",Познавательное,~,False,0,0,52,0,0,0.0,0.769595590302693,0.2333333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,mf,MF,5,10003159,"Т/с 'Ничто не случается дважды', 8 с.",Сериалы,—,False,0,0,0,0,0,0.0,0.5988748804237568,0.2333333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,ppr,PPR,1,400357,"'Холостяк', 10 сезон, 11 эп.",Развлечения,✓,True,1,4,21336,0,9,9.007497798953658,0.22314980015812313,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,ppr,PPR,2,2400508,Сегодня. Итоги с Олегом Панютой.,Инфо,✓,True,3,1,12347,0,2,2.111897912387232,0.11452536203103005,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,ppr,PPR,3,2400467,'Викна-Новости'.,Инфо,~,False,0,0,4402,0,1,0.9367914628574999,0.06988618627532966,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,ppr,PPR,4,200402,Дом на зависть всем.,Развлечения,—,False,0,0,0,1,1,0.813829702846331,0.05737118919978783,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,ppr,PPR,5,2400480,ТСН. Неделя.,Инфо,✓,True,2,2,35885,0,1,0.6788869046178502,0.05724661831836397,0.52,pre-cutoff catalogue representative
+light,1026253314001693311,hybrid_007,Final 007 hybrid,1,400357,"'Холостяк', 10 сезон, 11 эп.",Развлечения,✓,True,1,4,21336,0,9,9.007497798953658,0.75,0.4833333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,hybrid_007,Final 007 hybrid,2,2400467,'Викна-Новости'.,Инфо,~,False,0,0,4402,0,1,0.9367914628574999,0.6666666666666666,0.4833333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,hybrid_007,Final 007 hybrid,3,2400508,Сегодня. Итоги с Олегом Панютой.,Инфо,✓,True,3,1,12347,0,2,2.111897912387232,0.47604166666666664,0.4833333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,hybrid_007,Final 007 hybrid,4,2400480,ТСН. Неделя.,Инфо,✓,True,2,2,35885,0,1,0.6788869046178502,0.35,0.4833333333333333,pre-cutoff catalogue representative
+light,1026253314001693311,hybrid_007,Final 007 hybrid,5,400361,"'МастерШеф. Профессионалы', 2 сезон, 12 эп.",Познавательное,~,False,0,0,52,0,0,0.0,0.125,0.4833333333333333,pre-cutoff catalogue representative

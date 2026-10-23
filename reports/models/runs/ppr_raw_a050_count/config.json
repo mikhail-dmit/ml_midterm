@@ -1,0 +1,7 @@
+{
+  "id": "ppr_raw_a050_count",
+  "method": "ppr",
+  "alpha": 0.5,
+  "normalization": "raw",
+  "weighting": "count"
+}

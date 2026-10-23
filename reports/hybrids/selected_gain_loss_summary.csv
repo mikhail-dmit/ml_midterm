@@ -1,0 +1,5 @@
+cohort,reference,added_correct_pairs,lost_correct_pairs,net_correct_pairs,gained_any_hits_users,lost_any_hits_users
+all_primary,implicit_mf,617,426,191,595,422
+all_primary,ppr,639,468,171,619,454
+template_primary,implicit_mf,197,132,65,187,132
+template_primary,ppr,182,143,39,177,140

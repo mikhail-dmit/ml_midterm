@@ -1,0 +1,71 @@
+{
+  "competition": "sweettv-tv-program-recommender",
+  "selection_metric": "returned public score",
+  "results": [
+    {
+      "submission_id": "submission_001",
+      "csv_path": "submissions/submission_001.csv",
+      "csv_sha256": "138b69c4dbb2d1aa97df390e5fc6e311eaa3838109c85d132d94a9aba5e56313",
+      "strategy": "rrf_mf_ppr_rules_k0",
+      "public_score": 0.43347,
+      "private_score": 0.41452,
+      "provenance": "User-supplied Kaggle result; no API score retrieval",
+      "recorded_at_utc": "2026-10-23T12:11:29.461073+00:00",
+      "screenshot_path": "submissions/Score for sub1.png",
+      "screenshot_sha256": "e87f755421639459d681936a8e45c8484df6bb6a68d06dee3fb95b6c295386d9",
+      "generation_manifest": "reports/final_11_30/summary.json"
+    },
+    {
+      "submission_id": "submission_002",
+      "csv_path": "submissions/submission_002.csv",
+      "csv_sha256": "cbf6a25c207876cce727b6b325c8793fca6ff04b7c6d0ec1aab8c2983c51439c",
+      "strategy": "rrf_mf_ppr_rules_pop_k0",
+      "public_score": 0.43359,
+      "private_score": 0.41489,
+      "provenance": "User-supplied Kaggle result; no API score retrieval",
+      "recorded_at_utc": "2026-10-23T12:27:02.827676+00:00",
+      "screenshot_path": "submissions/Score for sub2.png",
+      "screenshot_sha256": "1a4168d7cb550767947b22a8d49a5181c4abf2ccab6dbc0fed299df60c713ec8",
+      "generation_manifest": "reports/submission_002/summary.json"
+    },
+    {
+      "submission_id": "submission_003",
+      "csv_path": "submissions/submission_003.csv",
+      "csv_sha256": "aa81d12d12e4d640ed07404d269593d51883182e01bdcc8454e5d35d8417fc02",
+      "strategy": "ppr20_rerank_mf",
+      "public_score": 0.43042,
+      "private_score": 0.4126,
+      "provenance": "User-supplied Kaggle result; no API score retrieval",
+      "recorded_at_utc": "2026-10-23T12:42:37.056065+00:00",
+      "screenshot_path": "submissions/Score for sub3.png",
+      "screenshot_sha256": "944f92fc204eb4404a8d207008bf565d64012273ab530d2623c755de9c3605b8",
+      "generation_manifest": "reports/submission_003/summary.json"
+    },
+    {
+      "submission_id": "submission_004",
+      "csv_path": "submissions/submission_004.csv",
+      "csv_sha256": "e22c0cb142ffae7daa38c4464bf3d6374c99775878ea14642517e3fa1e5092b4",
+      "strategy": "implicit_mf",
+      "public_score": 0.42643,
+      "private_score": 0.40943,
+      "provenance": "User-supplied Kaggle result; no API score retrieval",
+      "recorded_at_utc": "2026-10-23T13:08:56.019825+00:00",
+      "screenshot_path": "submissions/Score for sub4.png",
+      "screenshot_sha256": "9f15ed78f0a8262a4c33b97f01da4d1c9fcc6bd184df3315208ff26587d28c41",
+      "generation_manifest": "reports/submission_004/summary.json"
+    },
+    {
+      "submission_id": "submission_005",
+      "csv_path": "submissions/submission_005.csv",
+      "csv_sha256": "8a688a1f5b149dcad51acbf651a69183f75eb15659c9c8d2d0873971e910656f",
+      "strategy": "rrf_mf_ppr_k0",
+      "public_score": 0.43163,
+      "private_score": 0.41039,
+      "provenance": "User-supplied Kaggle result; no API score retrieval",
+      "recorded_at_utc": "2026-10-23T13:24:37.960983+00:00",
+      "screenshot_path": "submissions/Score for sub5.png",
+      "screenshot_sha256": "fcdaf20b7a835fc97830fc654d16d3fdc2059652edb1be3e5568c532191ab0c5",
+      "generation_manifest": "reports/submission_005/summary.json"
+    }
+  ]
+}

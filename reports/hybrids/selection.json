@@ -1,0 +1,6 @@
+{
+  "selection_metric": "all_primary MAP@5; template_primary is reporting only",
+  "best_hybrid": "rrf_mf_ppr_rules_k0",
+  "best_overall": "rrf_mf_ppr_rules_k0",
+  "status": "Local validation selection only; conditional on this declared search"
+}

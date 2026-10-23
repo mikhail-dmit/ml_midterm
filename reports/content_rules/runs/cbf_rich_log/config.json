@@ -1,0 +1,14 @@
+{
+  "id": "cbf_rich_log",
+  "method": "content_based",
+  "family_weights": {
+    "category": 1.0,
+    "genre": 1.0,
+    "decade": 0.25,
+    "director": 0.5,
+    "actor": 0.5
+  },
+  "idf": false,
+  "family_balance": true,
+  "history_weighting": "log1p"
+}

@@ -1,0 +1,151 @@
+{
+  "protocol": {
+    "metric": "MAP@5 = macro mean of sum(precision@r * first relevant hit at r) / min(5, number of distinct true IDs)",
+    "empty_truth": "AP helper returns zero; cohort evaluator rejects empty truth to prevent silent cohort changes",
+    "prediction_validation": "Exactly five distinct positive programme IDs per user; missing users are errors",
+    "truth_order": "Ignored by AP: relevant-ID membership matters; prediction order matters",
+    "training_window_local": [
+      "2020-03-09 00:00:00",
+      "2020-05-18 00:00:00"
+    ],
+    "validation_window_local": [
+      "2020-05-18 00:00:00",
+      "2020-07-27 00:00:00"
+    ],
+    "candidate_pool": "All nonzero, positive-duration programme IDs with any airing overlap with the validation window, from supplied historical schedules",
+    "candidate_pool_size": 6384,
+    "candidate_items_with_positive_training_score": 1874,
+    "candidate_items_with_zero_training_score": 4510,
+    "popularity_score": "Total qualifying training user-airing watches per programme, summed over all training users, not only evaluation users",
+    "training_users_with_qualified_watches": 4737,
+    "training_qualified_airings": 316413,
+    "training_items_with_qualified_watches": 2490,
+    "ranking_ties": "Descending training popularity count, then ascending numeric programme ID; zero-score items remain in pool",
+    "already_watched_definition": "At least one >=80%-qualified training airing of that programme ID; partial-only overlaps do not trigger the mask",
+    "ground_truth_under_exclude_repeats": "Unchanged original five IDs; no pruning, relabelling, denominator reduction or user exclusion",
+    "cold_start": "Same global training-popularity list; empty seen set gives identical output under both policies",
+    "recommended_shared_policy": "allow_repeats",
+    "label_uncertainty": "Local labels use numeric-ID tie-break; 2630/4030 users have a fifth/sixth frequency tie"
+  },
+  "metrics": [
+    {
+      "users": 4030,
+      "map_at_5": 0.2793912324234905,
+      "precision_at_5": 0.35766749379652607,
+      "recall_at_5": 0.35766749379652607,
+      "hit_rate_at_5": 0.8744416873449131,
+      "users_with_hits": 3524,
+      "total_hits": 7207,
+      "policy": "allow_repeats",
+      "cohort": "all_primary",
+      "training_cold_users": 59,
+      "mean_available_candidates": 6384.0,
+      "min_available_candidates": 6384,
+      "truth_items_previously_watched": 11323,
+      "truth_items_total": 20150,
+      "truth_repeat_fraction": 0.5619354838709677,
+      "unreachable_truth_items_under_policy": 0,
+      "users_all_truth_unreachable": 0,
+      "policy_oracle_map_ceiling": 1.0
+    },
+    {
+      "users": 1150,
+      "map_at_5": 0.3053072463768116,
+      "precision_at_5": 0.38730434782608697,
+      "recall_at_5": 0.38730434782608697,
+      "hit_rate_at_5": 0.9095652173913044,
+      "users_with_hits": 1046,
+      "total_hits": 2227,
+      "policy": "allow_repeats",
+      "cohort": "template_primary",
+      "training_cold_users": 10,
+      "mean_available_candidates": 6384.0,
+      "min_available_candidates": 6384,
+      "truth_items_previously_watched": 3561,
+      "truth_items_total": 5750,
+      "truth_repeat_fraction": 0.619304347826087,
+      "unreachable_truth_items_under_policy": 0,
+      "users_all_truth_unreachable": 0,
+      "policy_oracle_map_ceiling": 1.0
+    },
+    {
+      "users": 4030,
+      "map_at_5": 0.049312655086848636,
+      "precision_at_5": 0.07454094292803971,
+      "recall_at_5": 0.07454094292803971,
+      "hit_rate_at_5": 0.3,
+      "users_with_hits": 1209,
+      "total_hits": 1502,
+      "policy": "exclude_repeats",
+      "cohort": "all_primary",
+      "training_cold_users": 59,
+      "mean_available_candidates": 6360.570223325062,
+      "min_available_candidates": 6059,
+      "truth_items_previously_watched": 11323,
+      "truth_items_total": 20150,
+      "truth_repeat_fraction": 0.5619354838709677,
+      "unreachable_truth_items_under_policy": 11323,
+      "users_all_truth_unreachable": 674,
+      "policy_oracle_map_ceiling": 0.43806451612903224
+    },
+    {
+      "users": 1150,
+      "map_at_5": 0.04693043478260869,
+      "precision_at_5": 0.06886956521739131,
+      "recall_at_5": 0.06886956521739131,
+      "hit_rate_at_5": 0.28,
+      "users_with_hits": 322,
+      "total_hits": 396,
+      "policy": "exclude_repeats",
+      "cohort": "template_primary",
+      "training_cold_users": 10,
+      "mean_available_candidates": 6357.906086956522,
+      "min_available_candidates": 6208,
+      "truth_items_previously_watched": 3561,
+      "truth_items_total": 5750,
+      "truth_repeat_fraction": 0.619304347826087,
+      "unreachable_truth_items_under_policy": 3561,
+      "users_all_truth_unreachable": 243,
+      "policy_oracle_map_ceiling": 0.38069565217391305
+    }
+  ],
+  "paired_policy_comparison": {
+    "all_primary": {
+      "users_allow_better": 3110,
+      "users_exclude_better": 255,
+      "users_equal": 665,
+      "allow_hits_from_previously_watched_items": 6117,
+      "allow_total_hits": 7207
+    },
+    "template_primary": {
+      "users_allow_better": 948,
+      "users_exclude_better": 66,
+      "users_equal": 136,
+      "allow_hits_from_previously_watched_items": 1941,
+      "allow_total_hits": 2227
+    }
+  },
+  "example_user": "127680364314713816",
+  "source_files_sha256": {
+    "reports/interactions/validation_ground_truth.csv": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3",
+    "reports/interactions/validation_users.csv": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30",
+    "artifacts/interactions/user_programme_interactions.parquet": "8f9b93fa183e6c24df8d6812aded2fd9084b4f8c4e0deff8d72b06d61516ef9e",
+    "artifacts/interactions/airings.parquet": "e42b9199d3076e5727f9c3a27986ce3dd5070b323807dddd996a2b59f8fcaed3"
+  },
+  "source_scripts_sha256": {
+    "ranking_metrics.py": "7d0a60ca6f893be1522a5ef8d280714f0b468061cebd5faf05d6615817109290",
+    "popularity_core.py": "5e33300edce87af807b46afcf5a55ef8aed30114f7bed125590b9e41bbb5506d",
+    "evaluate_popularity.py": "c37e1cedd99c85206691ce9c51670d85fe64c0724e1f073cd7b4700267926786"
+  },
+  "runtime": {
+    "fit_seconds": 0.04397808300018369,
+    "prediction_seconds": {
+      "allow_repeats": 0.000909207999939099,
+      "exclude_repeats": 0.0021973340008116793
+    },
+    "total_seconds": 0.8304153750004843,
+    "python_platform": "macOS-15.7.3-arm64-arm-64bit",
+    "pandas": "2.2.2"
+  },
+  "verification": "See verify_popularity.py and verification.json; student personal verification not claimed"
+}

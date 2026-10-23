@@ -1,0 +1,32 @@
+{
+  "selected_id": "recency_h8",
+  "selected_config": {
+    "id": "recency_h8",
+    "half_life_weeks": 8,
+    "depth": 5,
+    "offset": 0,
+    "weights": {
+      "implicit_mf": 0.5,
+      "ppr": 0.5,
+      "association_rules": 0.125,
+      "popularity": 0.125
+    }
+  },
+  "selection_rule": "Highest all_primary MAP@5 among the eleven new configurations, excluding configurations whose complete validation lists duplicate a previous upload. Ties use config ID. Controls 001 and 002 are reported, not re-uploaded. Template MAP and paired intervals are diagnostics only. Freeze the selected configuration before all-weeks inference; no grid expansion after seeing results.",
+  "primary_MAP": 0.376010752688172,
+  "template_MAP": 0.4109942028985507,
+  "ranked_new_ids": [
+    "recency_h8",
+    "recency_h4",
+    "split_rules01875_pop00625",
+    "depth20_k0",
+    "depth10_k0",
+    "rules025_pop0125",
+    "aux0125_balanced",
+    "depth20_k10",
+    "split_rules00625_pop01875",
+    "aux0375_balanced",
+    "depth10_k10"
+  ],
+  "public_private_scores_used_by_selector": false
+}

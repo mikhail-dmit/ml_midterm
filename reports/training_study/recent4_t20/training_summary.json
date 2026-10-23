@@ -1,0 +1,20 @@
+{
+  "setting": {
+    "id": "recent4_t20",
+    "window": "recent4",
+    "start_local": "2020-04-20 00:00:00",
+    "end_local": "2020-05-18 00:00:00",
+    "threshold_percent": 20
+  },
+  "positive_airings": 343778,
+  "positive_user_programme_pairs": 186277,
+  "training_users": 4692,
+  "training_items": 1796,
+  "cold_primary_users": 82,
+  "true_slots_supported_by_this_history": 11359,
+  "true_slots_without_global_training_support": 1474,
+  "qualified_watch_seconds_below_60": 42,
+  "median_qualified_coverage": 0.6375,
+  "earliest_observation": 1587330000,
+  "latest_observation": 1589749200
+}

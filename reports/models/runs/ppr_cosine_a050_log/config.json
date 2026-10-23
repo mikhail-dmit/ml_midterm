@@ -1,0 +1,7 @@
+{
+  "id": "ppr_cosine_a050_log",
+  "method": "ppr",
+  "alpha": 0.5,
+  "normalization": "cosine",
+  "weighting": "log1p"
+}

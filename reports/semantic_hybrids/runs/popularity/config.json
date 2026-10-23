@@ -1,0 +1,5 @@
+{
+  "id": "popularity",
+  "type": "single",
+  "method": "popularity"
+}

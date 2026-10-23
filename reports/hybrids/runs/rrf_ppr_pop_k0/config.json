@@ -1,0 +1,9 @@
+{
+  "id": "rrf_ppr_pop_k0",
+  "type": "rrf",
+  "offset": 0,
+  "weights": {
+    "ppr": 1,
+    "popularity": 0.25
+  }
+}

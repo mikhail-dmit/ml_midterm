@@ -1,0 +1,12 @@
+{
+  "id": "rules025_pop0125",
+  "half_life_weeks": null,
+  "depth": 5,
+  "offset": 0,
+  "weights": {
+    "implicit_mf": 0.5,
+    "ppr": 0.5,
+    "association_rules": 0.25,
+    "popularity": 0.125
+  }
+}

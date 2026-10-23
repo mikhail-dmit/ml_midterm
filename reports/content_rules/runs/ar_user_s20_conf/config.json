@@ -1,0 +1,9 @@
+{
+  "id": "ar_user_s20_conf",
+  "method": "association_rules",
+  "baskets": "user",
+  "min_joint_count": 20,
+  "min_confidence": 0.1,
+  "score_metric": "confidence",
+  "history_weighting": "log1p"
+}

@@ -1,0 +1,28 @@
+{
+  "metric": "MAP@5 = macro mean of sum(precision@r * first relevant hit at r) / min(5, number of distinct true IDs)",
+  "empty_truth": "AP helper returns zero; cohort evaluator rejects empty truth to prevent silent cohort changes",
+  "prediction_validation": "Exactly five distinct positive programme IDs per user; missing users are errors",
+  "truth_order": "Ignored by AP: relevant-ID membership matters; prediction order matters",
+  "training_window_local": [
+    "2020-03-09 00:00:00",
+    "2020-05-18 00:00:00"
+  ],
+  "validation_window_local": [
+    "2020-05-18 00:00:00",
+    "2020-07-27 00:00:00"
+  ],
+  "candidate_pool": "All nonzero, positive-duration programme IDs with any airing overlap with the validation window, from supplied historical schedules",
+  "candidate_pool_size": 6384,
+  "candidate_items_with_positive_training_score": 1874,
+  "candidate_items_with_zero_training_score": 4510,
+  "popularity_score": "Total qualifying training user-airing watches per programme, summed over all training users, not only evaluation users",
+  "training_users_with_qualified_watches": 4737,
+  "training_qualified_airings": 316413,
+  "training_items_with_qualified_watches": 2490,
+  "ranking_ties": "Descending training popularity count, then ascending numeric programme ID; zero-score items remain in pool",
+  "already_watched_definition": "At least one >=80%-qualified training airing of that programme ID; partial-only overlaps do not trigger the mask",
+  "ground_truth_under_exclude_repeats": "Unchanged original five IDs; no pruning, relabelling, denominator reduction or user exclusion",
+  "cold_start": "Same global training-popularity list; empty seen set gives identical output under both policies",
+  "recommended_shared_policy": "allow_repeats",
+  "label_uncertainty": "Local labels use numeric-ID tie-break; 2630/4030 users have a fifth/sixth frequency tie"
+}

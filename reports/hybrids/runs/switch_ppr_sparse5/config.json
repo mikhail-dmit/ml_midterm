@@ -1,0 +1,7 @@
+{
+  "id": "switch_ppr_sparse5",
+  "type": "switch",
+  "max_sparse_history": 5,
+  "sparse_method": "popularity",
+  "warm_method": "ppr"
+}

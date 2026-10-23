@@ -1,0 +1,879 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Saved training matrix equals training-only input aggregates",
+      "passed": true,
+      "evidence": {
+        "shape": [
+          4737,
+          2490
+        ],
+        "positive_pairs": 114851,
+        "qualifying_airings": 316413
+      }
+    },
+    {
+      "check": "mf_f16_a10_r1: identical frozen input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "mf_f16_a10_r1: unchanged cohort and full-pool valid Top-5",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "mf_f16_a10_r1: all cold users get the same popularity fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "mf_f16_a10_r1: every user AP agrees with rational arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "mf_f16_a10_r1 / all_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "44927/201500",
+        "users": 4030
+      }
+    },
+    {
+      "check": "mf_f16_a10_r1 / template_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "672/2875",
+        "users": 1150
+      }
+    },
+    {
+      "check": "mf_f16_a10_r1: factor index maps preserve original IDs",
+      "passed": true,
+      "evidence": [
+        4737,
+        16
+      ]
+    },
+    {
+      "check": "mf_f16_a10_r1: all warm-user rankings reproduce from factor dot products",
+      "passed": true,
+      "evidence": 6.661338147750939e-16
+    },
+    {
+      "check": "mf_f16_a10_r1: item-factor normal equations hold",
+      "passed": true,
+      "evidence": 5.265924897051928e-16
+    },
+    {
+      "check": "mf_f16_a10_r1: objective decreases each epoch",
+      "passed": true,
+      "evidence": {
+        "first": 1262471.7340237687,
+        "last": 404751.3347460752
+      }
+    },
+    {
+      "check": "mf_f16_a10_r1: best validation checkpoint restored",
+      "passed": true,
+      "evidence": 5
+    },
+    {
+      "check": "mf_f16_a1_r1: identical frozen input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "mf_f16_a1_r1: unchanged cohort and full-pool valid Top-5",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "mf_f16_a1_r1: all cold users get the same popularity fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "mf_f16_a1_r1: every user AP agrees with rational arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "mf_f16_a1_r1 / all_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "27301/100750",
+        "users": 4030
+      }
+    },
+    {
+      "check": "mf_f16_a1_r1 / template_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "99377/345000",
+        "users": 1150
+      }
+    },
+    {
+      "check": "mf_f16_a1_r1: factor index maps preserve original IDs",
+      "passed": true,
+      "evidence": [
+        4737,
+        16
+      ]
+    },
+    {
+      "check": "mf_f16_a1_r1: all warm-user rankings reproduce from factor dot products",
+      "passed": true,
+      "evidence": 6.661338147750939e-16
+    },
+    {
+      "check": "mf_f16_a1_r1: item-factor normal equations hold",
+      "passed": true,
+      "evidence": 2.5770879484694907e-16
+    },
+    {
+      "check": "mf_f16_a1_r1: objective decreases each epoch",
+      "passed": true,
+      "evidence": {
+        "first": 229616.64383185815,
+        "last": 123017.0201811059
+      }
+    },
+    {
+      "check": "mf_f16_a1_r1: best validation checkpoint restored",
+      "passed": true,
+      "evidence": 15
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1: identical frozen input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1: unchanged cohort and full-pool valid Top-5",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1: all cold users get the same popularity fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1: every user AP agrees with rational arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1 / all_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "426761/1209000",
+        "users": 4030
+      }
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1 / template_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "6653/17250",
+        "users": 1150
+      }
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1: factor index maps preserve original IDs",
+      "passed": true,
+      "evidence": [
+        4737,
+        16
+      ]
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1: all warm-user rankings reproduce from factor dot products",
+      "passed": true,
+      "evidence": 1.7763568394002505e-15
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1: item-factor normal equations hold",
+      "passed": true,
+      "evidence": 4.629762143066154e-16
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1: objective decreases each epoch",
+      "passed": true,
+      "evidence": {
+        "first": 456902.170887159,
+        "last": 100033.84309825939
+      }
+    },
+    {
+      "check": "mf_f16_logtarget_a1_r1: best validation checkpoint restored",
+      "passed": true,
+      "evidence": 15
+    },
+    {
+      "check": "mf_f32_a10_r1: identical frozen input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "mf_f32_a10_r1: unchanged cohort and full-pool valid Top-5",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "mf_f32_a10_r1: all cold users get the same popularity fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "mf_f32_a10_r1: every user AP agrees with rational arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "mf_f32_a10_r1 / all_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "84709/403000",
+        "users": 4030
+      }
+    },
+    {
+      "check": "mf_f32_a10_r1 / template_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "37967/172500",
+        "users": 1150
+      }
+    },
+    {
+      "check": "mf_f32_a10_r1: factor index maps preserve original IDs",
+      "passed": true,
+      "evidence": [
+        4737,
+        32
+      ]
+    },
+    {
+      "check": "mf_f32_a10_r1: all warm-user rankings reproduce from factor dot products",
+      "passed": true,
+      "evidence": 8.881784197001252e-16
+    },
+    {
+      "check": "mf_f32_a10_r1: item-factor normal equations hold",
+      "passed": true,
+      "evidence": 4.613296332523071e-16
+    },
+    {
+      "check": "mf_f32_a10_r1: objective decreases each epoch",
+      "passed": true,
+      "evidence": {
+        "first": 1262475.730408876,
+        "last": 343267.74156127055
+      }
+    },
+    {
+      "check": "mf_f32_a10_r1: best validation checkpoint restored",
+      "passed": true,
+      "evidence": 5
+    },
+    {
+      "check": "ppr_cosine_a050_log: identical frozen input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ppr_cosine_a050_log: unchanged cohort and full-pool valid Top-5",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ppr_cosine_a050_log: all cold users get the same popularity fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ppr_cosine_a050_log: every user AP agrees with rational arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ppr_cosine_a050_log / all_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "212867/604500",
+        "users": 4030
+      }
+    },
+    {
+      "check": "ppr_cosine_a050_log / template_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "2227/5750",
+        "users": 1150
+      }
+    },
+    {
+      "check": "ppr_cosine_a050_log: graph has no self-loops, nonnegative weights and normalized transitions",
+      "passed": true,
+      "evidence": {
+        "nodes": 2490,
+        "nonzeros": 1206748
+      }
+    },
+    {
+      "check": "ppr_cosine_a050_log: graph edge weights match independent viewer-set intersections",
+      "passed": true,
+      "evidence": 1.3877787807814457e-17
+    },
+    {
+      "check": "ppr_cosine_a050_log: independent power iteration converges and conserves mass",
+      "passed": true,
+      "evidence": {
+        "iterations": 22,
+        "max_L1_change": 4.676737855927569e-14,
+        "sampled_users": [
+          "1026253314001693311",
+          "13866173795451203812",
+          "4974786234363757781",
+          "5189627579108366144"
+        ]
+      }
+    },
+    {
+      "check": "ppr_cosine_a050_log: saved PPR scores/ranking agree with independent iteration",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 5.4860629927766524e-17,
+        "max_top5_cutoff_violation": 0.0
+      }
+    },
+    {
+      "check": "ppr_raw_a050_count: identical frozen input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ppr_raw_a050_count: unchanged cohort and full-pool valid Top-5",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ppr_raw_a050_count: all cold users get the same popularity fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ppr_raw_a050_count: every user AP agrees with rational arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ppr_raw_a050_count / all_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "429067/1209000",
+        "users": 4030
+      }
+    },
+    {
+      "check": "ppr_raw_a050_count / template_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "2929/7500",
+        "users": 1150
+      }
+    },
+    {
+      "check": "ppr_raw_a050_count: graph has no self-loops, nonnegative weights and normalized transitions",
+      "passed": true,
+      "evidence": {
+        "nodes": 2490,
+        "nonzeros": 1206748
+      }
+    },
+    {
+      "check": "ppr_raw_a050_count: graph edge weights match independent viewer-set intersections",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "check": "ppr_raw_a050_count: independent power iteration converges and conserves mass",
+      "passed": true,
+      "evidence": {
+        "iterations": 16,
+        "max_L1_change": 1.3022717004272913e-14,
+        "sampled_users": [
+          "1026253314001693311",
+          "13866173795451203812",
+          "4974786234363757781",
+          "5189627579108366144"
+        ]
+      }
+    },
+    {
+      "check": "ppr_raw_a050_count: saved PPR scores/ranking agree with independent iteration",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 1.1102230246251565e-16,
+        "max_top5_cutoff_violation": 0.0
+      }
+    },
+    {
+      "check": "ppr_raw_a050_log: identical frozen input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ppr_raw_a050_log: unchanged cohort and full-pool valid Top-5",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ppr_raw_a050_log: all cold users get the same popularity fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ppr_raw_a050_log: every user AP agrees with rational arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ppr_raw_a050_log / all_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "108131/302250",
+        "users": 4030
+      }
+    },
+    {
+      "check": "ppr_raw_a050_log / template_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "16909/43125",
+        "users": 1150
+      }
+    },
+    {
+      "check": "ppr_raw_a050_log: graph has no self-loops, nonnegative weights and normalized transitions",
+      "passed": true,
+      "evidence": {
+        "nodes": 2490,
+        "nonzeros": 1206748
+      }
+    },
+    {
+      "check": "ppr_raw_a050_log: graph edge weights match independent viewer-set intersections",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "check": "ppr_raw_a050_log: independent power iteration converges and conserves mass",
+      "passed": true,
+      "evidence": {
+        "iterations": 16,
+        "max_L1_change": 1.3022717004272913e-14,
+        "sampled_users": [
+          "1026253314001693311",
+          "13866173795451203812",
+          "4974786234363757781",
+          "5189627579108366144"
+        ]
+      }
+    },
+    {
+      "check": "ppr_raw_a050_log: saved PPR scores/ranking agree with independent iteration",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 1.1102230246251565e-16,
+        "max_top5_cutoff_violation": 0.0
+      }
+    },
+    {
+      "check": "ppr_raw_a085_log: identical frozen input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ppr_raw_a085_log: unchanged cohort and full-pool valid Top-5",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ppr_raw_a085_log: all cold users get the same popularity fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ppr_raw_a085_log: every user AP agrees with rational arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ppr_raw_a085_log / all_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "81043/241800",
+        "users": 4030
+      }
+    },
+    {
+      "check": "ppr_raw_a085_log / template_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "2731/7500",
+        "users": 1150
+      }
+    },
+    {
+      "check": "ppr_raw_a085_log: graph has no self-loops, nonnegative weights and normalized transitions",
+      "passed": true,
+      "evidence": {
+        "nodes": 2490,
+        "nonzeros": 1206748
+      }
+    },
+    {
+      "check": "ppr_raw_a085_log: graph edge weights match independent viewer-set intersections",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "check": "ppr_raw_a085_log: independent power iteration converges and conserves mass",
+      "passed": true,
+      "evidence": {
+        "iterations": 21,
+        "max_L1_change": 3.252752262709978e-14,
+        "sampled_users": [
+          "1026253314001693311",
+          "13866173795451203812",
+          "4974786234363757781",
+          "5189627579108366144"
+        ]
+      }
+    },
+    {
+      "check": "ppr_raw_a085_log: saved PPR scores/ranking agree with independent iteration",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 1.1796119636642288e-16,
+        "max_top5_cutoff_violation": 0.0
+      }
+    },
+    {
+      "check": "ppr_raw_a095_log: identical frozen input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ppr_raw_a095_log: unchanged cohort and full-pool valid Top-5",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ppr_raw_a095_log: all cold users get the same popularity fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ppr_raw_a095_log: every user AP agrees with rational arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ppr_raw_a095_log / all_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "44398/151125",
+        "users": 4030
+      }
+    },
+    {
+      "check": "ppr_raw_a095_log / template_primary: MAP and hit counts",
+      "passed": true,
+      "evidence": {
+        "MAP_fraction": "109219/345000",
+        "users": 1150
+      }
+    },
+    {
+      "check": "ppr_raw_a095_log: graph has no self-loops, nonnegative weights and normalized transitions",
+      "passed": true,
+      "evidence": {
+        "nodes": 2490,
+        "nonzeros": 1206748
+      }
+    },
+    {
+      "check": "ppr_raw_a095_log: graph edge weights match independent viewer-set intersections",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "check": "ppr_raw_a095_log: independent power iteration converges and conserves mass",
+      "passed": true,
+      "evidence": {
+        "iterations": 22,
+        "max_L1_change": 8.251524199540958e-14,
+        "sampled_users": [
+          "1026253314001693311",
+          "13866173795451203812",
+          "4974786234363757781",
+          "5189627579108366144"
+        ]
+      }
+    },
+    {
+      "check": "ppr_raw_a095_log: saved PPR scores/ranking agree with independent iteration",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 2.706168622523819e-16,
+        "max_top5_cutoff_violation": 0.0
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "run_id": "mf_f16_a10_r1",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.22296277915632753,
+          "precision_at_5": 0.3110173697270472,
+          "recall_at_5": 0.3110173697270472,
+          "hit_rate_at_5": 0.7915632754342432,
+          "users_with_hits": 3190,
+          "total_hits": 6267
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.23373913043478262,
+          "precision_at_5": 0.3262608695652174,
+          "recall_at_5": 0.3262608695652174,
+          "hit_rate_at_5": 0.8173913043478261,
+          "users_with_hits": 940,
+          "total_hits": 1876
+        }
+      ]
+    },
+    {
+      "run_id": "mf_f16_a1_r1",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.27097766749379654,
+          "precision_at_5": 0.3620347394540943,
+          "recall_at_5": 0.3620347394540943,
+          "hit_rate_at_5": 0.8617866004962779,
+          "users_with_hits": 3473,
+          "total_hits": 7295
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.28804927536231884,
+          "precision_at_5": 0.37982608695652176,
+          "recall_at_5": 0.37982608695652176,
+          "hit_rate_at_5": 0.888695652173913,
+          "users_with_hits": 1022,
+          "total_hits": 2184
+        }
+      ]
+    },
+    {
+      "run_id": "mf_f16_logtarget_a1_r1",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.3529867659222498,
+          "precision_at_5": 0.41052109181141444,
+          "recall_at_5": 0.41052109181141444,
+          "hit_rate_at_5": 0.8799007444168735,
+          "users_with_hits": 3546,
+          "total_hits": 8272
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.38568115942028985,
+          "precision_at_5": 0.4431304347826087,
+          "recall_at_5": 0.4431304347826087,
+          "hit_rate_at_5": 0.9069565217391304,
+          "users_with_hits": 1043,
+          "total_hits": 2548
+        }
+      ]
+    },
+    {
+      "run_id": "mf_f32_a10_r1",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.21019602977667495,
+          "precision_at_5": 0.306848635235732,
+          "recall_at_5": 0.306848635235732,
+          "hit_rate_at_5": 0.794044665012407,
+          "users_with_hits": 3200,
+          "total_hits": 6183
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.2200985507246377,
+          "precision_at_5": 0.3234782608695652,
+          "recall_at_5": 0.3234782608695652,
+          "hit_rate_at_5": 0.8182608695652174,
+          "users_with_hits": 941,
+          "total_hits": 1860
+        }
+      ]
+    },
+    {
+      "run_id": "ppr_cosine_a050_log",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.35213730355665834,
+          "precision_at_5": 0.4135483870967742,
+          "recall_at_5": 0.4135483870967742,
+          "hit_rate_at_5": 0.8893300248138958,
+          "users_with_hits": 3584,
+          "total_hits": 8333
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.3873043478260869,
+          "precision_at_5": 0.45008695652173913,
+          "recall_at_5": 0.45008695652173913,
+          "hit_rate_at_5": 0.922608695652174,
+          "users_with_hits": 1061,
+          "total_hits": 2588
+        }
+      ]
+    },
+    {
+      "run_id": "ppr_raw_a050_count",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.35489412737799836,
+          "precision_at_5": 0.41776674937965264,
+          "recall_at_5": 0.41776674937965264,
+          "hit_rate_at_5": 0.8955334987593052,
+          "users_with_hits": 3609,
+          "total_hits": 8418
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.39053333333333334,
+          "precision_at_5": 0.4547826086956522,
+          "recall_at_5": 0.4547826086956522,
+          "hit_rate_at_5": 0.9278260869565217,
+          "users_with_hits": 1067,
+          "total_hits": 2615
+        }
+      ]
+    },
+    {
+      "run_id": "ppr_raw_a050_log",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.3577535153019024,
+          "precision_at_5": 0.4192059553349876,
+          "recall_at_5": 0.4192059553349876,
+          "hit_rate_at_5": 0.896029776674938,
+          "users_with_hits": 3611,
+          "total_hits": 8447
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.3920927536231884,
+          "precision_at_5": 0.4546086956521739,
+          "recall_at_5": 0.4546086956521739,
+          "hit_rate_at_5": 0.9260869565217391,
+          "users_with_hits": 1065,
+          "total_hits": 2614
+        }
+      ]
+    },
+    {
+      "run_id": "ppr_raw_a085_log",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.3351654259718776,
+          "precision_at_5": 0.4001985111662531,
+          "recall_at_5": 0.4001985111662531,
+          "hit_rate_at_5": 0.8965260545905707,
+          "users_with_hits": 3613,
+          "total_hits": 8064
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.3641333333333333,
+          "precision_at_5": 0.4281739130434783,
+          "recall_at_5": 0.4281739130434783,
+          "hit_rate_at_5": 0.9147826086956522,
+          "users_with_hits": 1052,
+          "total_hits": 2462
+        }
+      ]
+    },
+    {
+      "run_id": "ppr_raw_a095_log",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.2937832919768404,
+          "precision_at_5": 0.35101736972704717,
+          "recall_at_5": 0.35101736972704717,
+          "hit_rate_at_5": 0.8483870967741935,
+          "users_with_hits": 3419,
+          "total_hits": 7073
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.3165768115942029,
+          "precision_at_5": 0.37373913043478263,
+          "recall_at_5": 0.37373913043478263,
+          "hit_rate_at_5": 0.8626086956521739,
+          "users_with_hits": 992,
+          "total_hits": 2149
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 5.60158145800051,
+  "verification_scope": "All runs: fixed-input/cohort/candidate/cold-fallback checks and exact AP/MAP; MF: all-user dot-product rankings and sampled normal equations; PPR: sampled co-view edges and independent iterative solver",
+  "student_personal_verification": "Not claimed; manual_mf_dot_product.csv/json exported for a later student calculation"
+}

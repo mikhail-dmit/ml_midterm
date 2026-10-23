@@ -1,0 +1,8 @@
+{
+  "id": "switch_roles_strict5",
+  "type": "slots",
+  "favourite": "ppr",
+  "new": "association_rules",
+  "familiar_slots": 4,
+  "max_sparse_history": 5
+}

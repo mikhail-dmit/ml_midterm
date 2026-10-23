@@ -1,0 +1,20 @@
+{
+  "setting": {
+    "id": "full10_t20",
+    "window": "full10",
+    "start_local": "2020-03-09 00:00:00",
+    "end_local": "2020-05-18 00:00:00",
+    "threshold_percent": 20
+  },
+  "positive_airings": 861447,
+  "positive_user_programme_pairs": 352915,
+  "training_users": 4825,
+  "training_items": 2811,
+  "cold_primary_users": 33,
+  "true_slots_supported_by_this_history": 13590,
+  "true_slots_without_global_training_support": 1021,
+  "qualified_watch_seconds_below_60": 122,
+  "median_qualified_coverage": 0.61375,
+  "earliest_observation": 1583709360,
+  "latest_observation": 1589749200
+}

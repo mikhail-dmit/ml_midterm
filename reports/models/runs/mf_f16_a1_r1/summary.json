@@ -1,0 +1,97 @@
+{
+  "config": {
+    "id": "mf_f16_a1_r1",
+    "method": "implicit_mf",
+    "factors": 16,
+    "confidence_scale": 1.0,
+    "regularization": 1.0,
+    "weighting": "log1p",
+    "epochs": 15
+  },
+  "metrics": [
+    {
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.27097766749379654,
+      "precision_at_5": 0.3620347394540943,
+      "recall_at_5": 0.3620347394540943,
+      "hit_rate_at_5": 0.8617866004962779,
+      "users_with_hits": 3473,
+      "total_hits": 7295
+    },
+    {
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.28804927536231884,
+      "precision_at_5": 0.37982608695652176,
+      "recall_at_5": 0.37982608695652176,
+      "hit_rate_at_5": 0.888695652173913,
+      "users_with_hits": 1022,
+      "total_hits": 2184
+    }
+  ],
+  "diagnostics": {
+    "selected_epoch": 15,
+    "selection_metric": "MAP@5 on all 4030 primary users; template cohort is reporting only",
+    "initial_objective": 229616.64383185815,
+    "last_objective": 123017.0201811059,
+    "objective_monotonically_nonincreasing": true,
+    "positive_training_pair_dot_score_quantiles": {
+      "0": -0.1280744814163075,
+      "0.25": 0.05500438235212716,
+      "0.5": 0.29018980374847037,
+      "0.75": 0.7160646539380664,
+      "1": 2.1790961855236777
+    },
+    "share_positive_training_pairs_score_above_095": 0.10270698557261147,
+    "median_within_user_count_score_spearman": 0.6097457534272301,
+    "users_in_count_score_correlation": 4338,
+    "item_norm_support_spearman": 0.9690725164696344,
+    "user_factor_norm_quantiles": {
+      "0": 0.0006803997217783511,
+      "0.25": 0.29933161447722306,
+      "0.5": 0.3870420028751239,
+      "0.75": 0.4659481820964152,
+      "1": 1.7691018678117167
+    },
+    "item_factor_norm_quantiles": {
+      "0": 3.1292192877285945e-05,
+      "0.25": 0.03892109167428874,
+      "0.5": 0.08534397116566395,
+      "0.75": 0.2124109243069505,
+      "1": 4.786369907314313
+    },
+    "score_semantics": "Implicit binary-preference reconstruction score, not a rating or calibrated watch probability",
+    "recommended_slots": 20150,
+    "share_slots_previously_watched": 0.8494789081885856,
+    "mean_training_popularity_of_recommendations": 14434.308436724566,
+    "median_training_distinct_viewers_of_recommendations": 1937.0,
+    "unique_recommended_programmes": 82,
+    "zero_training_support_recommendations": 0,
+    "cold_fallback_users": 59,
+    "mean_top5_overlap_with_popularity": 2.242928039702233,
+    "max_share_users_receiving_one_item": 0.7300248138957817,
+    "users_better_than_popularity": 1645,
+    "users_worse_than_popularity": 1743,
+    "users_equal_to_popularity": 642
+  },
+  "runtime": {
+    "training_seconds_excluding_validation": 1.2659737489975669,
+    "checkpoint_validation_seconds": 3.206839917002071,
+    "final_scoring_and_ranking_seconds": 1.0380912909986364,
+    "total_seconds": 6.76309908300027
+  },
+  "artifact_directory": "artifacts/models/mf_f16_a1_r1",
+  "source_hashes": {
+    "interactions": "8f9b93fa183e6c24df8d6812aded2fd9084b4f8c4e0deff8d72b06d61516ef9e",
+    "truth": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3",
+    "users": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30",
+    "candidates": "87e4c234140161cc68546490ecdc57a4b4eca909ffc08a77e8e8401c9263cb26",
+    "baseline": "8e54268d8e457b512e71c87942ce4fd8baf536fc7d1f05e2799e8309d0908dda",
+    "protocol": "047091c2ce248a61666ea740111c2fee4f1029a215b5887859795c885bc20d7a"
+  },
+  "code_hashes": {
+    "collaborative_models.py": "ed848c68bddd732bb5faff3658432163395a4b624ee85dec65a324715933ef4d",
+    "run_model_experiments.py": "315a953261e0b73d6fd802025f9d78f05767bb49a9bc66883e4b1fed88206bcd"
+  }
+}

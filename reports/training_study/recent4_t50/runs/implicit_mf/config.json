@@ -1,0 +1,12 @@
+{
+  "id": "recent4_t50__implicit_mf",
+  "method": "implicit_mf",
+  "shared_setting": {
+    "id": "recent4_t50",
+    "window": "recent4",
+    "start_local": "2020-04-20 00:00:00",
+    "end_local": "2020-05-18 00:00:00",
+    "threshold_percent": 50
+  },
+  "hyperparameters": "Frozen original selected configuration; no per-setting tuning"
+}

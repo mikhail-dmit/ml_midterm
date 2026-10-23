@@ -1,0 +1,9 @@
+{
+  "id": "ar_user_s5_lift",
+  "method": "association_rules",
+  "baskets": "user",
+  "min_joint_count": 5,
+  "min_confidence": 0.1,
+  "score_metric": "lift",
+  "history_weighting": "log1p"
+}

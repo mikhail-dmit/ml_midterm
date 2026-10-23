@@ -1,0 +1,114 @@
+{
+  "purpose": "Method-role hybrids; RRF is the fixed control. Declare all candidates before scoring.",
+  "selection": "Highest MAP@5 on all_primary, including RRF and standalone controls; template_primary is reporting only; ties use run ID",
+  "seed": 20261023,
+  "familiarity": "At least one >=80% qualifying airing in the applicable training window; partial-only watches remain new-to-user",
+  "short_history": "At most five distinct >=80%-qualified training programmes, including unavailable programmes",
+  "components": {
+    "implicit_mf": "full-history 50%, f16 log-count target, confidence 1+log1p(count), reg1, 15 epochs",
+    "ppr": "full-history 50%, raw co-view, alpha .5, log restart",
+    "association_rules": "full-history 80%, weekly baskets, joint>=5, confidence>=.1, lift>1",
+    "popularity": "full-history 50% qualifying-airing counts"
+  },
+  "ranking": "Positive component scores descending, numeric ID for ties, then training-popularity backfill. Role filtering is applied to the full eligible ordering before taking 20 candidates.",
+  "slots": "Familiar slots first, new slots last. If a role is exhausted, borrow from the other role; never duplicate IDs. No truth is removed.",
+  "rerank": "Generate 20 candidates, order by the reranker's raw score descending; ties retain generator order. No scores from different models are added.",
+  "cold_fallback": "Same 50%-training popularity Top-5 for every actual cold user",
+  "rrf_control": {
+    "id": "rrf_mf_ppr_rules_k0",
+    "type": "rrf",
+    "offset": 0,
+    "weights": {
+      "implicit_mf": 0.5,
+      "ppr": 0.5,
+      "association_rules": 0.25
+    }
+  },
+  "runs": [
+    {
+      "id": "slots_ppr4_rules1",
+      "type": "slots",
+      "favourite": "ppr",
+      "new": "association_rules",
+      "familiar_slots": 4
+    },
+    {
+      "id": "slots_ppr3_rules2",
+      "type": "slots",
+      "favourite": "ppr",
+      "new": "association_rules",
+      "familiar_slots": 3
+    },
+    {
+      "id": "slots_ppr4_pop1",
+      "type": "slots",
+      "favourite": "ppr",
+      "new": "popularity",
+      "familiar_slots": 4
+    },
+    {
+      "id": "slots_ppr3_pop2",
+      "type": "slots",
+      "favourite": "ppr",
+      "new": "popularity",
+      "familiar_slots": 3
+    },
+    {
+      "id": "slots_mf4_rules1",
+      "type": "slots",
+      "favourite": "implicit_mf",
+      "new": "association_rules",
+      "familiar_slots": 4
+    },
+    {
+      "id": "switch_ppr_strict5",
+      "type": "switch",
+      "warm_method": "ppr",
+      "max_sparse_history": 5
+    },
+    {
+      "id": "switch_mf_strict5",
+      "type": "switch",
+      "warm_method": "implicit_mf",
+      "max_sparse_history": 5
+    },
+    {
+      "id": "switch_roles_strict5",
+      "type": "slots",
+      "favourite": "ppr",
+      "new": "association_rules",
+      "familiar_slots": 4,
+      "max_sparse_history": 5
+    },
+    {
+      "id": "ppr20_rerank_mf",
+      "type": "rerank",
+      "generator": "ppr",
+      "reranker": "implicit_mf",
+      "depth": 20
+    },
+    {
+      "id": "mf20_rerank_ppr",
+      "type": "rerank",
+      "generator": "implicit_mf",
+      "reranker": "ppr",
+      "depth": 20
+    },
+    {
+      "id": "slots_ppr4_rules20_pop1",
+      "type": "slots",
+      "favourite": "ppr",
+      "new": "association_rules",
+      "familiar_slots": 4,
+      "new_reranker": "popularity",
+      "depth": 20
+    }
+  ],
+  "final_refit": {
+    "training_start_local": "2020-03-09",
+    "training_end_local_exclusive": "2020-07-27",
+    "prediction_end_local_exclusive": "2020-10-19",
+    "epochs": 15,
+    "policy": "Freeze strategy and parameters after validation selection, then rejoin the complete weeks 11-30 observation window from raw views; do not use validation Top-5 labels in final fitting. Test schedule is used only for time/channel availability."
+  }
+}

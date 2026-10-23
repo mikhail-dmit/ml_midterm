@@ -1,0 +1,16 @@
+{
+  "raw_rows": 5821987,
+  "duplicate_rows_removed": 17,
+  "unique_rows": 5821970,
+  "duration_mismatches": {
+    "naive": 117,
+    "timezone_elapsed": 0
+  },
+  "clock_change_sample_user_ids": [
+    "12466582247545246052",
+    "10059425067810734795",
+    "12246241194532024321",
+    "6266399139997320035",
+    "5842699175950256892"
+  ]
+}

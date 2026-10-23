@@ -1,0 +1,9 @@
+{
+  "id": "slots_ppr4_rules20_pop1",
+  "type": "slots",
+  "favourite": "ppr",
+  "new": "association_rules",
+  "familiar_slots": 4,
+  "new_reranker": "popularity",
+  "depth": 20
+}

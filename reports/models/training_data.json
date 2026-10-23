@@ -1,0 +1,13 @@
+{
+  "users": 4737,
+  "programmes": 2490,
+  "positive_user_programme_pairs": 114851,
+  "qualifying_airings": 316413,
+  "density": 0.009737154232297566,
+  "candidate_pool": 6384,
+  "candidate_programmes_with_training_vector": 1874,
+  "primary_users": 4030,
+  "template_primary_users": 1150,
+  "primary_cold_users": 59,
+  "primary_true_ids_without_training_vector": 1043
+}

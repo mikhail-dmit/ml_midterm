@@ -1,0 +1,13 @@
+{
+  "submission_id": "submission_006",
+  "csv_path": "submissions/submission_006.csv",
+  "csv_sha256": "5d7ae1263308477f941d350ca214708f2cf7bdd8f06b8f28d4b31de24c299758",
+  "strategy": "recency_h8",
+  "public_score": 0.43662,
+  "private_score": 0.4234,
+  "provenance": "User-supplied Kaggle result; no API score retrieval",
+  "recorded_at_utc": "2026-10-23T13:55:02.743222+00:00",
+  "screenshot_path": "submissions/Score for sub6.png",
+  "screenshot_sha256": "63168db916302033386d7a4b8951e0aba4b230331de184e52e11911498703f95",
+  "generation_manifest": "reports/submission_006/summary.json"
+}

@@ -1,0 +1,8 @@
+{
+  "recommendation_slots_without_any_qualified_training_view": 2785,
+  "hits_among_these_slots": 0,
+  "true_slots_without_collaborative_training_support": 1043,
+  "true_slots_without_collaborative_support_but_with_frozen_metadata": 272,
+  "true_slots_without_collaborative_support_or_frozen_metadata": 771,
+  "scope": "CBF can score past-schedule items lacking collaborative history; a novel item is not automatically useful discovery"
+}

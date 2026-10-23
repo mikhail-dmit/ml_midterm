@@ -1,0 +1,12 @@
+{
+  "id": "rrf_all_equal_k0",
+  "type": "rrf",
+  "offset": 0,
+  "weights": {
+    "implicit_mf": 1,
+    "ppr": 1,
+    "content_based": 1,
+    "association_rules": 1,
+    "popularity": 1
+  }
+}

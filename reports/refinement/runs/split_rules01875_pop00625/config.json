@@ -1,0 +1,12 @@
+{
+  "id": "split_rules01875_pop00625",
+  "half_life_weeks": null,
+  "depth": 5,
+  "offset": 0,
+  "weights": {
+    "implicit_mf": 0.5,
+    "ppr": 0.5,
+    "association_rules": 0.1875,
+    "popularity": 0.0625
+  }
+}

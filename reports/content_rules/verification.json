@@ -1,0 +1,979 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "export_arh_11-20-final.csv: source fingerprint",
+      "passed": true,
+      "evidence": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c"
+    },
+    {
+      "check": "export_arh_11-20-final.csv: only training snapshot rows used",
+      "passed": true,
+      "evidence": 115316
+    },
+    {
+      "check": "export_arh_21-30-final.csv: source fingerprint",
+      "passed": true,
+      "evidence": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4"
+    },
+    {
+      "check": "export_arh_21-30-final.csv: only training snapshot rows used",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "All frozen item documents match raw pre-cutoff attributes",
+      "passed": true,
+      "evidence": {
+        "programmes": 5842,
+        "airings": 115316,
+        "latest_start": 1589748900
+      }
+    },
+    {
+      "check": "ar_user_s20_conf: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ar_user_s20_conf: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ar_user_s20_conf: user baskets contain only training positives",
+      "passed": true,
+      "evidence": 4737
+    },
+    {
+      "check": "ar_user_s20_conf: exact frequent pairs and directional rule filters",
+      "passed": true,
+      "evidence": {
+        "baskets": 4737,
+        "rules": 16796
+      }
+    },
+    {
+      "check": "ar_user_s20_conf: all support/confidence/lift/count fields verified",
+      "passed": true,
+      "evidence": 16796
+    },
+    {
+      "check": "ar_user_s20_conf: rule score matrix matches the declared metric",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "ar_user_s20_conf: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 309
+      }
+    },
+    {
+      "check": "ar_user_s20_conf: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ar_user_s20_conf: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ar_user_s20_conf / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "38612/151125"
+      }
+    },
+    {
+      "check": "ar_user_s20_conf / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "15949/57500"
+      }
+    },
+    {
+      "check": "ar_user_s20_conf: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 2.8421709430404007e-13
+    },
+    {
+      "check": "ar_user_s5_conf: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ar_user_s5_conf: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ar_user_s5_conf: user baskets contain only training positives",
+      "passed": true,
+      "evidence": 4737
+    },
+    {
+      "check": "ar_user_s5_conf: exact frequent pairs and directional rule filters",
+      "passed": true,
+      "evidence": {
+        "baskets": 4737,
+        "rules": 72516
+      }
+    },
+    {
+      "check": "ar_user_s5_conf: all support/confidence/lift/count fields verified",
+      "passed": true,
+      "evidence": 72516
+    },
+    {
+      "check": "ar_user_s5_conf: rule score matrix matches the declared metric",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "ar_user_s5_conf: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 295
+      }
+    },
+    {
+      "check": "ar_user_s5_conf: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ar_user_s5_conf: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ar_user_s5_conf / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "311549/1209000"
+      }
+    },
+    {
+      "check": "ar_user_s5_conf / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "19319/69000"
+      }
+    },
+    {
+      "check": "ar_user_s5_conf: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 2.2737367544323206e-13
+    },
+    {
+      "check": "ar_user_s5_conf_count: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ar_user_s5_conf_count: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ar_user_s5_conf_count: user baskets contain only training positives",
+      "passed": true,
+      "evidence": 4737
+    },
+    {
+      "check": "ar_user_s5_conf_count: exact frequent pairs and directional rule filters",
+      "passed": true,
+      "evidence": {
+        "baskets": 4737,
+        "rules": 72516
+      }
+    },
+    {
+      "check": "ar_user_s5_conf_count: all support/confidence/lift/count fields verified",
+      "passed": true,
+      "evidence": 72516
+    },
+    {
+      "check": "ar_user_s5_conf_count: rule score matrix matches the declared metric",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "ar_user_s5_conf_count: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 295
+      }
+    },
+    {
+      "check": "ar_user_s5_conf_count: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ar_user_s5_conf_count: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ar_user_s5_conf_count / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "56789/241800"
+      }
+    },
+    {
+      "check": "ar_user_s5_conf_count / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "43819/172500"
+      }
+    },
+    {
+      "check": "ar_user_s5_conf_count: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 1.1368683772161603e-12
+    },
+    {
+      "check": "ar_user_s5_lift: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ar_user_s5_lift: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ar_user_s5_lift: user baskets contain only training positives",
+      "passed": true,
+      "evidence": 4737
+    },
+    {
+      "check": "ar_user_s5_lift: exact frequent pairs and directional rule filters",
+      "passed": true,
+      "evidence": {
+        "baskets": 4737,
+        "rules": 72516
+      }
+    },
+    {
+      "check": "ar_user_s5_lift: all support/confidence/lift/count fields verified",
+      "passed": true,
+      "evidence": 72516
+    },
+    {
+      "check": "ar_user_s5_lift: rule score matrix matches the declared metric",
+      "passed": true,
+      "evidence": 24491
+    },
+    {
+      "check": "ar_user_s5_lift: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 295
+      }
+    },
+    {
+      "check": "ar_user_s5_lift: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ar_user_s5_lift: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ar_user_s5_lift / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "11467/302250"
+      }
+    },
+    {
+      "check": "ar_user_s5_lift / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "1634/43125"
+      }
+    },
+    {
+      "check": "ar_user_s5_lift: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 5.684341886080801e-13
+    },
+    {
+      "check": "ar_week_s5_conf: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "ar_week_s5_conf: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "ar_week_s5_conf: weekly baskets independently rebuilt from training airings",
+      "passed": true,
+      "evidence": 37403
+    },
+    {
+      "check": "ar_week_s5_conf: exact frequent pairs and directional rule filters",
+      "passed": true,
+      "evidence": {
+        "baskets": 37403,
+        "rules": 16126
+      }
+    },
+    {
+      "check": "ar_week_s5_conf: all support/confidence/lift/count fields verified",
+      "passed": true,
+      "evidence": 16126
+    },
+    {
+      "check": "ar_week_s5_conf: rule score matrix matches the declared metric",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "check": "ar_week_s5_conf: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 298
+      }
+    },
+    {
+      "check": "ar_week_s5_conf: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ar_week_s5_conf: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "ar_week_s5_conf / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "379841/1209000"
+      }
+    },
+    {
+      "check": "ar_week_s5_conf / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "116119/345000"
+      }
+    },
+    {
+      "check": "ar_week_s5_conf: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 1.7053025658242404e-13
+    },
+    {
+      "check": "cbf_genre_log: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "cbf_genre_log: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "cbf_genre_log: vocabulary and IDF fitted on frozen metadata only",
+      "passed": true,
+      "evidence": 71
+    },
+    {
+      "check": "cbf_genre_log: every item vector independently reconstructed",
+      "passed": true,
+      "evidence": 1.1102230246251565e-16
+    },
+    {
+      "check": "cbf_genre_log: all profiles use training-only watched items/counts",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "check": "cbf_genre_log: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 295
+      }
+    },
+    {
+      "check": "cbf_genre_log: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "cbf_genre_log: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "cbf_genre_log / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "841/9672"
+      }
+    },
+    {
+      "check": "cbf_genre_log / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "10783/115000"
+      }
+    },
+    {
+      "check": "cbf_genre_log: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 1.1102230246251565e-16
+    },
+    {
+      "check": "cbf_rich_log: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "cbf_rich_log: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "cbf_rich_log: vocabulary and IDF fitted on frozen metadata only",
+      "passed": true,
+      "evidence": 11878
+    },
+    {
+      "check": "cbf_rich_log: every item vector independently reconstructed",
+      "passed": true,
+      "evidence": 1.1102230246251565e-16
+    },
+    {
+      "check": "cbf_rich_log: all profiles use training-only watched items/counts",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "check": "cbf_rich_log: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 295
+      }
+    },
+    {
+      "check": "cbf_rich_log: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "cbf_rich_log: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "cbf_rich_log / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "98729/1209000"
+      }
+    },
+    {
+      "check": "cbf_rich_log / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "14911/172500"
+      }
+    },
+    {
+      "check": "cbf_rich_log: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 5.551115123125783e-16
+    },
+    {
+      "check": "cbf_rich_tfidf_count: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "cbf_rich_tfidf_count: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "cbf_rich_tfidf_count: vocabulary and IDF fitted on frozen metadata only",
+      "passed": true,
+      "evidence": 11878
+    },
+    {
+      "check": "cbf_rich_tfidf_count: every item vector independently reconstructed",
+      "passed": true,
+      "evidence": 2.220446049250313e-16
+    },
+    {
+      "check": "cbf_rich_tfidf_count: all profiles use training-only watched items/counts",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "check": "cbf_rich_tfidf_count: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 295
+      }
+    },
+    {
+      "check": "cbf_rich_tfidf_count: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "cbf_rich_tfidf_count: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "cbf_rich_tfidf_count / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "48691/302250"
+      }
+    },
+    {
+      "check": "cbf_rich_tfidf_count / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "7684/43125"
+      }
+    },
+    {
+      "check": "cbf_rich_tfidf_count: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 3.3306690738754696e-16
+    },
+    {
+      "check": "cbf_rich_tfidf_log: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "cbf_rich_tfidf_log: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "cbf_rich_tfidf_log: vocabulary and IDF fitted on frozen metadata only",
+      "passed": true,
+      "evidence": 11878
+    },
+    {
+      "check": "cbf_rich_tfidf_log: every item vector independently reconstructed",
+      "passed": true,
+      "evidence": 2.220446049250313e-16
+    },
+    {
+      "check": "cbf_rich_tfidf_log: all profiles use training-only watched items/counts",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "check": "cbf_rich_tfidf_log: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 295
+      }
+    },
+    {
+      "check": "cbf_rich_tfidf_log: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "cbf_rich_tfidf_log: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "cbf_rich_tfidf_log / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "667/7800"
+      }
+    },
+    {
+      "check": "cbf_rich_tfidf_log / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "31207/345000"
+      }
+    },
+    {
+      "check": "cbf_rich_tfidf_log: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 4.440892098500626e-16
+    },
+    {
+      "check": "cbf_title_tfidf_count: frozen protocol/input fingerprints",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "cbf_title_tfidf_count: unchanged primary cohort, five unique candidate IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "cbf_title_tfidf_count: vocabulary and IDF fitted on frozen metadata only",
+      "passed": true,
+      "evidence": 23383
+    },
+    {
+      "check": "cbf_title_tfidf_count: every item vector independently reconstructed",
+      "passed": true,
+      "evidence": 1.6653345369377348e-15
+    },
+    {
+      "check": "cbf_title_tfidf_count: all profiles use training-only watched items/counts",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "check": "cbf_title_tfidf_count: all predictions, repeat policy, score and fallback provenance reproduce",
+      "passed": true,
+      "evidence": {
+        "max_score_error": 0.0,
+        "fallback_slots": 295
+      }
+    },
+    {
+      "check": "cbf_title_tfidf_count: same cold-user fallback as other methods",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "cbf_title_tfidf_count: all per-user AP agrees with exact arithmetic",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "cbf_title_tfidf_count / all_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "296207/1209000"
+      }
+    },
+    {
+      "check": "cbf_title_tfidf_count / template_primary: exact MAP and total hits",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "46489/172500"
+      }
+    },
+    {
+      "check": "cbf_title_tfidf_count: explanation contributions sum to reported scores",
+      "passed": true,
+      "evidence": 3.3306690738754696e-16
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "ar_user_s20_conf",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.25549710504549217,
+          "precision_at_5": 0.3204466501240695,
+          "recall_at_5": 0.3204466501240695,
+          "hit_rate_at_5": 0.8330024813895781,
+          "users_with_hits": 3357,
+          "total_hits": 6457
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.2773739130434783,
+          "precision_at_5": 0.34069565217391307,
+          "recall_at_5": 0.34069565217391307,
+          "hit_rate_at_5": 0.8504347826086956,
+          "users_with_hits": 978,
+          "total_hits": 1959
+        }
+      ]
+    },
+    {
+      "run_id": "ar_user_s5_conf",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.2576914805624483,
+          "precision_at_5": 0.3220347394540943,
+          "recall_at_5": 0.3220347394540943,
+          "hit_rate_at_5": 0.8347394540942928,
+          "users_with_hits": 3364,
+          "total_hits": 6489
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.27998550724637683,
+          "precision_at_5": 0.34243478260869564,
+          "recall_at_5": 0.34243478260869564,
+          "hit_rate_at_5": 0.8539130434782609,
+          "users_with_hits": 982,
+          "total_hits": 1969
+        }
+      ]
+    },
+    {
+      "run_id": "ar_user_s5_conf_count",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.23485938792390407,
+          "precision_at_5": 0.310272952853598,
+          "recall_at_5": 0.310272952853598,
+          "hit_rate_at_5": 0.8124069478908189,
+          "users_with_hits": 3274,
+          "total_hits": 6252
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.2540231884057971,
+          "precision_at_5": 0.32921739130434785,
+          "recall_at_5": 0.32921739130434785,
+          "hit_rate_at_5": 0.8330434782608696,
+          "users_with_hits": 958,
+          "total_hits": 1893
+        }
+      ]
+    },
+    {
+      "run_id": "ar_user_s5_lift",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.0379387923904053,
+          "precision_at_5": 0.07295285359801489,
+          "recall_at_5": 0.07295285359801489,
+          "hit_rate_at_5": 0.2642679900744417,
+          "users_with_hits": 1065,
+          "total_hits": 1470
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.037889855072463764,
+          "precision_at_5": 0.07547826086956522,
+          "recall_at_5": 0.07547826086956522,
+          "hit_rate_at_5": 0.2773913043478261,
+          "users_with_hits": 319,
+          "total_hits": 434
+        }
+      ]
+    },
+    {
+      "run_id": "ar_week_s5_conf",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.3141778329197684,
+          "precision_at_5": 0.38550868486352363,
+          "recall_at_5": 0.38550868486352363,
+          "hit_rate_at_5": 0.8761786600496277,
+          "users_with_hits": 3531,
+          "total_hits": 7768
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.3365768115942029,
+          "precision_at_5": 0.4090434782608696,
+          "recall_at_5": 0.4090434782608696,
+          "hit_rate_at_5": 0.9078260869565218,
+          "users_with_hits": 1044,
+          "total_hits": 2352
+        }
+      ]
+    },
+    {
+      "run_id": "cbf_genre_log",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.0869520264681555,
+          "precision_at_5": 0.11379652605459058,
+          "recall_at_5": 0.11379652605459058,
+          "hit_rate_at_5": 0.3426799007444169,
+          "users_with_hits": 1381,
+          "total_hits": 2293
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.09376521739130435,
+          "precision_at_5": 0.1231304347826087,
+          "recall_at_5": 0.1231304347826087,
+          "hit_rate_at_5": 0.3626086956521739,
+          "users_with_hits": 417,
+          "total_hits": 708
+        }
+      ]
+    },
+    {
+      "run_id": "cbf_rich_log",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.08166170388751035,
+          "precision_at_5": 0.1369727047146402,
+          "recall_at_5": 0.1369727047146402,
+          "hit_rate_at_5": 0.43300248138957814,
+          "users_with_hits": 1745,
+          "total_hits": 2760
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.08644057971014493,
+          "precision_at_5": 0.14626086956521742,
+          "recall_at_5": 0.14626086956521742,
+          "hit_rate_at_5": 0.45565217391304347,
+          "users_with_hits": 524,
+          "total_hits": 841
+        }
+      ]
+    },
+    {
+      "run_id": "cbf_rich_tfidf_count",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.1610951199338296,
+          "precision_at_5": 0.23225806451612904,
+          "recall_at_5": 0.23225806451612904,
+          "hit_rate_at_5": 0.6900744416873449,
+          "users_with_hits": 2781,
+          "total_hits": 4680
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.17817971014492753,
+          "precision_at_5": 0.2549565217391304,
+          "recall_at_5": 0.2549565217391304,
+          "hit_rate_at_5": 0.7452173913043478,
+          "users_with_hits": 857,
+          "total_hits": 1466
+        }
+      ]
+    },
+    {
+      "run_id": "cbf_rich_tfidf_log",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.08551282051282051,
+          "precision_at_5": 0.14014888337468984,
+          "recall_at_5": 0.14014888337468984,
+          "hit_rate_at_5": 0.44094292803970225,
+          "users_with_hits": 1777,
+          "total_hits": 2824
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.0904550724637681,
+          "precision_at_5": 0.14869565217391303,
+          "recall_at_5": 0.14869565217391303,
+          "hit_rate_at_5": 0.4652173913043478,
+          "users_with_hits": 535,
+          "total_hits": 855
+        }
+      ]
+    },
+    {
+      "run_id": "cbf_title_tfidf_count",
+      "verified": true,
+      "metrics": [
+        {
+          "cohort": "all_primary",
+          "users": 4030,
+          "map_at_5": 0.2450016542597188,
+          "precision_at_5": 0.28014888337468985,
+          "recall_at_5": 0.28014888337468985,
+          "hit_rate_at_5": 0.7600496277915633,
+          "users_with_hits": 3063,
+          "total_hits": 5645
+        },
+        {
+          "cohort": "template_primary",
+          "users": 1150,
+          "map_at_5": 0.26950144927536235,
+          "precision_at_5": 0.3050434782608696,
+          "recall_at_5": 0.3050434782608696,
+          "hit_rate_at_5": 0.8121739130434783,
+          "users_with_hits": 934,
+          "total_hits": 1754
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 40.578511415998946,
+  "method": "Raw-CSV cutoff metadata reconstruction, independent feature/IDF/profile algebra, independent user-week baskets and frequent-pair rule reconstruction, all-user ranking and Fraction AP/MAP",
+  "student_personal_verification": "Not claimed; source attributes and complete score-contribution tables are exported for later inspection"
+}

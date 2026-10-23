@@ -1,0 +1,9 @@
+{
+  "id": "mf_f32_a10_r1",
+  "method": "implicit_mf",
+  "factors": 32,
+  "confidence_scale": 10.0,
+  "regularization": 1.0,
+  "weighting": "log1p",
+  "epochs": 15
+}

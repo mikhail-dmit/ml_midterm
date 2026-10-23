@@ -1,0 +1,2446 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Frozen input unchanged: truth",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "Frozen input unchanged: user_cohorts",
+      "passed": true,
+      "evidence": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30"
+    },
+    {
+      "check": "Frozen input unchanged: candidate_pool",
+      "passed": true,
+      "evidence": "87e4c234140161cc68546490ecdc57a4b4eca909ffc08a77e8e8401c9263cb26"
+    },
+    {
+      "check": "Frozen input unchanged: original_protocol",
+      "passed": true,
+      "evidence": "047091c2ce248a61666ea740111c2fee4f1029a215b5887859795c885bc20d7a"
+    },
+    {
+      "check": "Frozen input unchanged: content_vectors",
+      "passed": true,
+      "evidence": "8eccdae675f13c6973c570fba9b18ea32730cb59c6258cd319db4728daa06cca"
+    },
+    {
+      "check": "Frozen input unchanged: content_item_ids",
+      "passed": true,
+      "evidence": "793c8d231a71b67cefec340bd822fccfdeb8d184099d2f40ab1b3cd0a3f48fcb"
+    },
+    {
+      "check": "Reference familiar/new answers rebuilt from strict airing events",
+      "passed": true,
+      "evidence": {
+        "familiar": 11323,
+        "new": 8827
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/popularity/implicit_mf",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 3302,
+        "a_only_hit_users": 222,
+        "b_only_hit_users": 244,
+        "neither_hit_users": 262,
+        "both_correct_user_item_pairs": 5542,
+        "a_only_correct_pairs": 1665,
+        "b_only_correct_pairs": 2730,
+        "union_correct_pairs": 9937
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/popularity/ppr",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 3353,
+        "a_only_hit_users": 171,
+        "b_only_hit_users": 258,
+        "neither_hit_users": 248,
+        "both_correct_user_item_pairs": 5646,
+        "a_only_correct_pairs": 1561,
+        "b_only_correct_pairs": 2801,
+        "union_correct_pairs": 10008
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/popularity/content_based",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 2858,
+        "a_only_hit_users": 666,
+        "b_only_hit_users": 205,
+        "neither_hit_users": 301,
+        "both_correct_user_item_pairs": 3806,
+        "a_only_correct_pairs": 3401,
+        "b_only_correct_pairs": 1839,
+        "union_correct_pairs": 9046
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/popularity/association_rules",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 3405,
+        "a_only_hit_users": 119,
+        "b_only_hit_users": 126,
+        "neither_hit_users": 380,
+        "both_correct_user_item_pairs": 6453,
+        "a_only_correct_pairs": 754,
+        "b_only_correct_pairs": 1315,
+        "union_correct_pairs": 8522
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/implicit_mf/ppr",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 3491,
+        "a_only_hit_users": 55,
+        "b_only_hit_users": 120,
+        "neither_hit_users": 364,
+        "both_correct_user_item_pairs": 7513,
+        "a_only_correct_pairs": 759,
+        "b_only_correct_pairs": 934,
+        "union_correct_pairs": 9206
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/implicit_mf/content_based",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 3006,
+        "a_only_hit_users": 540,
+        "b_only_hit_users": 57,
+        "neither_hit_users": 427,
+        "both_correct_user_item_pairs": 5046,
+        "a_only_correct_pairs": 3226,
+        "b_only_correct_pairs": 599,
+        "union_correct_pairs": 8871
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/implicit_mf/association_rules",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 3351,
+        "a_only_hit_users": 195,
+        "b_only_hit_users": 180,
+        "neither_hit_users": 304,
+        "both_correct_user_item_pairs": 6176,
+        "a_only_correct_pairs": 2096,
+        "b_only_correct_pairs": 1592,
+        "union_correct_pairs": 9864
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/ppr/content_based",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 3034,
+        "a_only_hit_users": 577,
+        "b_only_hit_users": 29,
+        "neither_hit_users": 390,
+        "both_correct_user_item_pairs": 5174,
+        "a_only_correct_pairs": 3273,
+        "b_only_correct_pairs": 471,
+        "union_correct_pairs": 8918
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/ppr/association_rules",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 3389,
+        "a_only_hit_users": 222,
+        "b_only_hit_users": 142,
+        "neither_hit_users": 277,
+        "both_correct_user_item_pairs": 6182,
+        "a_only_correct_pairs": 2265,
+        "b_only_correct_pairs": 1586,
+        "union_correct_pairs": 10033
+      }
+    },
+    {
+      "check": "Reference overlap all_primary/content_based/association_rules",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 2908,
+        "a_only_hit_users": 155,
+        "b_only_hit_users": 623,
+        "neither_hit_users": 344,
+        "both_correct_user_item_pairs": 4375,
+        "a_only_correct_pairs": 1270,
+        "b_only_correct_pairs": 3393,
+        "union_correct_pairs": 9038
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/popularity/implicit_mf",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 985,
+        "a_only_hit_users": 61,
+        "b_only_hit_users": 58,
+        "neither_hit_users": 46,
+        "both_correct_user_item_pairs": 1729,
+        "a_only_correct_pairs": 498,
+        "b_only_correct_pairs": 819,
+        "union_correct_pairs": 3046
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/popularity/ppr",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 1005,
+        "a_only_hit_users": 41,
+        "b_only_hit_users": 60,
+        "neither_hit_users": 44,
+        "both_correct_user_item_pairs": 1764,
+        "a_only_correct_pairs": 463,
+        "b_only_correct_pairs": 850,
+        "union_correct_pairs": 3077
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/popularity/content_based",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 886,
+        "a_only_hit_users": 160,
+        "b_only_hit_users": 48,
+        "neither_hit_users": 56,
+        "both_correct_user_item_pairs": 1182,
+        "a_only_correct_pairs": 1045,
+        "b_only_correct_pairs": 572,
+        "union_correct_pairs": 2799
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/popularity/association_rules",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 1022,
+        "a_only_hit_users": 24,
+        "b_only_hit_users": 22,
+        "neither_hit_users": 82,
+        "both_correct_user_item_pairs": 1990,
+        "a_only_correct_pairs": 237,
+        "b_only_correct_pairs": 362,
+        "union_correct_pairs": 2589
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/implicit_mf/ppr",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 1028,
+        "a_only_hit_users": 15,
+        "b_only_hit_users": 37,
+        "neither_hit_users": 70,
+        "both_correct_user_item_pairs": 2332,
+        "a_only_correct_pairs": 216,
+        "b_only_correct_pairs": 282,
+        "union_correct_pairs": 2830
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/implicit_mf/content_based",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 917,
+        "a_only_hit_users": 126,
+        "b_only_hit_users": 17,
+        "neither_hit_users": 90,
+        "both_correct_user_item_pairs": 1561,
+        "a_only_correct_pairs": 987,
+        "b_only_correct_pairs": 193,
+        "union_correct_pairs": 2741
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/implicit_mf/association_rules",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 993,
+        "a_only_hit_users": 50,
+        "b_only_hit_users": 51,
+        "neither_hit_users": 56,
+        "both_correct_user_item_pairs": 1891,
+        "a_only_correct_pairs": 657,
+        "b_only_correct_pairs": 461,
+        "union_correct_pairs": 3009
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/ppr/content_based",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 928,
+        "a_only_hit_users": 137,
+        "b_only_hit_users": 6,
+        "neither_hit_users": 79,
+        "both_correct_user_item_pairs": 1608,
+        "a_only_correct_pairs": 1006,
+        "b_only_correct_pairs": 146,
+        "union_correct_pairs": 2760
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/ppr/association_rules",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 1006,
+        "a_only_hit_users": 59,
+        "b_only_hit_users": 38,
+        "neither_hit_users": 47,
+        "both_correct_user_item_pairs": 1901,
+        "a_only_correct_pairs": 713,
+        "b_only_correct_pairs": 451,
+        "union_correct_pairs": 3065
+      }
+    },
+    {
+      "check": "Reference overlap template_primary/content_based/association_rules",
+      "passed": true,
+      "evidence": {
+        "both_hit_users": 894,
+        "a_only_hit_users": 40,
+        "b_only_hit_users": 150,
+        "neither_hit_users": 66,
+        "both_correct_user_item_pairs": 1355,
+        "a_only_correct_pairs": 399,
+        "b_only_correct_pairs": 997,
+        "union_correct_pairs": 2751
+      }
+    },
+    {
+      "check": "Reference AP partition all_primary/popularity/familiar_80pct",
+      "passed": true,
+      "evidence": 6117
+    },
+    {
+      "check": "Reference AP partition all_primary/popularity/new_qualified_for_user",
+      "passed": true,
+      "evidence": 1090
+    },
+    {
+      "check": "Reference AP partition template_primary/popularity/familiar_80pct",
+      "passed": true,
+      "evidence": 1941
+    },
+    {
+      "check": "Reference AP partition template_primary/popularity/new_qualified_for_user",
+      "passed": true,
+      "evidence": 286
+    },
+    {
+      "check": "Reference AP partition all_primary/implicit_mf/familiar_80pct",
+      "passed": true,
+      "evidence": 7924
+    },
+    {
+      "check": "Reference AP partition all_primary/implicit_mf/new_qualified_for_user",
+      "passed": true,
+      "evidence": 348
+    },
+    {
+      "check": "Reference AP partition template_primary/implicit_mf/familiar_80pct",
+      "passed": true,
+      "evidence": 2471
+    },
+    {
+      "check": "Reference AP partition template_primary/implicit_mf/new_qualified_for_user",
+      "passed": true,
+      "evidence": 77
+    },
+    {
+      "check": "Reference AP partition all_primary/ppr/familiar_80pct",
+      "passed": true,
+      "evidence": 8271
+    },
+    {
+      "check": "Reference AP partition all_primary/ppr/new_qualified_for_user",
+      "passed": true,
+      "evidence": 176
+    },
+    {
+      "check": "Reference AP partition template_primary/ppr/familiar_80pct",
+      "passed": true,
+      "evidence": 2580
+    },
+    {
+      "check": "Reference AP partition template_primary/ppr/new_qualified_for_user",
+      "passed": true,
+      "evidence": 34
+    },
+    {
+      "check": "Reference AP partition all_primary/content_based/familiar_80pct",
+      "passed": true,
+      "evidence": 5399
+    },
+    {
+      "check": "Reference AP partition all_primary/content_based/new_qualified_for_user",
+      "passed": true,
+      "evidence": 246
+    },
+    {
+      "check": "Reference AP partition template_primary/content_based/familiar_80pct",
+      "passed": true,
+      "evidence": 1689
+    },
+    {
+      "check": "Reference AP partition template_primary/content_based/new_qualified_for_user",
+      "passed": true,
+      "evidence": 65
+    },
+    {
+      "check": "Reference AP partition all_primary/association_rules/familiar_80pct",
+      "passed": true,
+      "evidence": 6733
+    },
+    {
+      "check": "Reference AP partition all_primary/association_rules/new_qualified_for_user",
+      "passed": true,
+      "evidence": 1035
+    },
+    {
+      "check": "Reference AP partition template_primary/association_rules/familiar_80pct",
+      "passed": true,
+      "evidence": 2099
+    },
+    {
+      "check": "Reference AP partition template_primary/association_rules/new_qualified_for_user",
+      "passed": true,
+      "evidence": 253
+    },
+    {
+      "check": "full10: exact clipped positive intervals/full denominators",
+      "passed": true,
+      "evidence": 1823893
+    },
+    {
+      "check": "full10_t80: training aggregation/threshold exact",
+      "passed": true,
+      "evidence": {
+        "positive_pairs": 114851,
+        "positive_airings": 316413
+      }
+    },
+    {
+      "check": "full10_t80: sparse matrix/ID indices preserve exact counts",
+      "passed": true,
+      "evidence": [
+        4737,
+        2490
+      ]
+    },
+    {
+      "check": "full10_t80: same pool and training-only popularity ranking",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "full10_t80/popularity: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/popularity: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "full10_t80: popularity predictions reconstruct from counts",
+      "passed": true,
+      "evidence": [
+        2400480,
+        240081,
+        12001682,
+        20088,
+        2400508
+      ]
+    },
+    {
+      "check": "popularity: strict/full reproduces original predictions exactly",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/popularity: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t80/popularity/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "42223/151125"
+      }
+    },
+    {
+      "check": "full10_t80/popularity/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "105331/345000"
+      }
+    },
+    {
+      "check": "full10_t80/implicit_mf: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/implicit_mf: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "implicit_mf: strict/full reproduces original predictions exactly",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/implicit_mf: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t80/implicit_mf/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "426761/1209000"
+      }
+    },
+    {
+      "check": "full10_t80/implicit_mf/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "6653/17250"
+      }
+    },
+    {
+      "check": "full10_t80/ppr: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/ppr: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "ppr: strict/full reproduces original predictions exactly",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/ppr: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t80/ppr/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "108131/302250"
+      }
+    },
+    {
+      "check": "full10_t80/ppr/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "16909/43125"
+      }
+    },
+    {
+      "check": "full10_t80: PPR mass/fixed-point assertions passed for all warm users",
+      "passed": true,
+      "evidence": 1.0379660055569016e-15
+    },
+    {
+      "check": "full10_t80/content_based: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/content_based: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "content_based: strict/full reproduces original predictions exactly",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/content_based: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t80/content_based/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "296207/1209000"
+      }
+    },
+    {
+      "check": "full10_t80/content_based/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "46489/172500"
+      }
+    },
+    {
+      "check": "full10_t80/association_rules: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/association_rules: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 59
+    },
+    {
+      "check": "association_rules: strict/full reproduces original predictions exactly",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t80/association_rules: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t80/association_rules/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "379841/1209000"
+      }
+    },
+    {
+      "check": "full10_t80/association_rules/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "116119/345000"
+      }
+    },
+    {
+      "check": "full10_t50: training aggregation/threshold exact",
+      "passed": true,
+      "evidence": {
+        "positive_pairs": 199036,
+        "positive_airings": 515512
+      }
+    },
+    {
+      "check": "full10_t50: sparse matrix/ID indices preserve exact counts",
+      "passed": true,
+      "evidence": [
+        4789,
+        2704
+      ]
+    },
+    {
+      "check": "full10_t50: same pool and training-only popularity ranking",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "full10_t50/popularity: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t50/popularity: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 43
+    },
+    {
+      "check": "full10_t50: popularity predictions reconstruct from counts",
+      "passed": true,
+      "evidence": [
+        2400480,
+        240081,
+        12001682,
+        20088,
+        2400508
+      ]
+    },
+    {
+      "check": "full10_t50/popularity: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t50/popularity/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "42223/151125"
+      }
+    },
+    {
+      "check": "full10_t50/popularity/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "105331/345000"
+      }
+    },
+    {
+      "check": "full10_t50/implicit_mf: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t50/implicit_mf: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 43
+    },
+    {
+      "check": "full10_t50/implicit_mf: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t50/implicit_mf/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "34031/93000"
+      }
+    },
+    {
+      "check": "full10_t50/implicit_mf/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "45709/115000"
+      }
+    },
+    {
+      "check": "full10_t50/ppr: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t50/ppr: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 43
+    },
+    {
+      "check": "full10_t50/ppr: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t50/ppr/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "7117/19500"
+      }
+    },
+    {
+      "check": "full10_t50/ppr/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "2001/5000"
+      }
+    },
+    {
+      "check": "full10_t50: PPR mass/fixed-point assertions passed for all warm users",
+      "passed": true,
+      "evidence": 1.0116068961037194e-15
+    },
+    {
+      "check": "full10_t50/content_based: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t50/content_based: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 43
+    },
+    {
+      "check": "full10_t50/content_based: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t50/content_based/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "143257/604500"
+      }
+    },
+    {
+      "check": "full10_t50/content_based/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "22451/86250"
+      }
+    },
+    {
+      "check": "full10_t50/association_rules: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t50/association_rules: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 43
+    },
+    {
+      "check": "full10_t50/association_rules: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t50/association_rules/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "121711/403000"
+      }
+    },
+    {
+      "check": "full10_t50/association_rules/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "37567/115000"
+      }
+    },
+    {
+      "check": "full10_t20: training aggregation/threshold exact",
+      "passed": true,
+      "evidence": {
+        "positive_pairs": 352915,
+        "positive_airings": 861447
+      }
+    },
+    {
+      "check": "full10_t20: sparse matrix/ID indices preserve exact counts",
+      "passed": true,
+      "evidence": [
+        4825,
+        2811
+      ]
+    },
+    {
+      "check": "full10_t20: same pool and training-only popularity ranking",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "full10_t20/popularity: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t20/popularity: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 33
+    },
+    {
+      "check": "full10_t20: popularity predictions reconstruct from counts",
+      "passed": true,
+      "evidence": [
+        2400480,
+        240081,
+        12001682,
+        2400508,
+        20088
+      ]
+    },
+    {
+      "check": "full10_t20/popularity: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t20/popularity/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "337013/1209000"
+      }
+    },
+    {
+      "check": "full10_t20/popularity/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "21011/69000"
+      }
+    },
+    {
+      "check": "full10_t20/implicit_mf: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t20/implicit_mf: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 33
+    },
+    {
+      "check": "full10_t20/implicit_mf: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t20/implicit_mf/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "73297/201500"
+      }
+    },
+    {
+      "check": "full10_t20/implicit_mf/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "136171/345000"
+      }
+    },
+    {
+      "check": "full10_t20/ppr: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t20/ppr: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 33
+    },
+    {
+      "check": "full10_t20/ppr: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t20/ppr/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "87211/241800"
+      }
+    },
+    {
+      "check": "full10_t20/ppr/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "11261/28750"
+      }
+    },
+    {
+      "check": "full10_t20: PPR mass/fixed-point assertions passed for all warm users",
+      "passed": true,
+      "evidence": 1.115337541909576e-15
+    },
+    {
+      "check": "full10_t20/content_based: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t20/content_based: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 33
+    },
+    {
+      "check": "full10_t20/content_based: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t20/content_based/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "20069/93000"
+      }
+    },
+    {
+      "check": "full10_t20/content_based/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "81073/345000"
+      }
+    },
+    {
+      "check": "full10_t20/association_rules: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "full10_t20/association_rules: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 33
+    },
+    {
+      "check": "full10_t20/association_rules: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "full10_t20/association_rules/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "352117/1209000"
+      }
+    },
+    {
+      "check": "full10_t20/association_rules/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "36239/115000"
+      }
+    },
+    {
+      "check": "early4: exact clipped positive intervals/full denominators",
+      "passed": true,
+      "evidence": 737478
+    },
+    {
+      "check": "early4_t80: training aggregation/threshold exact",
+      "passed": true,
+      "evidence": {
+        "positive_pairs": 49706,
+        "positive_airings": 125294
+      }
+    },
+    {
+      "check": "early4_t80: sparse matrix/ID indices preserve exact counts",
+      "passed": true,
+      "evidence": [
+        4519,
+        1137
+      ]
+    },
+    {
+      "check": "early4_t80: same pool and training-only popularity ranking",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "early4_t80/popularity: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t80/popularity: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 189
+    },
+    {
+      "check": "early4_t80: popularity predictions reconstruct from counts",
+      "passed": true,
+      "evidence": [
+        2400480,
+        240081,
+        12001682,
+        20088,
+        2400508
+      ]
+    },
+    {
+      "check": "early4_t80/popularity: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t80/popularity/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "42223/151125"
+      }
+    },
+    {
+      "check": "early4_t80/popularity/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "105331/345000"
+      }
+    },
+    {
+      "check": "early4_t80/implicit_mf: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t80/implicit_mf: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 189
+    },
+    {
+      "check": "early4_t80/implicit_mf: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t80/implicit_mf/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "45439/151125"
+      }
+    },
+    {
+      "check": "early4_t80/implicit_mf/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "22619/69000"
+      }
+    },
+    {
+      "check": "early4_t80/ppr: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t80/ppr: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 189
+    },
+    {
+      "check": "early4_t80/ppr: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t80/ppr/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "123503/403000"
+      }
+    },
+    {
+      "check": "early4_t80/ppr/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "19007/57500"
+      }
+    },
+    {
+      "check": "early4_t80: PPR mass/fixed-point assertions passed for all warm users",
+      "passed": true,
+      "evidence": 7.501803413290467e-16
+    },
+    {
+      "check": "early4_t80/content_based: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t80/content_based: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 189
+    },
+    {
+      "check": "early4_t80/content_based: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t80/content_based/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "20663/93000"
+      }
+    },
+    {
+      "check": "early4_t80/content_based/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "82643/345000"
+      }
+    },
+    {
+      "check": "early4_t80/association_rules: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t80/association_rules: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 189
+    },
+    {
+      "check": "early4_t80/association_rules: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t80/association_rules/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "356609/1209000"
+      }
+    },
+    {
+      "check": "early4_t80/association_rules/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "27683/86250"
+      }
+    },
+    {
+      "check": "early4_t50: training aggregation/threshold exact",
+      "passed": true,
+      "evidence": {
+        "positive_pairs": 85804,
+        "positive_airings": 207320
+      }
+    },
+    {
+      "check": "early4_t50: sparse matrix/ID indices preserve exact counts",
+      "passed": true,
+      "evidence": [
+        4647,
+        1288
+      ]
+    },
+    {
+      "check": "early4_t50: same pool and training-only popularity ranking",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "early4_t50/popularity: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t50/popularity: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 129
+    },
+    {
+      "check": "early4_t50: popularity predictions reconstruct from counts",
+      "passed": true,
+      "evidence": [
+        2400480,
+        240081,
+        12001682,
+        20088,
+        2400508
+      ]
+    },
+    {
+      "check": "early4_t50/popularity: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t50/popularity/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "42223/151125"
+      }
+    },
+    {
+      "check": "early4_t50/popularity/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "105331/345000"
+      }
+    },
+    {
+      "check": "early4_t50/implicit_mf: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t50/implicit_mf: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 129
+    },
+    {
+      "check": "early4_t50/implicit_mf: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t50/implicit_mf/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "381887/1209000"
+      }
+    },
+    {
+      "check": "early4_t50/implicit_mf/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "19869/57500"
+      }
+    },
+    {
+      "check": "early4_t50/ppr: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t50/ppr: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 129
+    },
+    {
+      "check": "early4_t50/ppr: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t50/ppr/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "5903/18600"
+      }
+    },
+    {
+      "check": "early4_t50/ppr/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "5971/17250"
+      }
+    },
+    {
+      "check": "early4_t50: PPR mass/fixed-point assertions passed for all warm users",
+      "passed": true,
+      "evidence": 8.527933536307808e-16
+    },
+    {
+      "check": "early4_t50/content_based: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t50/content_based: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 129
+    },
+    {
+      "check": "early4_t50/content_based: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t50/content_based/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "421/1860"
+      }
+    },
+    {
+      "check": "early4_t50/content_based/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "28101/115000"
+      }
+    },
+    {
+      "check": "early4_t50/association_rules: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t50/association_rules: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 129
+    },
+    {
+      "check": "early4_t50/association_rules: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t50/association_rules/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "175793/604500"
+      }
+    },
+    {
+      "check": "early4_t50/association_rules/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "109103/345000"
+      }
+    },
+    {
+      "check": "early4_t20: training aggregation/threshold exact",
+      "passed": true,
+      "evidence": {
+        "positive_pairs": 152139,
+        "positive_airings": 349254
+      }
+    },
+    {
+      "check": "early4_t20: sparse matrix/ID indices preserve exact counts",
+      "passed": true,
+      "evidence": [
+        4719,
+        1386
+      ]
+    },
+    {
+      "check": "early4_t20: same pool and training-only popularity ranking",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "early4_t20/popularity: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t20/popularity: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 98
+    },
+    {
+      "check": "early4_t20: popularity predictions reconstruct from counts",
+      "passed": true,
+      "evidence": [
+        2400480,
+        240081,
+        12001682,
+        2400508,
+        20088
+      ]
+    },
+    {
+      "check": "early4_t20/popularity: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t20/popularity/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "337013/1209000"
+      }
+    },
+    {
+      "check": "early4_t20/popularity/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "21011/69000"
+      }
+    },
+    {
+      "check": "early4_t20/implicit_mf: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t20/implicit_mf: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 98
+    },
+    {
+      "check": "early4_t20/implicit_mf: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t20/implicit_mf/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "1251/3875"
+      }
+    },
+    {
+      "check": "early4_t20/implicit_mf/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "15112/43125"
+      }
+    },
+    {
+      "check": "early4_t20/ppr: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t20/ppr: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 98
+    },
+    {
+      "check": "early4_t20/ppr: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t20/ppr/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "29713/93000"
+      }
+    },
+    {
+      "check": "early4_t20/ppr/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "120961/345000"
+      }
+    },
+    {
+      "check": "early4_t20: PPR mass/fixed-point assertions passed for all warm users",
+      "passed": true,
+      "evidence": 8.675241697909294e-16
+    },
+    {
+      "check": "early4_t20/content_based: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t20/content_based: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 98
+    },
+    {
+      "check": "early4_t20/content_based: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t20/content_based/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "128971/604500"
+      }
+    },
+    {
+      "check": "early4_t20/content_based/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "13279/57500"
+      }
+    },
+    {
+      "check": "early4_t20/association_rules: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "early4_t20/association_rules: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 98
+    },
+    {
+      "check": "early4_t20/association_rules: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "early4_t20/association_rules/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "176227/604500"
+      }
+    },
+    {
+      "check": "early4_t20/association_rules/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "54611/172500"
+      }
+    },
+    {
+      "check": "recent4: exact clipped positive intervals/full denominators",
+      "passed": true,
+      "evidence": 718468
+    },
+    {
+      "check": "recent4_t80: training aggregation/threshold exact",
+      "passed": true,
+      "evidence": {
+        "positive_pairs": 65890,
+        "positive_airings": 133800
+      }
+    },
+    {
+      "check": "recent4_t80: sparse matrix/ID indices preserve exact counts",
+      "passed": true,
+      "evidence": [
+        4520,
+        1578
+      ]
+    },
+    {
+      "check": "recent4_t80: same pool and training-only popularity ranking",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "recent4_t80/popularity: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t80/popularity: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 138
+    },
+    {
+      "check": "recent4_t80: popularity predictions reconstruct from counts",
+      "passed": true,
+      "evidence": [
+        2400480,
+        12001682,
+        240081,
+        20088,
+        2400508
+      ]
+    },
+    {
+      "check": "recent4_t80/popularity: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t80/popularity/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "78941/302250"
+      }
+    },
+    {
+      "check": "recent4_t80/popularity/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "98401/345000"
+      }
+    },
+    {
+      "check": "recent4_t80/implicit_mf: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t80/implicit_mf: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 138
+    },
+    {
+      "check": "recent4_t80/implicit_mf: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t80/implicit_mf/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "48512/151125"
+      }
+    },
+    {
+      "check": "recent4_t80/implicit_mf/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "2019/5750"
+      }
+    },
+    {
+      "check": "recent4_t80/ppr: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t80/ppr: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 138
+    },
+    {
+      "check": "recent4_t80/ppr: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t80/ppr/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "19553/60450"
+      }
+    },
+    {
+      "check": "recent4_t80/ppr/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "61973/172500"
+      }
+    },
+    {
+      "check": "recent4_t80: PPR mass/fixed-point assertions passed for all warm users",
+      "passed": true,
+      "evidence": 9.825079262337452e-16
+    },
+    {
+      "check": "recent4_t80/content_based: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t80/content_based: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 138
+    },
+    {
+      "check": "recent4_t80/content_based: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t80/content_based/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "42931/201500"
+      }
+    },
+    {
+      "check": "recent4_t80/content_based/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "10381/43125"
+      }
+    },
+    {
+      "check": "recent4_t80/association_rules: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t80/association_rules: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 138
+    },
+    {
+      "check": "recent4_t80/association_rules: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t80/association_rules/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "358313/1209000"
+      }
+    },
+    {
+      "check": "recent4_t80/association_rules/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "27191/86250"
+      }
+    },
+    {
+      "check": "recent4_t50: training aggregation/threshold exact",
+      "passed": true,
+      "evidence": {
+        "positive_pairs": 109364,
+        "positive_airings": 210729
+      }
+    },
+    {
+      "check": "recent4_t50: sparse matrix/ID indices preserve exact counts",
+      "passed": true,
+      "evidence": [
+        4640,
+        1704
+      ]
+    },
+    {
+      "check": "recent4_t50: same pool and training-only popularity ranking",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "recent4_t50/popularity: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t50/popularity: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 100
+    },
+    {
+      "check": "recent4_t50: popularity predictions reconstruct from counts",
+      "passed": true,
+      "evidence": [
+        2400480,
+        240081,
+        12001682,
+        20088,
+        2400508
+      ]
+    },
+    {
+      "check": "recent4_t50/popularity: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t50/popularity/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "42223/151125"
+      }
+    },
+    {
+      "check": "recent4_t50/popularity/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "105331/345000"
+      }
+    },
+    {
+      "check": "recent4_t50/implicit_mf: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t50/implicit_mf: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 100
+    },
+    {
+      "check": "recent4_t50/implicit_mf: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t50/implicit_mf/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "406349/1209000"
+      }
+    },
+    {
+      "check": "recent4_t50/implicit_mf/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "63037/172500"
+      }
+    },
+    {
+      "check": "recent4_t50/ppr: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t50/ppr: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 100
+    },
+    {
+      "check": "recent4_t50/ppr: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t50/ppr/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "40307/120900"
+      }
+    },
+    {
+      "check": "recent4_t50/ppr/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "127217/345000"
+      }
+    },
+    {
+      "check": "recent4_t50: PPR mass/fixed-point assertions passed for all warm users",
+      "passed": true,
+      "evidence": 9.080797102587712e-16
+    },
+    {
+      "check": "recent4_t50/content_based: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t50/content_based: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 100
+    },
+    {
+      "check": "recent4_t50/content_based: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t50/content_based/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "122569/604500"
+      }
+    },
+    {
+      "check": "recent4_t50/content_based/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "39151/172500"
+      }
+    },
+    {
+      "check": "recent4_t50/association_rules: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t50/association_rules: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 100
+    },
+    {
+      "check": "recent4_t50/association_rules: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t50/association_rules/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "44413/151125"
+      }
+    },
+    {
+      "check": "recent4_t50/association_rules/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "54557/172500"
+      }
+    },
+    {
+      "check": "recent4_t20: training aggregation/threshold exact",
+      "passed": true,
+      "evidence": {
+        "positive_pairs": 186277,
+        "positive_airings": 343778
+      }
+    },
+    {
+      "check": "recent4_t20: sparse matrix/ID indices preserve exact counts",
+      "passed": true,
+      "evidence": [
+        4692,
+        1796
+      ]
+    },
+    {
+      "check": "recent4_t20: same pool and training-only popularity ranking",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "recent4_t20/popularity: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t20/popularity: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 82
+    },
+    {
+      "check": "recent4_t20: popularity predictions reconstruct from counts",
+      "passed": true,
+      "evidence": [
+        2400480,
+        240081,
+        12001682,
+        20088,
+        2400508
+      ]
+    },
+    {
+      "check": "recent4_t20/popularity: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t20/popularity/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "42223/151125"
+      }
+    },
+    {
+      "check": "recent4_t20/popularity/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "105331/345000"
+      }
+    },
+    {
+      "check": "recent4_t20/implicit_mf: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t20/implicit_mf: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 82
+    },
+    {
+      "check": "recent4_t20/implicit_mf: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t20/implicit_mf/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "10306/30225"
+      }
+    },
+    {
+      "check": "recent4_t20/implicit_mf/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "42741/115000"
+      }
+    },
+    {
+      "check": "recent4_t20/ppr: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t20/ppr: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 82
+    },
+    {
+      "check": "recent4_t20/ppr: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t20/ppr/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "405203/1209000"
+      }
+    },
+    {
+      "check": "recent4_t20/ppr/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "126457/345000"
+      }
+    },
+    {
+      "check": "recent4_t20: PPR mass/fixed-point assertions passed for all warm users",
+      "passed": true,
+      "evidence": 8.690541627565768e-16
+    },
+    {
+      "check": "recent4_t20/content_based: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t20/content_based: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 82
+    },
+    {
+      "check": "recent4_t20/content_based: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t20/content_based/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "53389/302250"
+      }
+    },
+    {
+      "check": "recent4_t20/content_based/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "8467/43125"
+      }
+    },
+    {
+      "check": "recent4_t20/association_rules: fixed cohort/candidates/five distinct IDs",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "recent4_t20/association_rules: common setting-specific cold fallback",
+      "passed": true,
+      "evidence": 82
+    },
+    {
+      "check": "recent4_t20/association_rules: every AP verified exactly",
+      "passed": true,
+      "evidence": 5.551115123125783e-17
+    },
+    {
+      "check": "recent4_t20/association_rules/all_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "MAP_fraction": "22623/80600"
+      }
+    },
+    {
+      "check": "recent4_t20/association_rules/template_primary: fixed-label exact MAP",
+      "passed": true,
+      "evidence": {
+        "users": 1150,
+        "MAP_fraction": "13108/43125"
+      }
+    },
+    {
+      "check": "full10: clipped union overlaps independently match raw views",
+      "passed": true,
+      "evidence": {
+        "users": 6,
+        "user_airing_pairs": 8168
+      }
+    },
+    {
+      "check": "early4: clipped union overlaps independently match raw views",
+      "passed": true,
+      "evidence": {
+        "users": 6,
+        "user_airing_pairs": 4090
+      }
+    },
+    {
+      "check": "recent4: clipped union overlaps independently match raw views",
+      "passed": true,
+      "evidence": {
+        "users": 6,
+        "user_airing_pairs": 1618
+      }
+    }
+  ],
+  "verified_runs": [
+    {
+      "setting": "full10_t80",
+      "method": "popularity",
+      "verified": true
+    },
+    {
+      "setting": "full10_t80",
+      "method": "implicit_mf",
+      "verified": true
+    },
+    {
+      "setting": "full10_t80",
+      "method": "ppr",
+      "verified": true
+    },
+    {
+      "setting": "full10_t80",
+      "method": "content_based",
+      "verified": true
+    },
+    {
+      "setting": "full10_t80",
+      "method": "association_rules",
+      "verified": true
+    },
+    {
+      "setting": "full10_t50",
+      "method": "popularity",
+      "verified": true
+    },
+    {
+      "setting": "full10_t50",
+      "method": "implicit_mf",
+      "verified": true
+    },
+    {
+      "setting": "full10_t50",
+      "method": "ppr",
+      "verified": true
+    },
+    {
+      "setting": "full10_t50",
+      "method": "content_based",
+      "verified": true
+    },
+    {
+      "setting": "full10_t50",
+      "method": "association_rules",
+      "verified": true
+    },
+    {
+      "setting": "full10_t20",
+      "method": "popularity",
+      "verified": true
+    },
+    {
+      "setting": "full10_t20",
+      "method": "implicit_mf",
+      "verified": true
+    },
+    {
+      "setting": "full10_t20",
+      "method": "ppr",
+      "verified": true
+    },
+    {
+      "setting": "full10_t20",
+      "method": "content_based",
+      "verified": true
+    },
+    {
+      "setting": "full10_t20",
+      "method": "association_rules",
+      "verified": true
+    },
+    {
+      "setting": "early4_t80",
+      "method": "popularity",
+      "verified": true
+    },
+    {
+      "setting": "early4_t80",
+      "method": "implicit_mf",
+      "verified": true
+    },
+    {
+      "setting": "early4_t80",
+      "method": "ppr",
+      "verified": true
+    },
+    {
+      "setting": "early4_t80",
+      "method": "content_based",
+      "verified": true
+    },
+    {
+      "setting": "early4_t80",
+      "method": "association_rules",
+      "verified": true
+    },
+    {
+      "setting": "early4_t50",
+      "method": "popularity",
+      "verified": true
+    },
+    {
+      "setting": "early4_t50",
+      "method": "implicit_mf",
+      "verified": true
+    },
+    {
+      "setting": "early4_t50",
+      "method": "ppr",
+      "verified": true
+    },
+    {
+      "setting": "early4_t50",
+      "method": "content_based",
+      "verified": true
+    },
+    {
+      "setting": "early4_t50",
+      "method": "association_rules",
+      "verified": true
+    },
+    {
+      "setting": "early4_t20",
+      "method": "popularity",
+      "verified": true
+    },
+    {
+      "setting": "early4_t20",
+      "method": "implicit_mf",
+      "verified": true
+    },
+    {
+      "setting": "early4_t20",
+      "method": "ppr",
+      "verified": true
+    },
+    {
+      "setting": "early4_t20",
+      "method": "content_based",
+      "verified": true
+    },
+    {
+      "setting": "early4_t20",
+      "method": "association_rules",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t80",
+      "method": "popularity",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t80",
+      "method": "implicit_mf",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t80",
+      "method": "ppr",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t80",
+      "method": "content_based",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t80",
+      "method": "association_rules",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t50",
+      "method": "popularity",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t50",
+      "method": "implicit_mf",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t50",
+      "method": "ppr",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t50",
+      "method": "content_based",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t50",
+      "method": "association_rules",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t20",
+      "method": "popularity",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t20",
+      "method": "implicit_mf",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t20",
+      "method": "ppr",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t20",
+      "method": "content_based",
+      "verified": true
+    },
+    {
+      "setting": "recent4_t20",
+      "method": "association_rules",
+      "verified": true
+    }
+  ],
+  "elapsed_seconds": 16.67505549999987,
+  "scope": "Frozen truth/cohort/candidates/content vectors; reference novelty/AP and pairwise hits; nine threshold/window counts; all 45 model predictions/AP/MAP and cold fallbacks; raw-fragment boundary rejoin",
+  "model_numerics": "Existing ALS/CBF/rule/PPR algebra independently verified in previous stage; each new ALS/PPR run also executes its numerical sanity assertions",
+  "student_personal_verification": "Not claimed"
+}

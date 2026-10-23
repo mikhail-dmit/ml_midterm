@@ -1,0 +1,60 @@
+{
+  "user_id": "127680364314713816",
+  "raw_view_rows": 783,
+  "validation_qualified_programmes": 6,
+  "selection": "Readable verification example: 6–10 validation positives, nonempty train history, fewest qualified validation airings; no recommendation/model score used",
+  "worked_airings": [
+    {
+      "airing_id": 9156,
+      "tv_show_id": 700389,
+      "title": "Кто сверху?, 7 сезон, 3 эп.",
+      "duration": 7200,
+      "watched_seconds": 6752,
+      "coverage": 0.9377777777777778,
+      "watched": true,
+      "schedule_file": "export_arh_21-30-final.csv",
+      "schedule_csv_record": 7021,
+      "airing_start_local": "2020-07-16T19:00:00+03:00",
+      "airing_end_local": "2020-07-16T21:00:00+03:00",
+      "union_intervals": [
+        {
+          "start_local": "2020-07-16T19:07:28+03:00",
+          "end_local": "2020-07-16T21:00:00+03:00",
+          "seconds": 6752
+        }
+      ]
+    },
+    {
+      "airing_id": 22102,
+      "tv_show_id": 90076035,
+      "title": "Х/ф 'Эффект колибри'.",
+      "duration": 6900,
+      "watched_seconds": 5172,
+      "coverage": 0.7495652173913043,
+      "watched": false,
+      "schedule_file": "export_arh_21-30-final.csv",
+      "schedule_csv_record": 29434,
+      "airing_start_local": "2020-07-21T15:25:00+03:00",
+      "airing_end_local": "2020-07-21T17:20:00+03:00",
+      "union_intervals": [
+        {
+          "start_local": "2020-07-21T15:38:05+03:00",
+          "end_local": "2020-07-21T16:50:21+03:00",
+          "seconds": 4336
+        },
+        {
+          "start_local": "2020-07-21T17:04:14+03:00",
+          "end_local": "2020-07-21T17:18:10+03:00",
+          "seconds": 836
+        }
+      ]
+    }
+  ],
+  "validation_top5_ids": [
+    700389,
+    2400480,
+    6700482,
+    12001682,
+    12002355
+  ]
+}

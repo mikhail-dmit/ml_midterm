@@ -1,0 +1,13 @@
+{
+  "submission_id": "submission_007",
+  "csv_path": "submissions/submission_007.csv",
+  "csv_sha256": "8d3bc085cb0a830cbab5c68789470c608fd34bb840dffbe75e4dd43833f87d8c",
+  "strategy": "h8_rules01875_pop00625",
+  "public_score": 0.43707,
+  "private_score": 0.42472,
+  "provenance": "User-supplied Kaggle result; no API score retrieval",
+  "recorded_at_utc": "2026-10-23T15:23:43.972173+00:00",
+  "screenshot_path": "submissions/Score for sub7.png",
+  "screenshot_sha256": "ab971329dbe57d19c0981903424e7c62573b1c99f353844c48487f9b80da4356",
+  "generation_manifest": "reports/submission_007/summary.json"
+}

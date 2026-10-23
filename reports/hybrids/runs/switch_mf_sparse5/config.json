@@ -1,0 +1,7 @@
+{
+  "id": "switch_mf_sparse5",
+  "type": "switch",
+  "max_sparse_history": 5,
+  "sparse_method": "popularity",
+  "warm_method": "implicit_mf"
+}

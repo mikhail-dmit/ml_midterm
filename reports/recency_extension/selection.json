@@ -1,0 +1,36 @@
+{
+  "selected_id": "h8_rules01875_pop00625",
+  "selected_config": {
+    "id": "h8_rules01875_pop00625",
+    "mf_half_life": 8,
+    "ppr_half_life": 8,
+    "rules_half_life": null,
+    "pop_half_life": null,
+    "depth": 5,
+    "offset": 0,
+    "weights": {
+      "implicit_mf": 0.5,
+      "ppr": 0.5,
+      "association_rules": 0.1875,
+      "popularity": 0.0625
+    }
+  },
+  "primary_MAP": 0.3765277088502895,
+  "template_MAP": 0.41177101449275366,
+  "selection_rule": "Highest all_primary MAP@5 among thirteen new configurations whose full validation lists do not duplicate uploads 001-006; tie by config ID. Report 006 as fixed control. Template results and paired intervals are diagnostics only. No grid expansion after scores; no Kaggle score/CSV loaded by the selector.",
+  "ranked_new_ids": [
+    "h8_rules01875_pop00625",
+    "mf_h4_ppr_h8",
+    "h8_rules_and_pop",
+    "h8_rules_query",
+    "cf_h6",
+    "mf_h8_ppr_h4",
+    "mf_raw_ppr_h8",
+    "h8_mf0375_ppr0625",
+    "cf_h12",
+    "cf_h16",
+    "mf_h8_ppr_raw",
+    "h8_mf0625_ppr0375"
+  ],
+  "public_private_scores_used_by_selector": false
+}

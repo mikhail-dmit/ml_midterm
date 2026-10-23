@@ -1,0 +1,17 @@
+{
+  "selection": "Primary-cohort light/heavy users chosen only by training qualified-airing counts before model runs",
+  "users": [
+    {
+      "role": "light",
+      "user_id": "1026253314001693311",
+      "train_qualified_programmes": 1,
+      "train_watched_airings": 1
+    },
+    {
+      "role": "heavy",
+      "user_id": "13866173795451203812",
+      "train_qualified_programmes": 408,
+      "train_watched_airings": 1845
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "run_directory": "reports/final_check/rebuild_001",
+  "rebuilt_submission": "reports/final_check/rebuild_001/final/submission_007.csv",
+  "published_submission": "submissions/submission_007.csv",
+  "rebuilt_sha256": "8d3bc085cb0a830cbab5c68789470c608fd34bb840dffbe75e4dd43833f87d8c",
+  "published_sha256": "8d3bc085cb0a830cbab5c68789470c608fd34bb840dffbe75e4dd43833f87d8c",
+  "byte_identical": true,
+  "ordered_predictions_identical": true,
+  "changed_users": 0,
+  "rows": 1260,
+  "all_inputs_and_published_csv_unchanged": true,
+  "logical_stage_comparisons": 40,
+  "logical_stage_differences": [],
+  "old_artifact_accesses_during_fitting": 0,
+  "elapsed_seconds": 164.88784745900193,
+  "scope": "Fresh raw audit, interaction/label build, all six selected validation strategies, full-window join and final007 refit. Frozen parameters; no tuning replay.",
+  "code_sha256": "173e393ceba0013725c8bf7d7ba344d0a997c5ace4d11d8cc9a0f7342060baf8"
+}

@@ -1,0 +1,54 @@
+{
+  "config": {
+    "id": "rrf_mf_ppr_k10",
+    "type": "rrf",
+    "offset": 10,
+    "weights": {
+      "implicit_mf": 0.5,
+      "ppr": 0.5
+    }
+  },
+  "metrics": [
+    {
+      "run_id": "rrf_mf_ppr_k10",
+      "kind": "rrf",
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.37093548387096775,
+      "precision_at_5": 0.430272952853598,
+      "recall_at_5": 0.430272952853598,
+      "hit_rate_at_5": 0.901985111662531,
+      "users_with_hits": 3635,
+      "total_hits": 8670
+    },
+    {
+      "run_id": "rrf_mf_ppr_k10",
+      "kind": "rrf",
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.4062028985507246,
+      "precision_at_5": 0.4676521739130434,
+      "recall_at_5": 0.4676521739130434,
+      "hit_rate_at_5": 0.9339130434782609,
+      "users_with_hits": 1074,
+      "total_hits": 2689
+    }
+  ],
+  "diagnostics": {
+    "cold_fallback_users": 43,
+    "route_counts": {
+      "rrf": 4030
+    },
+    "mean_shared_top5_with_mf": 4.391563275434243,
+    "mean_shared_top5_with_ppr": 4.2985111662531015
+  },
+  "runtime": {
+    "fusion_inference_seconds_excludes_component_fits": 0.20610887500151875
+  },
+  "code_hashes": {
+    "hybrid_models.py": "2a811a935f35935da14413214d272961665eb1ac1670e2d09b363850566cbdf6",
+    "run_hybrid_experiments.py": "13119a8bb8708717a41145f05df5dcdb037b7938cd6dceac482ec778b1677929",
+    "ranking_metrics.py": "7d0a60ca6f893be1522a5ef8d280714f0b468061cebd5faf05d6615817109290",
+    "segment_analysis.py": "d75349609e94d6a4512c821fb7770bacd7db2156bb25cdbaa8e5592e548c76f8"
+  }
+}

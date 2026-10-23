@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "generated_file": "artifacts/reproduce_007_001/final/submission_007.csv",
+  "reference_file": "submissions/submission_007.csv",
+  "generated_sha256": "8d3bc085cb0a830cbab5c68789470c608fd34bb840dffbe75e4dd43833f87d8c",
+  "expected_sha256": "8d3bc085cb0a830cbab5c68789470c608fd34bb840dffbe75e4dd43833f87d8c",
+  "byte_identical": true,
+  "elapsed_seconds": 85.2555736669965,
+  "stage_times": [
+    {
+      "stage": "interactions",
+      "command": "/opt/anaconda3/bin/python3 '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/scripts/final_check_sandbox.py' --work-dir '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/artifacts/reproduce_007_001' --access-log '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/artifacts/reproduce_007_001/logs/interactions_access.json' --script '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/scripts/build_interactions.py' -- --data-dir '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/sweettv-tv-program-recommender' --artifact-dir '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/artifacts/reproduce_007_001/interactions' --report-dir '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/artifacts/reproduce_007_001/interaction_reports'",
+      "seconds": 24.517057958000805,
+      "returncode": 0
+    },
+    {
+      "stage": "models",
+      "command": "/opt/anaconda3/bin/python3 '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/scripts/final_check_sandbox.py' --work-dir '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/artifacts/reproduce_007_001' --access-log '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/artifacts/reproduce_007_001/logs/models_access.json' --script '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/scripts/final_check_models.py' -- --work-dir '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/artifacts/reproduce_007_001' --data-dir '/Users/mikhaildmitrenko/Desktop/ДЗ ML/Хакатон/sweettv-tv-program-recommender'",
+      "seconds": 60.30041954199987,
+      "returncode": 0
+    }
+  ],
+  "raw_inputs_sha256": {
+    "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+    "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+    "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+    "export_arh_31-42-final.csv": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+    "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+  },
+  "old_derived_artifact_accesses": 0,
+  "configuration_sha256": {
+    "final_007.json": "e1aa0b5d4a833431e008a6ef54933a5afdc54b10aef6a0d1d4680253634e9ce4",
+    "cbf_selected.json": "c31b829d0a8c8b74008efda3d560188b295205f212c28dd2d5028b582d8d3557"
+  },
+  "environment": {
+    "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
+    "platform": "macOS-15.7.3-arm64-arm-64bit",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "BLAS_threads_during_fit": 1,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 12,
+        "prefix": "libopenblas",
+        "filepath": "/opt/anaconda3/lib/libopenblasp-r0.3.21.dylib",
+        "version": "0.3.21",
+        "threading_layer": "pthreads",
+        "architecture": "armv8"
+      }
+    ],
+    "view_stats": {
+      "raw_rows": 5821987,
+      "duplicate_rows_removed": 17,
+      "unique_rows": 5821970,
+      "duration_mismatches": {
+        "naive": 117,
+        "timezone_elapsed": 0
+      },
+      "clock_change_sample_user_ids": [
+        "12466582247545246052",
+        "10059425067810734795",
+        "12246241194532024321",
+        "6266399139997320035",
+        "5842699175950256892"
+      ]
+    },
+    "scope": "Frozen selected six validation strategies and all-history final007 recipe; fresh weights/factors/graph/rules/CBF metadata, no cached derived input"
+  }
+}

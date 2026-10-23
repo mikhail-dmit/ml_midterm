@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "checks": [
+    "AP example has five unique predictions and five true IDs",
+    "worked hit pattern and explicit 29/60 arithmetic",
+    "hand AP fraction equals evaluator",
+    "hand AP fraction equals scratch per-user metric",
+    "raw-source validation Top-5 matches scratch truth: 127680364314713816",
+    "raw-source validation Top-5 matches scratch truth: 1026253314001693311",
+    "original manual user raw row count reproduced",
+    "original manual user's six once-watched positives and local Top-5 reproduced",
+    "manual programme 700389: exact raw-source duration/watch decision reproduced",
+    "manual programme 700389: union pieces match the original worked case",
+    "manual programme 90076035: exact raw-source duration/watch decision reproduced",
+    "manual programme 90076035: union pieces match the original worked case",
+    "rebuilt final CSV remains byte-identical after hand checks",
+    "scratch final format: header, exact 1260 template strings/order, five distinct eligible IDs",
+    "frozen raw inputs/configs/code/reference CSV unchanged after all checks"
+  ],
+  "ap_user": "1026253314001693311",
+  "ap_exact": "29/60",
+  "ap_decimal": 0.48333333333333334,
+  "ap_predictions": [
+    400357,
+    2400467,
+    2400508,
+    2400480,
+    400361
+  ],
+  "ap_truth": [
+    2400508,
+    2400480,
+    240081,
+    400357,
+    10002514
+  ],
+  "manual_user": "127680364314713816",
+  "manual_cases": [
+    {
+      "channel_id": 7,
+      "tv_show_id": 700389,
+      "start": 1594915200,
+      "end": 1594922400,
+      "duration": 7200,
+      "title": "Кто сверху?, 7 сезон, 3 эп.",
+      "category": "Развлечения",
+      "source_file": "export_arh_21-30-final.csv",
+      "source_csv_record": 7021,
+      "watched_seconds": 6752,
+      "coverage_fraction": "211/225",
+      "coverage": 0.9377777777777778,
+      "watched": true,
+      "five_times_watched": 33760,
+      "four_times_duration": 28800,
+      "union_pieces": [
+        {
+          "start": "2020-07-16T19:07:28+03:00",
+          "end": "2020-07-16T21:00:00+03:00",
+          "seconds": 6752
+        }
+      ]
+    },
+    {
+      "channel_id": 23,
+      "tv_show_id": 90076035,
+      "start": 1595334300,
+      "end": 1595341200,
+      "duration": 6900,
+      "title": "Х/ф 'Эффект колибри'.",
+      "category": "Фильмы",
+      "source_file": "export_arh_21-30-final.csv",
+      "source_csv_record": 29434,
+      "watched_seconds": 5172,
+      "coverage_fraction": "431/575",
+      "coverage": 0.7495652173913043,
+      "watched": false,
+      "five_times_watched": 25860,
+      "four_times_duration": 27600,
+      "union_pieces": [
+        {
+          "start": "2020-07-21T15:38:05+03:00",
+          "end": "2020-07-21T16:50:21+03:00",
+          "seconds": 4336
+        },
+        {
+          "start": "2020-07-21T17:04:14+03:00",
+          "end": "2020-07-21T17:18:10+03:00",
+          "seconds": 836
+        }
+      ]
+    }
+  ],
+  "manual_user_raw_rows": 783,
+  "manual_user_qualified_programmes": 6,
+  "hand_checker_sha256": "0c7100eb8517413a1b4e4678567220069c27f438ec490d0117c1b5f90c326c23"
+}

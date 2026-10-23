@@ -1,0 +1,42 @@
+{
+  "paths": {
+    "plan": "scripts/kaggle_comparison_plan.json",
+    "ledger": "submissions/results.json",
+    "template": "sweettv-tv-program-recommender/submission.csv",
+    "anchor_csv": "submissions/submission_001.csv",
+    "training_manifest": "reports/final_11_30/summary.json",
+    "training_verification": "reports/final_11_30/verification.json",
+    "test_candidates": "reports/final_11_30/test_candidates.csv",
+    "popularity": "artifacts/final_11_30/candidate_scores.csv",
+    "cold_users": "artifacts/final_11_30/cold_users.json",
+    "history": "artifacts/final_11_30/history.json",
+    "model_scores": "artifacts/final_11_30/scores.npz",
+    "model_users": "artifacts/final_11_30/users.json",
+    "validation_comparison": "reports/hybrids/comparison.csv",
+    "validation_config": "reports/hybrids/runs/rrf_mf_ppr_rules_pop_k0/config.json",
+    "component_implicit_mf": "reports/final_11_30/component_implicit_mf.csv",
+    "component_ppr": "reports/final_11_30/component_ppr.csv",
+    "component_association_rules": "reports/final_11_30/component_association_rules.csv",
+    "component_popularity": "reports/final_11_30/component_popularity.csv"
+  },
+  "sha256": {
+    "plan": "498253b00a823a249a58aad504eda6eae41d98382e833d2b1174ccb72ad4e893",
+    "ledger": "6a35204fa4f594c66dacbb27cd1dcafd9b0a0ba1a5436b5742a2ec8382d2cc8a",
+    "template": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+    "anchor_csv": "138b69c4dbb2d1aa97df390e5fc6e311eaa3838109c85d132d94a9aba5e56313",
+    "training_manifest": "15a31389ec4ef3ef747d0112c6916286c25abcd2767695e02ef4e2e064e438d9",
+    "training_verification": "5b2f7181c8eec1029cc90e722e7f1fc1ba926dfa9894ae79c4a8f4196aeb7424",
+    "test_candidates": "9ec8fd06b66b0e37f0bdbc98c2a79cb1cce909e3964119308eec32597ed0bf8b",
+    "popularity": "c29da505157cd87d1f4ca118e2dadb2eb984ccaab4df43fb3e69250e5191c28f",
+    "cold_users": "5eaa6796fd1c0a3ab23986411f151098fdf95e15c9cced5ffa5b4fa2257a4199",
+    "history": "77e6bdd74152675f50ea18a854a412563dbb5d6c49b6b7749206be5d53b9bcef",
+    "model_scores": "858bcaebdaddce97b68d49818210f061486cd2787ef09d6393aee59792995bc6",
+    "model_users": "7c93eb48ea10d2c1fba8c59871a9af8d0f86aed3c3574bb7ca7685873d4805eb",
+    "validation_comparison": "c891771e02f770f6f5a68d048f743f1a81a04e35745157aa32094bf07ac4fc93",
+    "validation_config": "f022ce136415fd051630986b9cef7b4bd0f1ebd0d69201caa9cb711e3cd0109b",
+    "component_implicit_mf": "e22c0cb142ffae7daa38c4464bf3d6374c99775878ea14642517e3fa1e5092b4",
+    "component_ppr": "a06d8fa3dc412a69e24caea3260b34cf153da1df86f9bea7b3f648461affcbaf",
+    "component_association_rules": "232f274589a3b173d1c7bb94bfcba0bc05c463eb1edc51840769b3bb51531a25",
+    "component_popularity": "7826aaef552f9168100216df26080849184ce46d7b0765c4d4bf5cb32949a08f"
+  }
+}

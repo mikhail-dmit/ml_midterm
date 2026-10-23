@@ -1,0 +1,11 @@
+{
+  "id": "rrf_mf_ppr_rules_pop_k10",
+  "type": "rrf",
+  "offset": 10,
+  "weights": {
+    "implicit_mf": 0.5,
+    "ppr": 0.5,
+    "association_rules": 0.125,
+    "popularity": 0.125
+  }
+}

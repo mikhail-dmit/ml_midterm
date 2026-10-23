@@ -1,0 +1,7 @@
+{
+  "id": "ppr_raw_a095_log",
+  "method": "ppr",
+  "alpha": 0.95,
+  "normalization": "raw",
+  "weighting": "log1p"
+}

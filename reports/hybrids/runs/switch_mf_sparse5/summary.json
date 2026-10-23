@@ -1,0 +1,53 @@
+{
+  "config": {
+    "id": "switch_mf_sparse5",
+    "type": "switch",
+    "max_sparse_history": 5,
+    "sparse_method": "popularity",
+    "warm_method": "implicit_mf"
+  },
+  "metrics": [
+    {
+      "run_id": "switch_mf_sparse5",
+      "kind": "switch",
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.3661629445822994,
+      "precision_at_5": 0.42526054590570717,
+      "recall_at_5": 0.42526054590570717,
+      "hit_rate_at_5": 0.8972704714640198,
+      "users_with_hits": 3616,
+      "total_hits": 8569
+    },
+    {
+      "run_id": "switch_mf_sparse5",
+      "kind": "switch",
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.39822898550724634,
+      "precision_at_5": 0.4586086956521739,
+      "recall_at_5": 0.4586086956521739,
+      "hit_rate_at_5": 0.9278260869565217,
+      "users_with_hits": 1067,
+      "total_hits": 2637
+    }
+  ],
+  "diagnostics": {
+    "cold_fallback_users": 43,
+    "route_counts": {
+      "implicit_mf": 3912,
+      "popularity": 118
+    },
+    "mean_shared_top5_with_mf": 4.929280397022333,
+    "mean_shared_top5_with_ppr": 3.696029776674938
+  },
+  "runtime": {
+    "fusion_inference_seconds_excludes_component_fits": 0.022073500000260537
+  },
+  "code_hashes": {
+    "hybrid_models.py": "2a811a935f35935da14413214d272961665eb1ac1670e2d09b363850566cbdf6",
+    "run_hybrid_experiments.py": "13119a8bb8708717a41145f05df5dcdb037b7938cd6dceac482ec778b1677929",
+    "ranking_metrics.py": "7d0a60ca6f893be1522a5ef8d280714f0b468061cebd5faf05d6615817109290",
+    "segment_analysis.py": "d75349609e94d6a4512c821fb7770bacd7db2156bb25cdbaa8e5592e548c76f8"
+  }
+}

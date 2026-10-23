@@ -1,0 +1,63 @@
+{
+  "submission_id": "submission_004",
+  "selected_id": "implicit_mf",
+  "selected_config": {
+    "id": "implicit_mf",
+    "type": "single",
+    "method": "implicit_mf"
+  },
+  "submission_path": "submissions/submission_004.csv",
+  "submission_sha256": "e22c0cb142ffae7daa38c4464bf3d6374c99775878ea14642517e3fa1e5092b4",
+  "training": "Reuse the identical weeks 11-30 MF fit; no refitting, new seed or parameter changes",
+  "validation_source": {
+    "comparison": "reports/semantic_hybrids/comparison.csv",
+    "run_id": "implicit_mf",
+    "all_primary": 0.3659247311827957,
+    "template_primary": 0.39746956521739135
+  },
+  "template_users": 1260,
+  "candidates": 6632,
+  "cold_users": 4,
+  "comparisons": [
+    {
+      "reference": "submission_001",
+      "changed_ordered_users": 1083,
+      "changed_set_users": 728,
+      "order_only_users": 355,
+      "unchanged_users": 177,
+      "mean_shared_top5": 4.31031746031746,
+      "entered_user_item_pairs": 869
+    },
+    {
+      "reference": "submission_002",
+      "changed_ordered_users": 1089,
+      "changed_set_users": 734,
+      "order_only_users": 355,
+      "unchanged_users": 171,
+      "mean_shared_top5": 4.298412698412698,
+      "entered_user_item_pairs": 884
+    },
+    {
+      "reference": "submission_003",
+      "changed_ordered_users": 310,
+      "changed_set_users": 310,
+      "order_only_users": 0,
+      "unchanged_users": 950,
+      "mean_shared_top5": 4.6571428571428575,
+      "entered_user_item_pairs": 432
+    }
+  ],
+  "source_component_sha256": "e22c0cb142ffae7daa38c4464bf3d6374c99775878ea14642517e3fa1e5092b4",
+  "kaggle_status": "Completed upload; returned scores supplied by user",
+  "created_csvs": [
+    "submissions/submission_004.csv"
+  ],
+  "code_hashes": {
+    "prepare_submission_004.py": "17d79212d052a4c5d3f497ec463fb3cc1615f347b9966be4a60a3122107794d7"
+  },
+  "reported_kaggle_scores": {
+    "public": 0.42643,
+    "private": 0.40943,
+    "result_record": "reports/submission_004/kaggle_result.json"
+  }
+}

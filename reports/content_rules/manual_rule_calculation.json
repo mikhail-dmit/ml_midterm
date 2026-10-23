@@ -1,0 +1,14 @@
+{
+  "antecedent_id": 12002792,
+  "consequent_id": 12001682,
+  "antecedent_count": 23,
+  "consequent_count": 4890,
+  "joint_count": 23,
+  "baskets": 37403,
+  "distinct_training_users_joint": 20,
+  "basket_definition": "user_week",
+  "support": 0.0006149239365826271,
+  "confidence": 1.0,
+  "lift": 7.648875255623722,
+  "student_verification": "Not performed or claimed; raw counts are provided for a later hand calculation"
+}

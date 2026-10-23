@@ -1,0 +1,6 @@
+# Preserve exact scored CSV bytes, independent of local autocrlf settings.
+*.csv -text
+*.png binary
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf

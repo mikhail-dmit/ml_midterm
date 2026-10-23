@@ -1,0 +1,32 @@
+{
+  "popularity": {
+    "setting": "early4_t50",
+    "map_primary": 0.2793912324234905,
+    "map_template": 0.3053072463768116,
+    "meaning": "Study-only selection on all-primary scores; original shared protocol files not overwritten"
+  },
+  "implicit_mf": {
+    "setting": "full10_t50",
+    "map_primary": 0.3659247311827957,
+    "map_template": 0.3974695652173913,
+    "meaning": "Study-only selection on all-primary scores; original shared protocol files not overwritten"
+  },
+  "ppr": {
+    "setting": "full10_t50",
+    "map_primary": 0.3649743589743589,
+    "map_template": 0.4002,
+    "meaning": "Study-only selection on all-primary scores; original shared protocol files not overwritten"
+  },
+  "content_based": {
+    "setting": "full10_t80",
+    "map_primary": 0.2450016542597188,
+    "map_template": 0.2695014492753623,
+    "meaning": "Study-only selection on all-primary scores; original shared protocol files not overwritten"
+  },
+  "association_rules": {
+    "setting": "full10_t80",
+    "map_primary": 0.3141778329197684,
+    "map_template": 0.3365768115942029,
+    "meaning": "Study-only selection on all-primary scores; original shared protocol files not overwritten"
+  }
+}

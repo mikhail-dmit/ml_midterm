@@ -1,0 +1,24 @@
+{
+  "paths": {
+    "selected_strategy": "reports/semantic_hybrids/selection.json",
+    "plan": "scripts/semantic_hybrid_plan.json",
+    "validation_verification": "reports/semantic_hybrids/verification.json",
+    "view_log": "sweettv-tv-program-recommender/dataset11-30.csv",
+    "schedule_11_20": "sweettv-tv-program-recommender/export_arh_11-20-final.csv",
+    "schedule_21_30": "sweettv-tv-program-recommender/export_arh_21-30-final.csv",
+    "schedule_31_42": "sweettv-tv-program-recommender/export_arh_31-42-final.csv",
+    "template": "sweettv-tv-program-recommender/submission.csv",
+    "historical_airings": "artifacts/interactions/airings.parquet"
+  },
+  "sha256": {
+    "selected_strategy": "a5e7634582e3a621ec84687859caf3556844531cdb3b98ff84827cc757ccb9a5",
+    "plan": "498fa478c462f4529bf492197e081dcd67118ab7ac9a7c41422141e524a1ca57",
+    "validation_verification": "a3debd297eccba582f5f152c836ebf717fe5532abab80886534f0f109cab8eb0",
+    "view_log": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+    "schedule_11_20": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+    "schedule_21_30": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+    "schedule_31_42": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+    "template": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+    "historical_airings": "e42b9199d3076e5727f9c3a27986ce3dd5070b323807dddd996a2b59f8fcaed3"
+  }
+}

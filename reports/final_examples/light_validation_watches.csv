@@ -1,0 +1,6 @@
+role,user_id,actual_rank,tv_show_id,title,category,qualified_validation_airings,qualified_watched_seconds,in_true_top5,latest_watched_title,latest_watched_category,display_label_source,latest_schedule_source_file,latest_schedule_source_record,latest_airing_id
+light,1026253314001693311,1,2400508,Сегодня. Итоги с Олегом Панютой.,Инфо,3,2107,True,Сегодня.,Инфо,pre-cutoff catalogue representative,export_arh_21-30-final.csv,113527,60991
+light,1026253314001693311,2,2400480,ТСН. Неделя.,Инфо,2,1127,True,ТСН.,Инфо,pre-cutoff catalogue representative,export_arh_21-30-final.csv,1094,2021
+light,1026253314001693311,3,240081,Факты. День.,Инфо,1,286,True,Факты.,Инфо,pre-cutoff catalogue representative,export_arh_21-30-final.csv,4269,5670
+light,1026253314001693311,4,400357,"'Холостяк', 10 сезон, 11 эп.",Развлечения,1,8788,True,"'Холостяк', 10 сезон, 13 эп. Пост-шоу, 1 ч.",Развлечения,pre-cutoff catalogue representative,export_arh_21-30-final.csv,4930,6873
+light,1026253314001693311,5,10002514,Т/с 'Кухня'.,Сериалы,1,7200,True,"Т/с 'Кухня', 1 сезон, 5-8 с.",Сериалы,pre-cutoff catalogue representative,export_arh_21-30-final.csv,992,1937

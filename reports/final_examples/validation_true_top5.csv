@@ -1,0 +1,11 @@
+role,user_id,actual_rank,tv_show_id,title,category,qualified_validation_airings,qualified_watched_seconds,in_true_top5,latest_watched_title,latest_watched_category,display_label_source,latest_schedule_source_file,latest_schedule_source_record,latest_airing_id
+heavy,13866173795451203812,1,2400480,ТСН. Неделя.,Инфо,35,70278,True,ТСН.,Инфо,pre-cutoff catalogue representative,export_arh_21-30-final.csv,1352,2225
+heavy,13866173795451203812,2,240081,Факты. День.,Инфо,34,45443,True,Факты. День.,Инфо,pre-cutoff catalogue representative,export_arh_21-30-final.csv,4745,5949
+heavy,13866173795451203812,3,2400508,Сегодня. Итоги с Олегом Панютой.,Инфо,25,55780,True,Сегодня.,Инфо,pre-cutoff catalogue representative,export_arh_21-30-final.csv,113937,61350
+heavy,13866173795451203812,4,12001682,"М/с 'Губка Боб Квадратные Штаны', 92 с. 'Губка Боб Атлантические Штаны'.",Детям,22,21141,True,"М/с 'Губка Боб Квадратные Штаны', 192 с. 'Пикник для всей компании / Свистать всех наверх!'.",Детям,pre-cutoff catalogue representative,export_arh_21-30-final.csv,1064251,231296
+heavy,13866173795451203812,5,20088,'Завтрак с 1+1'. Информационно-развлекательная программа.,Развлечения,15,33000,True,'Завтрак с 1+1'. Информационно-развлекательная программа.,Развлечения,pre-cutoff catalogue representative,export_arh_21-30-final.csv,1320,2202
+light,1026253314001693311,1,2400508,Сегодня. Итоги с Олегом Панютой.,Инфо,3,2107,True,Сегодня.,Инфо,pre-cutoff catalogue representative,export_arh_21-30-final.csv,113527,60991
+light,1026253314001693311,2,2400480,ТСН. Неделя.,Инфо,2,1127,True,ТСН.,Инфо,pre-cutoff catalogue representative,export_arh_21-30-final.csv,1094,2021
+light,1026253314001693311,3,240081,Факты. День.,Инфо,1,286,True,Факты.,Инфо,pre-cutoff catalogue representative,export_arh_21-30-final.csv,4269,5670
+light,1026253314001693311,4,400357,"'Холостяк', 10 сезон, 11 эп.",Развлечения,1,8788,True,"'Холостяк', 10 сезон, 13 эп. Пост-шоу, 1 ч.",Развлечения,pre-cutoff catalogue representative,export_arh_21-30-final.csv,4930,6873
+light,1026253314001693311,5,10002514,Т/с 'Кухня'.,Сериалы,1,7200,True,"Т/с 'Кухня', 1 сезон, 5-8 с.",Сериалы,pre-cutoff catalogue representative,export_arh_21-30-final.csv,992,1937

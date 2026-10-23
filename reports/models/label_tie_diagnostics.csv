@@ -1,0 +1,13 @@
+cohort,ambiguous_top5_boundary,users,model,map_at_5
+all_primary,False,1400,popularity,0.3009523809523809
+all_primary,False,1400,mf_f16_logtarget_a1_r1,0.4187642857142857
+all_primary,False,1400,ppr_raw_a050_log,0.4216761904761904
+all_primary,True,2630,popularity,0.2679138149556401
+all_primary,True,2630,mf_f16_logtarget_a1_r1,0.31797211660329533
+all_primary,True,2630,ppr_raw_a050_log,0.3237262357414449
+template_primary,False,399,popularity,0.34564745196324137
+template_primary,False,399,mf_f16_logtarget_a1_r1,0.45954051796157064
+template_primary,False,399,ppr_raw_a050_log,0.4628487886382623
+template_primary,True,751,popularity,0.28387483355525966
+template_primary,True,751,mf_f16_logtarget_a1_r1,0.34644030181979585
+template_primary,True,751,ppr_raw_a050_log,0.3545006657789614

@@ -1,0 +1,86 @@
+{
+  "config": {
+    "id": "ppr_raw_a095_log",
+    "method": "ppr",
+    "alpha": 0.95,
+    "normalization": "raw",
+    "weighting": "log1p"
+  },
+  "metrics": [
+    {
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.2937832919768404,
+      "precision_at_5": 0.35101736972704717,
+      "recall_at_5": 0.35101736972704717,
+      "hit_rate_at_5": 0.8483870967741935,
+      "users_with_hits": 3419,
+      "total_hits": 7073
+    },
+    {
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.3165768115942029,
+      "precision_at_5": 0.37373913043478263,
+      "recall_at_5": 0.37373913043478263,
+      "hit_rate_at_5": 0.8626086956521739,
+      "users_with_hits": 992,
+      "total_hits": 2149
+    }
+  ],
+  "diagnostics": {
+    "graph": {
+      "nodes": 2490,
+      "directed_nonzeros": 1206748,
+      "undirected_edges": 603374,
+      "dangling_nodes": 0,
+      "connected_components": 1,
+      "max_row_sum_error": 4.440892098500626e-16,
+      "max_adjacency_asymmetry": 0.0
+    },
+    "solver_checks": {
+      "solver": "Dense LU solve of I-alpha*P.T, then exact dangling normalization",
+      "max_L1_fixed_point_residual": 1.2551301919283108e-15,
+      "max_mass_error": 4.440892098500626e-16,
+      "min_mass": 1.8023629343123856e-07,
+      "max_dangling_mass": 0.0,
+      "users_above_1e_9_residual": 0
+    },
+    "graph_weighted_degree_training_popularity_spearman": 0.9699261752085047,
+    "mean_stationary_mass_on_own_history": 0.17371189098429676,
+    "mean_stationary_mass_on_unavailable_programmes": 0.13593815256412986,
+    "mean_L1_distance_from_restart": 1.6537933854265,
+    "score_semantics": "Stationary programme-node visit mass, not probability of watching; unnormalized after availability filtering",
+    "recommended_slots": 20150,
+    "share_slots_previously_watched": 0.7160794044665012,
+    "mean_training_popularity_of_recommendations": 19150.4911662531,
+    "median_training_distinct_viewers_of_recommendations": 2492.0,
+    "unique_recommended_programmes": 121,
+    "zero_training_support_recommendations": 0,
+    "cold_fallback_users": 59,
+    "mean_top5_overlap_with_popularity": 3.1806451612903226,
+    "max_share_users_receiving_one_item": 1.0,
+    "users_better_than_popularity": 1576,
+    "users_worse_than_popularity": 1183,
+    "users_equal_to_popularity": 1271
+  },
+  "runtime": {
+    "graph_and_profiles_seconds": 0.033963833999223425,
+    "linear_solve_seconds": 2.2331486249986483,
+    "final_scoring_and_ranking_seconds": 0.6826540420006495,
+    "total_seconds": 3.6049559589991986
+  },
+  "artifact_directory": "artifacts/models/ppr_raw_a095_log",
+  "source_hashes": {
+    "interactions": "8f9b93fa183e6c24df8d6812aded2fd9084b4f8c4e0deff8d72b06d61516ef9e",
+    "truth": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3",
+    "users": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30",
+    "candidates": "87e4c234140161cc68546490ecdc57a4b4eca909ffc08a77e8e8401c9263cb26",
+    "baseline": "8e54268d8e457b512e71c87942ce4fd8baf536fc7d1f05e2799e8309d0908dda",
+    "protocol": "047091c2ce248a61666ea740111c2fee4f1029a215b5887859795c885bc20d7a"
+  },
+  "code_hashes": {
+    "collaborative_models.py": "ed848c68bddd732bb5faff3658432163395a4b624ee85dec65a324715933ef4d",
+    "run_model_experiments.py": "315a953261e0b73d6fd802025f9d78f05767bb49a9bc66883e4b1fed88206bcd"
+  }
+}

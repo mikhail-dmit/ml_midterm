@@ -1,0 +1,7 @@
+{
+  "id": "ppr20_rerank_mf",
+  "type": "rerank",
+  "generator": "ppr",
+  "reranker": "implicit_mf",
+  "depth": 20
+}

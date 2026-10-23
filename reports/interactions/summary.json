@@ -1,0 +1,280 @@
+{
+  "generated_utc": "2026-10-23T06:08:28.391198+00:00",
+  "timezone_assumption": "Europe/Kyiv",
+  "watched_rule": "union watched seconds / full scheduled elapsed duration >= 0.8, tested as 5*w >= 4*d",
+  "source_files_sha256": {
+    "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+    "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+    "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+    "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+  },
+  "source_scripts_sha256": {
+    "build_interactions.py": "eec1c70184eaecb63d048562ee1786fd5eac48ee1d2c9b9a2d6a2f77ce62bcfe",
+    "interaction_core.py": "1f83257836ffe0ee573b46ed362609893e3e0cd5c8e899e8976e80448a589e0e"
+  },
+  "views": {
+    "raw_rows": 5821987,
+    "duplicate_rows_removed": 17,
+    "unique_rows": 5821970,
+    "duration_mismatches": {
+      "naive": 117,
+      "timezone_elapsed": 0
+    },
+    "clock_change_sample_user_ids": [
+      "12466582247545246052",
+      "10059425067810734795",
+      "12246241194532024321",
+      "6266399139997320035",
+      "5842699175950256892"
+    ],
+    "merged_union_segments": 5441773,
+    "unique_view_seconds_before_union": 8619206214,
+    "view_seconds_after_union": 8502989921,
+    "overlapping_seconds_removed": 116216293
+  },
+  "schedule": {
+    "unlabelled_rows_excluded": 1911511,
+    "nonpositive_rows_excluded": 1,
+    "labelled_airings": 237118,
+    "duplicate_airing_identities_removed": 0,
+    "labelled_schedule_continuity": {
+      "gaps": 76981,
+      "overlaps": 0,
+      "one_hour_gaps": 3043
+    }
+  },
+  "splits": {
+    "train": {
+      "window_start_local": "2020-03-09 00:00:00",
+      "window_end_local_exclusive": "2020-05-18 00:00:00",
+      "window_start_utc": "2020-03-08T22:00:00+00:00",
+      "window_end_utc": "2020-05-17T21:00:00+00:00",
+      "clipped_merged_view_segments": 3677328,
+      "overlap_segments": 2225058,
+      "eligible_programme_ids": 5842,
+      "eligible_airings": 115316,
+      "user_airing_pairs": 1823893,
+      "qualifying_watched_airings": 316413,
+      "users_with_any_programme_overlap": 4841,
+      "users_with_qualified_watches": 4737,
+      "programmes_with_qualified_watches": 2490,
+      "watched_seconds_quantiles": {
+        "0": 1.0,
+        "0.25": 197.0,
+        "0.5": 621.0,
+        "0.75": 1767.0,
+        "0.9": 3599.0,
+        "0.99": 7253.0,
+        "1": 28387.0
+      },
+      "coverage_quantiles": {
+        "0": 6.116207951070337e-05,
+        "0.25": 0.040952380952380955,
+        "0.5": 0.17266666666666666,
+        "0.75": 0.5774242424242424,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      },
+      "exactly_80pct_events": 220,
+      "more_than_one_union_fragment_events": 264933,
+      "boundary_crossing_airing_events": 1925,
+      "qualified_boundary_crossing_airing_events": 102
+    },
+    "validation": {
+      "window_start_local": "2020-05-18 00:00:00",
+      "window_end_local_exclusive": "2020-07-27 00:00:00",
+      "window_start_utc": "2020-05-17T21:00:00+00:00",
+      "window_end_utc": "2020-07-26T21:00:00+00:00",
+      "clipped_merged_view_segments": 1765427,
+      "overlap_segments": 1393845,
+      "eligible_programme_ids": 6384,
+      "eligible_airings": 121587,
+      "user_airing_pairs": 1191015,
+      "qualifying_watched_airings": 295044,
+      "users_with_any_programme_overlap": 4806,
+      "users_with_qualified_watches": 4643,
+      "programmes_with_qualified_watches": 2852,
+      "watched_seconds_quantiles": {
+        "0": 1.0,
+        "0.25": 245.0,
+        "0.5": 888.0,
+        "0.75": 2508.0,
+        "0.9": 5134.0,
+        "0.99": 8700.0,
+        "1": 30000.0
+      },
+      "coverage_quantiles": {
+        "0": 3.436426116838488e-05,
+        "0.25": 0.04888888888888889,
+        "0.5": 0.23833333333333334,
+        "0.75": 0.7925,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1": 1.0
+      },
+      "exactly_80pct_events": 124,
+      "more_than_one_union_fragment_events": 135546,
+      "boundary_crossing_airing_events": 2728,
+      "qualified_boundary_crossing_airing_events": 20
+    }
+  },
+  "time_alignment": {
+    "assumed_timezone": "Europe/Kyiv",
+    "viewing_duration_mismatches": {
+      "naive": 117,
+      "timezone_elapsed": 0
+    },
+    "schedule_continuity": {
+      "export_arh_11-20-final.csv": {
+        "naive": {
+          "gaps": 396,
+          "overlaps": 2,
+          "one_hour_gaps": 394
+        },
+        "timezone_elapsed": {
+          "gaps": 2,
+          "overlaps": 2,
+          "one_hour_gaps": 0
+        }
+      },
+      "export_arh_21-30-final.csv": {
+        "naive": {
+          "gaps": 3,
+          "overlaps": 2,
+          "one_hour_gaps": 0
+        },
+        "timezone_elapsed": {
+          "gaps": 3,
+          "overlaps": 2,
+          "one_hour_gaps": 0
+        }
+      },
+      "combined_historical_schedule": {
+        "naive": {
+          "gaps": 399,
+          "overlaps": 5,
+          "one_hour_gaps": 394
+        },
+        "timezone_elapsed": {
+          "gaps": 5,
+          "overlaps": 5,
+          "one_hour_gaps": 0
+        }
+      }
+    }
+  },
+  "validation_labels": {
+    "raw_users": 4914,
+    "users_no_validation_qualified_programmes": 271,
+    "users_one_to_four_validation_qualified_programmes": 613,
+    "primary_users_at_least_five": 4030,
+    "primary_ground_truth_rows": 4030,
+    "primary_cold_start_users": 59,
+    "primary_test_template_users": 1150,
+    "test_template_users_without_training_qualified_history": 18,
+    "primary_users_with_fifth_sixth_count_tie": 2630,
+    "validation_top5_unseen_in_training_items": 1283,
+    "primary_validation_top5_unseen_in_training_items": 1043,
+    "validation_qualified_programme_count_quantiles": {
+      "0": 0.0,
+      "0.25": 7.0,
+      "0.5": 16.0,
+      "0.75": 36.0,
+      "0.9": 74.0,
+      "0.99": 160.8699999999999,
+      "1": 284.0
+    },
+    "tie_break": "Descending qualifying-airing count, then ascending numeric tv_show_id; organiser tie-break unspecified",
+    "display_title": "Title/category of this user's most recent qualifying validation airing for that ID; explanatory lookup only",
+    "primary_cohort": "All raw-log users with >=5 distinct qualified validation programmes; no warm-user filter",
+    "broad_cohort": "All users with >=1 qualified validation programme, with up to five true IDs"
+  },
+  "sanity_checks": {
+    "all watched times positive and no larger than full programme duration": true,
+    "all coverage values in (0,1]": true,
+    "one row per split/user/airing": true,
+    "no ID zero in joined events": true,
+    "train plus validation watched seconds do not exceed an airing duration": true,
+    "no airing counted watched in both temporal splits": true,
+    "programme counts reconcile to qualified airing counts": true,
+    "primary ground truth always five distinct IDs": true,
+    "raw user cohort accounting closes": true,
+    "zero timezone elapsed-duration mismatches": true
+  },
+  "manual_example": {
+    "user_id": "127680364314713816",
+    "raw_view_rows": 783,
+    "validation_qualified_programmes": 6,
+    "selection": "Readable verification example: 6–10 validation positives, nonempty train history, fewest qualified validation airings; no recommendation/model score used",
+    "worked_airings": [
+      {
+        "airing_id": 9156,
+        "tv_show_id": 700389,
+        "title": "Кто сверху?, 7 сезон, 3 эп.",
+        "duration": 7200,
+        "watched_seconds": 6752,
+        "coverage": 0.9377777777777778,
+        "watched": true,
+        "schedule_file": "export_arh_21-30-final.csv",
+        "schedule_csv_record": 7021,
+        "airing_start_local": "2020-07-16T19:00:00+03:00",
+        "airing_end_local": "2020-07-16T21:00:00+03:00",
+        "union_intervals": [
+          {
+            "start_local": "2020-07-16T19:07:28+03:00",
+            "end_local": "2020-07-16T21:00:00+03:00",
+            "seconds": 6752
+          }
+        ]
+      },
+      {
+        "airing_id": 22102,
+        "tv_show_id": 90076035,
+        "title": "Х/ф 'Эффект колибри'.",
+        "duration": 6900,
+        "watched_seconds": 5172,
+        "coverage": 0.7495652173913043,
+        "watched": false,
+        "schedule_file": "export_arh_21-30-final.csv",
+        "schedule_csv_record": 29434,
+        "airing_start_local": "2020-07-21T15:25:00+03:00",
+        "airing_end_local": "2020-07-21T17:20:00+03:00",
+        "union_intervals": [
+          {
+            "start_local": "2020-07-21T15:38:05+03:00",
+            "end_local": "2020-07-21T16:50:21+03:00",
+            "seconds": 4336
+          },
+          {
+            "start_local": "2020-07-21T17:04:14+03:00",
+            "end_local": "2020-07-21T17:18:10+03:00",
+            "seconds": 836
+          }
+        ]
+      }
+    ],
+    "validation_top5_ids": [
+      700389,
+      2400480,
+      6700482,
+      12001682,
+      12002355
+    ]
+  },
+  "boundary_verification_user_id": "1568767380147341172",
+  "tables": {
+    "user_airing_rows": 3014908,
+    "user_programme_rows": 1516807,
+    "positive_user_programme_rows": 255337
+  },
+  "execution": {
+    "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
+    "pandas": "2.2.2",
+    "numpy": "1.26.4",
+    "pyarrow": "16.1.0",
+    "platform": "macOS-15.7.3-arm64-arm-64bit",
+    "elapsed_seconds": 22.717902459000015,
+    "peak_rss_MiB": 3136.171875
+  }
+}

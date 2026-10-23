@@ -1,0 +1,102 @@
+{
+  "submission_id": "submission_007",
+  "selected_id": "h8_rules01875_pop00625",
+  "selected_config": {
+    "id": "h8_rules01875_pop00625",
+    "mf_half_life": 8,
+    "ppr_half_life": 8,
+    "rules_half_life": null,
+    "pop_half_life": null,
+    "depth": 5,
+    "offset": 0,
+    "weights": {
+      "implicit_mf": 0.5,
+      "ppr": 0.5,
+      "association_rules": 0.1875,
+      "popularity": 0.0625
+    }
+  },
+  "submission_path": "submissions/submission_007.csv",
+  "submission_sha256": "8d3bc085cb0a830cbab5c68789470c608fd34bb840dffbe75e4dd43833f87d8c",
+  "selection_rule": "Highest all_primary MAP@5 among thirteen new configurations whose full validation lists do not duplicate uploads 001-006; tie by config ID. Report 006 as fixed control. Template results and paired intervals are diagnostics only. No grid expansion after scores; no Kaggle score/CSV loaded by the selector.",
+  "validation_primary": 0.3765277088502895,
+  "validation_template": 0.41177101449275366,
+  "training": "All weeks 11-30, unchanged parameters; selected component specification applied using the original cutoffs",
+  "weight_only_change_from_006": true,
+  "template_users": 1260,
+  "candidates": 6632,
+  "cold_users": 4,
+  "comparisons": [
+    {
+      "reference": "submission_001",
+      "changed_ordered_users": 1070,
+      "changed_set_users": 763,
+      "order_only_users": 307,
+      "unchanged_users": 190,
+      "mean_shared_top5": 4.252380952380952,
+      "entered_user_item_pairs": 942
+    },
+    {
+      "reference": "submission_002",
+      "changed_ordered_users": 1068,
+      "changed_set_users": 783,
+      "order_only_users": 285,
+      "unchanged_users": 192,
+      "mean_shared_top5": 4.230952380952381,
+      "entered_user_item_pairs": 969
+    },
+    {
+      "reference": "submission_003",
+      "changed_ordered_users": 1180,
+      "changed_set_users": 957,
+      "order_only_users": 223,
+      "unchanged_users": 80,
+      "mean_shared_top5": 3.933333333333333,
+      "entered_user_item_pairs": 1344
+    },
+    {
+      "reference": "submission_004",
+      "changed_ordered_users": 1177,
+      "changed_set_users": 964,
+      "order_only_users": 213,
+      "unchanged_users": 83,
+      "mean_shared_top5": 3.9420634920634923,
+      "entered_user_item_pairs": 1333
+    },
+    {
+      "reference": "submission_005",
+      "changed_ordered_users": 1115,
+      "changed_set_users": 870,
+      "order_only_users": 245,
+      "unchanged_users": 145,
+      "mean_shared_top5": 4.111111111111111,
+      "entered_user_item_pairs": 1120
+    },
+    {
+      "reference": "submission_006",
+      "changed_ordered_users": 198,
+      "changed_set_users": 103,
+      "order_only_users": 95,
+      "unchanged_users": 1062,
+      "mean_shared_top5": 4.9182539682539685,
+      "entered_user_item_pairs": 103
+    }
+  ],
+  "public_private_scores_used_for_selection": false,
+  "kaggle_status": "Completed upload; returned scores supplied by user",
+  "created_csvs": [
+    "submissions/submission_007.csv"
+  ],
+  "code_hashes": {
+    "prepare_submission_007.py": "3013d2cd1e20da717d591cb34279afeb1aff7154b35950e1ffad1d1a2889dd5d",
+    "recency_extension.py": "efb89179f7e29e78d3b07de11bb595a65dc8bd82bda99559c762ff33e928f2a4",
+    "refinement_models.py": "b2615de2fb620f2a75a29230451980667ba6b8064b91821431f3c01218412389",
+    "hybrid_models.py": "2a811a935f35935da14413214d272961665eb1ac1670e2d09b363850566cbdf6",
+    "recommender_bundle.py": "c36e4129ff468ed760347f221e428cf59bc00755cdc2024a0e68ba03b9065dab"
+  },
+  "reported_kaggle_scores": {
+    "public": 0.43707,
+    "private": 0.42472,
+    "result_record": "reports/submission_007/kaggle_result.json"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "config": {
+    "id": "cbf_title_tfidf_count",
+    "method": "content_based",
+    "family_weights": {
+      "category": 1.0,
+      "genre": 1.0,
+      "decade": 0.25,
+      "director": 0.5,
+      "actor": 0.5,
+      "title": 1.0
+    },
+    "idf": true,
+    "family_balance": true,
+    "history_weighting": "count"
+  },
+  "metrics": [
+    {
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.2450016542597188,
+      "precision_at_5": 0.28014888337468985,
+      "recall_at_5": 0.28014888337468985,
+      "hit_rate_at_5": 0.7600496277915633,
+      "users_with_hits": 3063,
+      "total_hits": 5645
+    },
+    {
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.26950144927536235,
+      "precision_at_5": 0.3050434782608696,
+      "recall_at_5": 0.3050434782608696,
+      "hit_rate_at_5": 0.8121739130434783,
+      "users_with_hits": 934,
+      "total_hits": 1754
+    }
+  ],
+  "diagnostics": {
+    "metadata_snapshot": {
+      "sources": {
+        "export_arh_11-20-final.csv": {
+          "sha256": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+          "used_airing_rows": 115316
+        },
+        "export_arh_21-30-final.csv": {
+          "sha256": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+          "used_airing_rows": 0
+        }
+      },
+      "training_start_utc_epoch": 1583704800,
+      "cutoff_utc_epoch_exclusive": 1589749200,
+      "max_airing_start_used": 1589748900,
+      "unique_programmes": 5842,
+      "used_airing_rows": 115316,
+      "policy": "All attributes, vocabulary and IDF frozen from pre-cutoff schedule airings; no validation metadata features"
+    },
+    "metadata_programmes": 5842,
+    "features": 23383,
+    "features_by_family": {
+      "category": 8,
+      "genre": 63,
+      "decade": 10,
+      "director": 3306,
+      "actor": 8491,
+      "title": 11505
+    },
+    "candidate_items_with_frozen_metadata": 3993,
+    "unique_item_feature_vectors": 5829,
+    "items_in_nonunique_feature_groups": 26,
+    "largest_identical_vector_group": 2,
+    "mean_candidates_tied_at_fifth_score": 1.1299420800805842,
+    "max_item_norm_error": 2.220446049250313e-16,
+    "score_semantics": "Cosine between training-history content profile and programme metadata vector, not watch probability",
+    "users_with_popularity_backfill": 59,
+    "warm_users_with_popularity_backfill": 0,
+    "popularity_backfilled_slots": 295,
+    "recommended_slots": 20150,
+    "share_slots_previously_watched": 0.559652605459057,
+    "mean_training_popularity_of_recommendations": 9438.043027295285,
+    "median_training_distinct_viewers_of_recommendations": 497.0,
+    "unique_recommended_programmes": 922,
+    "zero_training_support_recommendations": 2785,
+    "cold_fallback_users": 59,
+    "mean_top5_overlap_with_popularity": 1.3585607940446651,
+    "max_share_users_receiving_one_item": 0.5339950372208436,
+    "users_better_than_popularity": 1360,
+    "users_worse_than_popularity": 1944,
+    "users_equal_to_popularity": 726
+  },
+  "runtime": {
+    "fit_seconds": 0.0407992500004184,
+    "scoring_seconds": 0.32539591699969606,
+    "ranking_and_evaluation_seconds": 0.728784375000032,
+    "total_seconds": 2.141875125000297
+  },
+  "artifact_directory": "artifacts/content_rules/cbf_title_tfidf_count",
+  "source_hashes": {
+    "interactions": "8f9b93fa183e6c24df8d6812aded2fd9084b4f8c4e0deff8d72b06d61516ef9e",
+    "truth": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3",
+    "users": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30",
+    "candidates": "87e4c234140161cc68546490ecdc57a4b4eca909ffc08a77e8e8401c9263cb26",
+    "baseline": "8e54268d8e457b512e71c87942ce4fd8baf536fc7d1f05e2799e8309d0908dda",
+    "protocol": "047091c2ce248a61666ea740111c2fee4f1029a215b5887859795c885bc20d7a"
+  },
+  "code_hashes": {
+    "collaborative_models.py": "ed848c68bddd732bb5faff3658432163395a4b624ee85dec65a324715933ef4d",
+    "run_model_experiments.py": "315a953261e0b73d6fd802025f9d78f05767bb49a9bc66883e4b1fed88206bcd",
+    "content_rule_models.py": "31ec58b1e6f8c04c3a8407f3932bade1405e99f89401aacd1b38425bf36ce9b2",
+    "run_content_rules.py": "4de96ae5238d352d34e69442cbeb3084b9ebd958bb01326baa612816ccb487d5",
+    "ranking_metrics.py": "7d0a60ca6f893be1522a5ef8d280714f0b468061cebd5faf05d6615817109290"
+  }
+}

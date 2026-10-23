@@ -1,0 +1,91 @@
+{
+  "config": {
+    "id": "recent4_t20__ppr",
+    "method": "ppr",
+    "shared_setting": {
+      "id": "recent4_t20",
+      "window": "recent4",
+      "start_local": "2020-04-20 00:00:00",
+      "end_local": "2020-05-18 00:00:00",
+      "threshold_percent": 20
+    },
+    "hyperparameters": "Frozen original selected configuration; no per-setting tuning"
+  },
+  "metrics": [
+    {
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.33515550041356496,
+      "precision_at_5": 0.3952853598014888,
+      "recall_at_5": 0.3952853598014888,
+      "hit_rate_at_5": 0.8694789081885856,
+      "users_with_hits": 3504,
+      "total_hits": 7965
+    },
+    {
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.36654202898550725,
+      "precision_at_5": 0.4241739130434783,
+      "recall_at_5": 0.4241739130434783,
+      "hit_rate_at_5": 0.8965217391304348,
+      "users_with_hits": 1031,
+      "total_hits": 2439
+    }
+  ],
+  "diagnostics": {
+    "active_training_users": 4692,
+    "trained_items": 1796,
+    "trained_positive_pairs": 186277,
+    "training_events": 343778,
+    "cold_users_in_setting": 82,
+    "graph": {
+      "nodes": 1796,
+      "directed_nonzeros": 1564328,
+      "undirected_edges": 782164,
+      "dangling_nodes": 1,
+      "connected_components": 2,
+      "max_row_sum_error": 5.551115123125783e-16,
+      "max_adjacency_asymmetry": 0.0
+    },
+    "solver": {
+      "solver": "Dense LU solve of I-alpha*P.T, then exact dangling normalization",
+      "max_L1_fixed_point_residual": 8.690541627565768e-16,
+      "max_mass_error": 4.440892098500626e-16,
+      "min_mass": 0.0,
+      "max_dangling_mass": 0.0,
+      "users_above_1e_9_residual": 0
+    },
+    "recommended_slots": 20150,
+    "share_slots_previously_watched": 0.9694789081885856,
+    "mean_training_popularity_of_recommendations": 9996.569081885857,
+    "median_training_distinct_viewers_of_recommendations": 1788.0,
+    "unique_recommended_programmes": 474,
+    "zero_training_support_recommendations": 0,
+    "cold_fallback_users": 82,
+    "mean_top5_overlap_with_popularity": 2.1722084367245658,
+    "max_share_users_receiving_one_item": 0.7662531017369727,
+    "users_better_than_popularity": 2048,
+    "users_worse_than_popularity": 1324,
+    "users_equal_to_popularity": 658
+  },
+  "runtime": {
+    "total_seconds": 2.603991334000966
+  },
+  "artifact_directory": "artifacts/training_study/recent4_t20/ppr",
+  "source_hashes": {
+    "interactions": "ed5a048d69c8f6d26535a7fbc95de846bfe18f6e4de378e8efff37f5cbd71bc4",
+    "truth": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3",
+    "users": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30",
+    "candidates": "4a4dd6213648f2d5e051374a5cf129ef20336971a6b4db62e72da7074a02f204",
+    "baseline": "8e54268d8e457b512e71c87942ce4fd8baf536fc7d1f05e2799e8309d0908dda",
+    "protocol": "047091c2ce248a61666ea740111c2fee4f1029a215b5887859795c885bc20d7a",
+    "training_events": "761483d0497c6bdee1215055ac42aade806a1a3be81c5b058d857d0ab4d031f6",
+    "content_vectors": "8eccdae675f13c6973c570fba9b18ea32730cb59c6258cd319db4728daa06cca"
+  },
+  "code_hashes": {
+    "collaborative_models.py": "ed848c68bddd732bb5faff3658432163395a4b624ee85dec65a324715933ef4d",
+    "run_model_experiments.py": "315a953261e0b73d6fd802025f9d78f05767bb49a9bc66883e4b1fed88206bcd",
+    "training_study.py": "1fb559c9fe11a82a0cb144170b4b2985883fc012ad1b6d254615c65955fe6124"
+  }
+}

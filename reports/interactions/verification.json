@@ -1,0 +1,223 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Input unchanged: dataset11-30.csv",
+      "passed": true,
+      "evidence": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b"
+    },
+    {
+      "check": "Input unchanged: export_arh_11-20-final.csv",
+      "passed": true,
+      "evidence": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c"
+    },
+    {
+      "check": "Input unchanged: export_arh_21-30-final.csv",
+      "passed": true,
+      "evidence": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4"
+    },
+    {
+      "check": "Input unchanged: submission.csv",
+      "passed": true,
+      "evidence": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+    },
+    {
+      "check": "All event user IDs stored as decimal strings",
+      "passed": true,
+      "evidence": 3014908
+    },
+    {
+      "check": "No repeated split/user/airing keys",
+      "passed": true,
+      "evidence": 3014908
+    },
+    {
+      "check": "No zero item IDs",
+      "passed": true,
+      "evidence": 20088
+    },
+    {
+      "check": "Union watch time lies within full airing duration",
+      "passed": true,
+      "evidence": {
+        "min": 1,
+        "max": 30000,
+        "max_coverage": 1.0
+      }
+    },
+    {
+      "check": "Every watched flag implements exact >=80%",
+      "passed": true,
+      "evidence": 611457
+    },
+    {
+      "check": "Stored coverage equals watched/full duration",
+      "passed": true,
+      "evidence": "tolerance 1e-15"
+    },
+    {
+      "check": "train observed time stays inside its window",
+      "passed": true,
+      "evidence": {
+        "min_observation": 1583709360,
+        "max_observation": 1589749200,
+        "bounds": [
+          1583704800,
+          1589749200
+        ]
+      }
+    },
+    {
+      "check": "validation observed time stays inside its window",
+      "passed": true,
+      "evidence": {
+        "min_observation": 1589749200,
+        "max_observation": 1595797198,
+        "bounds": [
+          1589749200,
+          1595797200
+        ]
+      }
+    },
+    {
+      "check": "Event schedule identity matches airing table",
+      "passed": true,
+      "evidence": 86326
+    },
+    {
+      "check": "Programme frequencies sum to qualified airings",
+      "passed": true,
+      "evidence": 611457
+    },
+    {
+      "check": "Full primary ground truth equals independently ranked counts",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "ids": 20150
+      }
+    },
+    {
+      "check": "Long Top-5 includes every user's positive truth without padding",
+      "passed": true,
+      "evidence": 4643
+    },
+    {
+      "check": "All raw users accounted for in validation cohort",
+      "passed": true,
+      "evidence": {
+        "2": 152,
+        "5": 4030,
+        "1": 158,
+        "4": 168,
+        "0": 271,
+        "3": 135
+      }
+    },
+    {
+      "check": "Independent raw-CSV nested-loop rejoin matches every sampled user's events",
+      "passed": true,
+      "evidence": {
+        "users": 13,
+        "user_airing_pairs": 7592
+      }
+    }
+  ],
+  "sampled_user_results": [
+    {
+      "user_id": "103252238843743410",
+      "raw_view_rows": 33,
+      "user_airing_pairs": 1,
+      "qualified_airings": 0,
+      "exact_match": true
+    },
+    {
+      "user_id": "12466582247545246052",
+      "raw_view_rows": 2635,
+      "user_airing_pairs": 1505,
+      "qualified_airings": 526,
+      "exact_match": true
+    },
+    {
+      "user_id": "127680364314713816",
+      "raw_view_rows": 783,
+      "user_airing_pairs": 367,
+      "qualified_airings": 30,
+      "exact_match": true
+    },
+    {
+      "user_id": "1553224775894427845",
+      "raw_view_rows": 511,
+      "user_airing_pairs": 312,
+      "qualified_airings": 34,
+      "exact_match": true
+    },
+    {
+      "user_id": "1568767380147341172",
+      "raw_view_rows": 2902,
+      "user_airing_pairs": 1685,
+      "qualified_airings": 451,
+      "exact_match": true
+    },
+    {
+      "user_id": "16610904627558965255",
+      "raw_view_rows": 575,
+      "user_airing_pairs": 32,
+      "qualified_airings": 1,
+      "exact_match": true
+    },
+    {
+      "user_id": "16931155186940439261",
+      "raw_view_rows": 765,
+      "user_airing_pairs": 291,
+      "qualified_airings": 131,
+      "exact_match": true
+    },
+    {
+      "user_id": "17245252872208103161",
+      "raw_view_rows": 1360,
+      "user_airing_pairs": 1307,
+      "qualified_airings": 491,
+      "exact_match": true
+    },
+    {
+      "user_id": "319675768840678676",
+      "raw_view_rows": 172,
+      "user_airing_pairs": 36,
+      "qualified_airings": 4,
+      "exact_match": true
+    },
+    {
+      "user_id": "3622424808719533801",
+      "raw_view_rows": 2510,
+      "user_airing_pairs": 1624,
+      "qualified_airings": 356,
+      "exact_match": true
+    },
+    {
+      "user_id": "414363484269016605",
+      "raw_view_rows": 38,
+      "user_airing_pairs": 111,
+      "qualified_airings": 102,
+      "exact_match": true
+    },
+    {
+      "user_id": "8203940526710285035",
+      "raw_view_rows": 232,
+      "user_airing_pairs": 282,
+      "qualified_airings": 202,
+      "exact_match": true
+    },
+    {
+      "user_id": "9259429009574411320",
+      "raw_view_rows": 490,
+      "user_airing_pairs": 39,
+      "qualified_airings": 1,
+      "exact_match": true
+    }
+  ],
+  "random_seed": 20261023,
+  "elapsed_seconds": 10.522928040999886,
+  "method": "Full artifact invariants + Python frequency ranking + raw-CSV nested-loop overlap/union for deterministic sampled users; no builder helpers imported",
+  "student_personal_verification": "Not claimed; manual_example is provided for a later student check"
+}

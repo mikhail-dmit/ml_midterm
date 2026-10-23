@@ -1,0 +1,97 @@
+{
+  "config": {
+    "id": "mf_f32_a10_r1",
+    "method": "implicit_mf",
+    "factors": 32,
+    "confidence_scale": 10.0,
+    "regularization": 1.0,
+    "weighting": "log1p",
+    "epochs": 15
+  },
+  "metrics": [
+    {
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.21019602977667495,
+      "precision_at_5": 0.306848635235732,
+      "recall_at_5": 0.306848635235732,
+      "hit_rate_at_5": 0.794044665012407,
+      "users_with_hits": 3200,
+      "total_hits": 6183
+    },
+    {
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.2200985507246377,
+      "precision_at_5": 0.3234782608695652,
+      "recall_at_5": 0.3234782608695652,
+      "hit_rate_at_5": 0.8182608695652174,
+      "users_with_hits": 941,
+      "total_hits": 1860
+    }
+  ],
+  "diagnostics": {
+    "selected_epoch": 5,
+    "selection_metric": "MAP@5 on all 4030 primary users; template cohort is reporting only",
+    "initial_objective": 1262475.730408876,
+    "last_objective": 343267.74156127055,
+    "objective_monotonically_nonincreasing": true,
+    "positive_training_pair_dot_score_quantiles": {
+      "0": -0.1457497096181427,
+      "0.25": 0.37465032970328316,
+      "0.5": 0.7048380991153349,
+      "0.75": 0.924105280661071,
+      "1": 1.7157247590363909
+    },
+    "share_positive_training_pairs_score_above_095": 0.2097064892774116,
+    "median_within_user_count_score_spearman": 0.6158999081856601,
+    "users_in_count_score_correlation": 4338,
+    "item_norm_support_spearman": 0.9847220194043114,
+    "user_factor_norm_quantiles": {
+      "0": 0.02418614723374809,
+      "0.25": 1.688141249518503,
+      "0.5": 2.118391141644793,
+      "0.75": 2.5634794588637457,
+      "1": 7.16175742279796
+    },
+    "item_factor_norm_quantiles": {
+      "0": 0.0004882828636781029,
+      "0.25": 0.0894673867566688,
+      "0.5": 0.16921490025667912,
+      "0.75": 0.34685529390154646,
+      "1": 1.3228400375307985
+    },
+    "score_semantics": "Implicit binary-preference reconstruction score, not a rating or calibrated watch probability",
+    "recommended_slots": 20150,
+    "share_slots_previously_watched": 0.7586600496277915,
+    "mean_training_popularity_of_recommendations": 11751.091712158808,
+    "median_training_distinct_viewers_of_recommendations": 1485.0,
+    "unique_recommended_programmes": 210,
+    "zero_training_support_recommendations": 0,
+    "cold_fallback_users": 59,
+    "mean_top5_overlap_with_popularity": 1.7694789081885856,
+    "max_share_users_receiving_one_item": 0.5724565756823822,
+    "users_better_than_popularity": 1280,
+    "users_worse_than_popularity": 2130,
+    "users_equal_to_popularity": 620
+  },
+  "runtime": {
+    "training_seconds_excluding_validation": 1.6887847489997512,
+    "checkpoint_validation_seconds": 3.151209209001536,
+    "final_scoring_and_ranking_seconds": 1.0545553749998362,
+    "total_seconds": 7.185545000000275
+  },
+  "artifact_directory": "artifacts/models/mf_f32_a10_r1",
+  "source_hashes": {
+    "interactions": "8f9b93fa183e6c24df8d6812aded2fd9084b4f8c4e0deff8d72b06d61516ef9e",
+    "truth": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3",
+    "users": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30",
+    "candidates": "87e4c234140161cc68546490ecdc57a4b4eca909ffc08a77e8e8401c9263cb26",
+    "baseline": "8e54268d8e457b512e71c87942ce4fd8baf536fc7d1f05e2799e8309d0908dda",
+    "protocol": "047091c2ce248a61666ea740111c2fee4f1029a215b5887859795c885bc20d7a"
+  },
+  "code_hashes": {
+    "collaborative_models.py": "ed848c68bddd732bb5faff3658432163395a4b624ee85dec65a324715933ef4d",
+    "run_model_experiments.py": "315a953261e0b73d6fd802025f9d78f05767bb49a9bc66883e4b1fed88206bcd"
+  }
+}

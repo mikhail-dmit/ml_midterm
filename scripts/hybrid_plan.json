@@ -1,0 +1,42 @@
+{
+  "purpose": "Compact rank-fusion and training-history switching study, declared before scoring; no supervised meta-model.",
+  "selection_metric": "all_primary MAP@5; template_primary is reporting only",
+  "retrieval_depth": 5,
+  "fusion": "sum of weight/(offset+one-based component rank), absent ID contributes zero",
+  "tie_break": "full10_t50 training-popularity rank, then numeric programme ID",
+  "fallback": "full10_t50 training popularity; identical for every user with no 50%-qualified training history",
+  "sources": {
+    "popularity": "reports/training_study/full10_t50/runs/popularity",
+    "implicit_mf": "reports/training_study/full10_t50/runs/implicit_mf",
+    "ppr": "reports/training_study/full10_t50/runs/ppr",
+    "content_based": "reports/training_study/full10_t80/runs/content_based",
+    "association_rules": "reports/training_study/full10_t80/runs/association_rules"
+  },
+  "controls": {
+    "truth": "Original strict >=80% validation truth; no pruning or relabelling",
+    "cohorts": "Original 4030 users and nested 1150 template users",
+    "candidates": "Original 6384 programme IDs; repeats allowed",
+    "component_selection": "Previously studied full history: MF/PPR 50%; CBF/rules 80%",
+    "switch_feature": "Distinct programmes in training_counts.parquet for full10_t50, zero for absent users",
+    "segment_definitions": "Original strict/full reference bins and familiarity, unchanged",
+    "search_scope": "All thirteen configurations below are retained; no subsequent weight search in this stage",
+    "uncertainty": "Conditional paired-user bootstrap only; same temporal hold-out has already been used for selection"
+  },
+  "seed": 20261023,
+  "bootstrap_resamples": 2000,
+  "runs": [
+    {"id": "rrf_mf_ppr_k0", "type": "rrf", "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5}},
+    {"id": "rrf_mf_ppr_k10", "type": "rrf", "offset": 10, "weights": {"implicit_mf": 0.5, "ppr": 0.5}},
+    {"id": "rrf_mf_ppr_pop_k0", "type": "rrf", "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "popularity": 0.25}},
+    {"id": "rrf_mf_ppr_pop_k10", "type": "rrf", "offset": 10, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "popularity": 0.25}},
+    {"id": "rrf_mf_ppr_rules_k0", "type": "rrf", "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.25}},
+    {"id": "rrf_mf_ppr_rules_k10", "type": "rrf", "offset": 10, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.25}},
+    {"id": "rrf_mf_ppr_rules_pop_k0", "type": "rrf", "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "rrf_mf_ppr_rules_pop_k10", "type": "rrf", "offset": 10, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "rrf_all_equal_k0", "type": "rrf", "offset": 0, "weights": {"implicit_mf": 1, "ppr": 1, "content_based": 1, "association_rules": 1, "popularity": 1}},
+    {"id": "rrf_mf_pop_k0", "type": "rrf", "offset": 0, "weights": {"implicit_mf": 1, "popularity": 0.25}},
+    {"id": "rrf_ppr_pop_k0", "type": "rrf", "offset": 0, "weights": {"ppr": 1, "popularity": 0.25}},
+    {"id": "switch_mf_sparse5", "type": "switch", "max_sparse_history": 5, "sparse_method": "popularity", "warm_method": "implicit_mf"},
+    {"id": "switch_ppr_sparse5", "type": "switch", "max_sparse_history": 5, "sparse_method": "popularity", "warm_method": "ppr"}
+  ]
+}

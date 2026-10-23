@@ -1,0 +1,7 @@
+method,configuration,prediction_source
+popularity,Unweighted full-training >=50% qualified-airing popularity,artifacts/recency_extension/validation/mf8_ppr8_rulesraw_popraw/component_popularity_top20.csv
+cbf,Selected rich+title TF-IDF cosine/count profile; original >=80% history and pre-May18 metadata,reports/content_rules/runs/cbf_title_tfidf_count/predictions.csv
+association_rules,"Unweighted strict80 weekly rules, joint>=5/confidence>=.1/lift>1, log-count query",artifacts/recency_extension/validation/mf8_ppr8_rulesraw_popraw/component_association_rules_top20.csv
+mf,"Final007 component: 50% history, eight-week mass-preserving counts, f16/log-target/confidence1/reg1/15 epochs",artifacts/recency_extension/validation/mf8_ppr8_rulesraw_popraw/component_implicit_mf_top20.csv
+ppr,"Final007 component: raw graph alpha .5, eight-week 50% log-count restarts",artifacts/recency_extension/validation/mf8_ppr8_rulesraw_popraw/component_ppr_top20.csv
+hybrid_007,"Final007 recipe: RRF MF=.5/PPR=.5/rules=.1875/pop=.0625, depth5/offset0",reports/recency_extension/runs/h8_rules01875_pop00625/predictions.csv

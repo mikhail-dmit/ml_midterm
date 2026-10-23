@@ -1,0 +1,10 @@
+{
+  "id": "mf_f16_logtarget_a1_r1",
+  "method": "implicit_mf",
+  "factors": 16,
+  "confidence_scale": 1.0,
+  "regularization": 1.0,
+  "weighting": "log1p",
+  "preference": "log1p",
+  "epochs": 15
+}

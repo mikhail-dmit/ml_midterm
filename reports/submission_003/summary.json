@@ -1,0 +1,60 @@
+{
+  "submission_id": "submission_003",
+  "selected_id": "ppr20_rerank_mf",
+  "selected_config": {
+    "id": "ppr20_rerank_mf",
+    "type": "rerank",
+    "generator": "ppr",
+    "reranker": "implicit_mf",
+    "depth": 20
+  },
+  "submission_path": "submissions/submission_003.csv",
+  "submission_sha256": "aa81d12d12e4d640ed07404d269593d51883182e01bdcc8454e5d35d8417fc02",
+  "training": "Reuse identical verified weeks 11-30 fits; no refitting or parameter change",
+  "validation_source": {
+    "comparison": "reports/semantic_hybrids/comparison.csv",
+    "run_id": "ppr20_rerank_mf",
+    "all_primary": 0.36888502894954506,
+    "template_primary": 0.4005565217391304
+  },
+  "template_users": 1260,
+  "candidates": 6632,
+  "generator_depth": 20,
+  "cold_users": 4,
+  "comparisons": [
+    {
+      "reference": "submission_001",
+      "changed_ordered_users": 1079,
+      "changed_set_users": 734,
+      "order_only_users": 345,
+      "unchanged_users": 181,
+      "mean_shared_top5": 4.268253968253968,
+      "entered_user_item_pairs": 922
+    },
+    {
+      "reference": "submission_002",
+      "changed_ordered_users": 1084,
+      "changed_set_users": 743,
+      "order_only_users": 341,
+      "unchanged_users": 176,
+      "mean_shared_top5": 4.269047619047619,
+      "entered_user_item_pairs": 921
+    }
+  ],
+  "tie_policy": "MF score descending, ties retain PPR candidate order; all actual cold users keep popularity",
+  "kaggle_status": "Completed upload; returned scores supplied by user",
+  "created_csvs": [
+    "submissions/submission_003.csv"
+  ],
+  "code_hashes": {
+    "prepare_submission_003.py": "879e3659ff90780a104c0b614c7a486b4e0a35df8aaec85ab16255fab767d81d",
+    "recommender_bundle.py": "c36e4129ff468ed760347f221e428cf59bc00755cdc2024a0e68ba03b9065dab",
+    "run_semantic_hybrids.py": "d2a0b1f2d6993933169ceb3cd7ccd3529fc70561aaa1fc68bf1a68c06b48f88e",
+    "semantic_hybrids.py": "e239d722394fa8f0c1a48ef114b1879e51e34de7e5e5c29ebbcb8d6cef4c3533"
+  },
+  "reported_kaggle_scores": {
+    "public": 0.43042,
+    "private": 0.4126,
+    "result_record": "reports/submission_003/kaggle_result.json"
+  }
+}

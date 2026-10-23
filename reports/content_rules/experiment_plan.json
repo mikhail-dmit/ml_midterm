@@ -1,0 +1,122 @@
+{
+  "seed": 20261023,
+  "selection_metric": "MAP@5 on all 4030 primary users; 1150-user template cohort reporting only",
+  "metadata_policy": "Only labelled positive-duration airings with start before validation cutoff and end after training start; freeze all item documents/vocabulary/IDF at cutoff",
+  "initial": [
+    {
+      "id": "cbf_genre_log",
+      "method": "content_based",
+      "family_weights": {
+        "category": 1.0,
+        "genre": 1.0
+      },
+      "idf": false,
+      "family_balance": true,
+      "history_weighting": "log1p"
+    },
+    {
+      "id": "cbf_rich_log",
+      "method": "content_based",
+      "family_weights": {
+        "category": 1.0,
+        "genre": 1.0,
+        "decade": 0.25,
+        "director": 0.5,
+        "actor": 0.5
+      },
+      "idf": false,
+      "family_balance": true,
+      "history_weighting": "log1p"
+    },
+    {
+      "id": "cbf_rich_tfidf_log",
+      "method": "content_based",
+      "family_weights": {
+        "category": 1.0,
+        "genre": 1.0,
+        "decade": 0.25,
+        "director": 0.5,
+        "actor": 0.5
+      },
+      "idf": true,
+      "family_balance": true,
+      "history_weighting": "log1p"
+    },
+    {
+      "id": "ar_user_s5_conf",
+      "method": "association_rules",
+      "baskets": "user",
+      "min_joint_count": 5,
+      "min_confidence": 0.1,
+      "score_metric": "confidence",
+      "history_weighting": "log1p"
+    },
+    {
+      "id": "ar_user_s20_conf",
+      "method": "association_rules",
+      "baskets": "user",
+      "min_joint_count": 20,
+      "min_confidence": 0.1,
+      "score_metric": "confidence",
+      "history_weighting": "log1p"
+    },
+    {
+      "id": "ar_user_s5_lift",
+      "method": "association_rules",
+      "baskets": "user",
+      "min_joint_count": 5,
+      "min_confidence": 0.1,
+      "score_metric": "lift",
+      "history_weighting": "log1p"
+    }
+  ],
+  "diagnostic": [
+    {
+      "id": "cbf_rich_tfidf_count",
+      "method": "content_based",
+      "family_weights": {
+        "category": 1.0,
+        "genre": 1.0,
+        "decade": 0.25,
+        "director": 0.5,
+        "actor": 0.5
+      },
+      "idf": true,
+      "family_balance": true,
+      "history_weighting": "count"
+    },
+    {
+      "id": "cbf_title_tfidf_count",
+      "method": "content_based",
+      "family_weights": {
+        "category": 1.0,
+        "genre": 1.0,
+        "decade": 0.25,
+        "director": 0.5,
+        "actor": 0.5,
+        "title": 1.0
+      },
+      "idf": true,
+      "family_balance": true,
+      "history_weighting": "count"
+    },
+    {
+      "id": "ar_user_s5_conf_count",
+      "method": "association_rules",
+      "baskets": "user",
+      "min_joint_count": 5,
+      "min_confidence": 0.1,
+      "score_metric": "confidence",
+      "history_weighting": "count"
+    },
+    {
+      "id": "ar_week_s5_conf",
+      "method": "association_rules",
+      "baskets": "user_week",
+      "min_joint_count": 5,
+      "min_confidence": 0.1,
+      "score_metric": "confidence",
+      "history_weighting": "log1p"
+    }
+  ]
+}

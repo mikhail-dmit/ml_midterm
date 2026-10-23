@@ -1,0 +1,50 @@
+{
+  "submission_id": "submission_002",
+  "selected_id": "rrf_mf_ppr_rules_pop_k0",
+  "selected_config": {
+    "id": "rrf_mf_ppr_rules_pop_k0",
+    "type": "rrf",
+    "offset": 0,
+    "weights": {
+      "implicit_mf": 0.5,
+      "ppr": 0.5,
+      "association_rules": 0.125,
+      "popularity": 0.125
+    }
+  },
+  "submission_path": "submissions/submission_002.csv",
+  "submission_sha256": "cbf6a25c207876cce727b6b325c8793fca6ff04b7c6d0ec1aab8c2983c51439c",
+  "anchor_path": "submission_001.csv",
+  "anchor_sha256": "138b69c4dbb2d1aa97df390e5fc6e311eaa3838109c85d132d94a9aba5e56313",
+  "training": "Reuse identical verified weeks 11-30 fits; no training changes",
+  "validation_source": {
+    "comparison": "reports/hybrids/comparison.csv",
+    "run_id": "rrf_mf_ppr_rules_pop_k0",
+    "all_primary": 0.3728420181968569,
+    "template_primary": 0.40792463768115944
+  },
+  "template_users": 1260,
+  "candidates": 6632,
+  "cold_users": 4,
+  "changed_ordered_users": 323,
+  "changed_set_users": 144,
+  "order_only_users": 179,
+  "unchanged_users": 937,
+  "replaced_user_item_pairs": 144,
+  "mean_shared_top5": 4.885714285714286,
+  "changed_positions": 601,
+  "difference_in_familiar_slots": -11,
+  "kaggle_status": "Completed upload; returned scores supplied by user",
+  "created_csvs": [
+    "submissions/submission_002.csv"
+  ],
+  "code_hashes": {
+    "prepare_submission_002.py": "d04e69e0bbb1df0f881387a40b62130080f295ed3489c959f63bab1f23ea2458",
+    "hybrid_models.py": "2a811a935f35935da14413214d272961665eb1ac1670e2d09b363850566cbdf6"
+  },
+  "reported_kaggle_scores": {
+    "public": 0.43359,
+    "private": 0.41489,
+    "result_record": "reports/submission_002/kaggle_result.json"
+  }
+}

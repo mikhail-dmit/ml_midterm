@@ -1,0 +1,336 @@
+{
+  "passed": true,
+  "check_count": 39,
+  "checks": [
+    {
+      "check": "dataset11-30.csv: SHA-256 unchanged",
+      "value": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+      "passed": true
+    },
+    {
+      "check": "dataset11-30.csv: header",
+      "value": [
+        "user_id",
+        "vsetv_id",
+        "start_time",
+        "stop_time",
+        "duraton"
+      ],
+      "passed": true
+    },
+    {
+      "check": "dataset11-30.csv: rows",
+      "value": 5821987,
+      "passed": true
+    },
+    {
+      "check": "log distinct users",
+      "value": 4914,
+      "passed": true
+    },
+    {
+      "check": "log distinct channels",
+      "value": 202,
+      "passed": true
+    },
+    {
+      "check": "log users above signed int64",
+      "value": 2483,
+      "passed": true
+    },
+    {
+      "check": "log first start",
+      "value": "2020-03-09T00:00:02",
+      "passed": true
+    },
+    {
+      "check": "log last start",
+      "value": "2020-07-26T23:58:42",
+      "passed": true
+    },
+    {
+      "check": "log last stop",
+      "value": "2020-07-26T23:59:58",
+      "passed": true
+    },
+    {
+      "check": "log duration mismatch count",
+      "value": 117,
+      "passed": true
+    },
+    {
+      "check": "log mismatch offsets",
+      "value": {
+        "3600": 117
+      },
+      "passed": true
+    },
+    {
+      "check": "log exact median duration",
+      "value": 396.0,
+      "passed": true
+    },
+    {
+      "check": "log maximum duration",
+      "value": 342145,
+      "passed": true
+    },
+    {
+      "check": "export_arh_11-20-final.csv: SHA-256 unchanged",
+      "value": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+      "passed": true
+    },
+    {
+      "check": "export_arh_11-20-final.csv: header",
+      "value": [
+        "channel_id",
+        "channel_title",
+        "start_time",
+        "duration",
+        "tv_show_title",
+        "tv_show_id",
+        "tv_show_category",
+        "tv_show_genre_1",
+        "tv_show_genre_2",
+        "tv_show_genre_3",
+        "year_of_production",
+        "director",
+        "actors"
+      ],
+      "passed": true
+    },
+    {
+      "check": "export_arh_11-20-final.csv: rows",
+      "value": 1074235,
+      "passed": true
+    },
+    {
+      "check": "export_arh_11-20-final.csv: nonzero programmes",
+      "value": 5847,
+      "passed": true
+    },
+    {
+      "check": "export_arh_11-20-final.csv: channels",
+      "value": 400,
+      "passed": true
+    },
+    {
+      "check": "export_arh_11-20-final.csv: categories",
+      "value": 9,
+      "passed": true
+    },
+    {
+      "check": "export_arh_11-20-final.csv: zero IDs",
+      "value": 958622,
+      "passed": true
+    },
+    {
+      "check": "export_arh_21-30-final.csv: SHA-256 unchanged",
+      "value": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+      "passed": true
+    },
+    {
+      "check": "export_arh_21-30-final.csv: header",
+      "value": [
+        "channel_id",
+        "channel_title",
+        "start_time",
+        "duration",
+        "tv_show_title",
+        "tv_show_id",
+        "tv_show_category",
+        "tv_show_genre_1",
+        "tv_show_genre_2",
+        "tv_show_genre_3",
+        "year_of_production",
+        "director",
+        "actors"
+      ],
+      "passed": true
+    },
+    {
+      "check": "export_arh_21-30-final.csv: rows",
+      "value": 1074394,
+      "passed": true
+    },
+    {
+      "check": "export_arh_21-30-final.csv: nonzero programmes",
+      "value": 6363,
+      "passed": true
+    },
+    {
+      "check": "export_arh_21-30-final.csv: channels",
+      "value": 403,
+      "passed": true
+    },
+    {
+      "check": "export_arh_21-30-final.csv: categories",
+      "value": 9,
+      "passed": true
+    },
+    {
+      "check": "export_arh_21-30-final.csv: zero IDs",
+      "value": 952889,
+      "passed": true
+    },
+    {
+      "check": "export_arh_31-42-final.csv: SHA-256 unchanged",
+      "value": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+      "passed": true
+    },
+    {
+      "check": "export_arh_31-42-final.csv: header",
+      "value": [
+        "channel_id",
+        "channel_title",
+        "start_time",
+        "duration",
+        "tv_show_title",
+        "tv_show_id",
+        "tv_show_category",
+        "tv_show_genre_1",
+        "tv_show_genre_2",
+        "tv_show_genre_3",
+        "year_of_production",
+        "director",
+        "actors"
+      ],
+      "passed": true
+    },
+    {
+      "check": "export_arh_31-42-final.csv: rows",
+      "value": 1295378,
+      "passed": true
+    },
+    {
+      "check": "export_arh_31-42-final.csv: nonzero programmes",
+      "value": 6636,
+      "passed": true
+    },
+    {
+      "check": "export_arh_31-42-final.csv: channels",
+      "value": 404,
+      "passed": true
+    },
+    {
+      "check": "export_arh_31-42-final.csv: categories",
+      "value": 9,
+      "passed": true
+    },
+    {
+      "check": "export_arh_31-42-final.csv: zero IDs",
+      "value": 1150604,
+      "passed": true
+    },
+    {
+      "check": "submission.csv: SHA-256 unchanged",
+      "value": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02",
+      "passed": true
+    },
+    {
+      "check": "submission.csv: header",
+      "value": [
+        "user_id",
+        "tv_show_id"
+      ],
+      "passed": true
+    },
+    {
+      "check": "submission.csv: rows",
+      "value": 1260,
+      "passed": true
+    },
+    {
+      "check": "template unique users",
+      "value": 1260,
+      "passed": true
+    },
+    {
+      "check": "clock investigation retains every mismatch",
+      "value": 117,
+      "passed": true
+    }
+  ],
+  "method": "Independent standard-library csv/Counter recount; no pandas or audit implementation imported",
+  "clock_change_investigation": {
+    "mismatching_rows": 117,
+    "rows_matching_Europe_Kyiv_elapsed_hypothesis": 117,
+    "interpretation": "Consistency with the 2020-03-29 spring clock change is evidence for a DST explanation, not proof of the source timezone. No timestamps were corrected.",
+    "examples": [
+      {
+        "user_id": "12466582247545246052",
+        "start_time": "2020-03-28 22:47:45",
+        "stop_time": "2020-03-30 09:02:48",
+        "duraton": 119703,
+        "naive_elapsed": 123303,
+        "elapsed_if_Europe_Kyiv": 119703,
+        "clock_change_hypothesis_matches": true
+      },
+      {
+        "user_id": "10059425067810734795",
+        "start_time": "2020-03-28 22:56:59",
+        "stop_time": "2020-03-29 04:11:55",
+        "duraton": 15296,
+        "naive_elapsed": 18896,
+        "elapsed_if_Europe_Kyiv": 15296,
+        "clock_change_hypothesis_matches": true
+      },
+      {
+        "user_id": "12246241194532024321",
+        "start_time": "2020-03-29 00:15:15",
+        "stop_time": "2020-03-29 04:05:32",
+        "duraton": 10217,
+        "naive_elapsed": 13817,
+        "elapsed_if_Europe_Kyiv": 10217,
+        "clock_change_hypothesis_matches": true
+      },
+      {
+        "user_id": "6266399139997320035",
+        "start_time": "2020-03-29 00:27:30",
+        "stop_time": "2020-03-29 04:06:25",
+        "duraton": 9535,
+        "naive_elapsed": 13135,
+        "elapsed_if_Europe_Kyiv": 9535,
+        "clock_change_hypothesis_matches": true
+      },
+      {
+        "user_id": "5842699175950256892",
+        "start_time": "2020-03-29 00:46:06",
+        "stop_time": "2020-03-29 04:35:40",
+        "duraton": 10174,
+        "naive_elapsed": 13774,
+        "elapsed_if_Europe_Kyiv": 10174,
+        "clock_change_hypothesis_matches": true
+      },
+      {
+        "user_id": "4051396765385629500",
+        "start_time": "2020-03-29 00:50:30",
+        "stop_time": "2020-03-29 04:29:39",
+        "duraton": 9549,
+        "naive_elapsed": 13149,
+        "elapsed_if_Europe_Kyiv": 9549,
+        "clock_change_hypothesis_matches": true
+      },
+      {
+        "user_id": "13403292334828865123",
+        "start_time": "2020-03-29 01:00:23",
+        "stop_time": "2020-03-29 04:02:23",
+        "duraton": 7320,
+        "naive_elapsed": 10920,
+        "elapsed_if_Europe_Kyiv": 7320,
+        "clock_change_hypothesis_matches": true
+      },
+      {
+        "user_id": "14761563450803362415",
+        "start_time": "2020-03-29 01:00:52",
+        "stop_time": "2020-03-29 04:23:46",
+        "duraton": 8574,
+        "naive_elapsed": 12174,
+        "elapsed_if_Europe_Kyiv": 8574,
+        "clock_change_hypothesis_matches": true
+      }
+    ]
+  },
+  "elapsed_seconds": 18.54644700000017,
+  "personal_student_verification": "Assistant-executed independent check; student verification not claimed"
+}

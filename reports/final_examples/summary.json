@@ -1,0 +1,59 @@
+{
+  "selection_rule": "Within the fixed 4030-user validation cohort, choose maximum/minimum nonzero original >=80% training-airing count; ties use ascending exact decimal user-ID string. No predictions/AP or validation behaviour beyond cohort eligibility are used.",
+  "selected_users": {
+    "heavy": "13866173795451203812",
+    "light": "1026253314001693311"
+  },
+  "methods": [
+    {
+      "method": "popularity",
+      "configuration": "Unweighted full-training >=50% qualified-airing popularity",
+      "prediction_source": "artifacts/recency_extension/validation/mf8_ppr8_rulesraw_popraw/component_popularity_top20.csv"
+    },
+    {
+      "method": "cbf",
+      "configuration": "Selected rich+title TF-IDF cosine/count profile; original >=80% history and pre-May18 metadata",
+      "prediction_source": "reports/content_rules/runs/cbf_title_tfidf_count/predictions.csv"
+    },
+    {
+      "method": "association_rules",
+      "configuration": "Unweighted strict80 weekly rules, joint>=5/confidence>=.1/lift>1, log-count query",
+      "prediction_source": "artifacts/recency_extension/validation/mf8_ppr8_rulesraw_popraw/component_association_rules_top20.csv"
+    },
+    {
+      "method": "mf",
+      "configuration": "Final007 component: 50% history, eight-week mass-preserving counts, f16/log-target/confidence1/reg1/15 epochs",
+      "prediction_source": "artifacts/recency_extension/validation/mf8_ppr8_rulesraw_popraw/component_implicit_mf_top20.csv"
+    },
+    {
+      "method": "ppr",
+      "configuration": "Final007 component: raw graph alpha .5, eight-week 50% log-count restarts",
+      "prediction_source": "artifacts/recency_extension/validation/mf8_ppr8_rulesraw_popraw/component_ppr_top20.csv"
+    },
+    {
+      "method": "hybrid_007",
+      "configuration": "Final007 recipe: RRF MF=.5/PPR=.5/rules=.1875/pop=.0625, depth5/offset0",
+      "prediction_source": "reports/recency_extension/runs/h8_rules01875_pop00625/predictions.csv"
+    }
+  ],
+  "training_window_local": [
+    "2020-03-09",
+    "2020-05-18"
+  ],
+  "validation_window_local": [
+    "2020-05-18",
+    "2020-07-27"
+  ],
+  "time_policy": "Half-open Europe/Kyiv boundaries; interval arithmetic UTC; full airing-duration denominator; exact >=80% truth",
+  "labels": "Canonical pre-cutoff ID-level representative labels; episode titles may vary. Actual latest watched titles and schedule records are saved separately.",
+  "hits": "A hit is membership anywhere in the frozen five-ID truth, not rank-aligned equality. Watched-but-outside-Top5 is not a hit.",
+  "markers": {
+    "✓": "True Top-5 hit",
+    "○": "Qualified validation watch, outside true Top-5",
+    "~": "Only partial observed overlap; no >=80% watch",
+    "—": "No recorded validation programme overlap"
+  },
+  "numerical_verification": "Assistant checks only; student's personal review remains pending",
+  "experiments": "Closed; report evidence only, no fitting or tuning",
+  "code_sha256": "5865740676e14b6172afcce67ae4a9c307be55b431b20813ee05fa7cd8677265"
+}

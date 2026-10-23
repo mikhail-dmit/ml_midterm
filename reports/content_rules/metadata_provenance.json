@@ -1,0 +1,18 @@
+{
+  "sources": {
+    "export_arh_11-20-final.csv": {
+      "sha256": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+      "used_airing_rows": 115316
+    },
+    "export_arh_21-30-final.csv": {
+      "sha256": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+      "used_airing_rows": 0
+    }
+  },
+  "training_start_utc_epoch": 1583704800,
+  "cutoff_utc_epoch_exclusive": 1589749200,
+  "max_airing_start_used": 1589748900,
+  "unique_programmes": 5842,
+  "used_airing_rows": 115316,
+  "policy": "All attributes, vocabulary and IDF frozen from pre-cutoff schedule airings; no validation metadata features"
+}

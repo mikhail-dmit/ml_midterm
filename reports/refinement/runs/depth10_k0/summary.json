@@ -1,0 +1,55 @@
+{
+  "config": {
+    "id": "depth10_k0",
+    "half_life_weeks": null,
+    "depth": 10,
+    "offset": 0,
+    "weights": {
+      "implicit_mf": 0.5,
+      "ppr": 0.5,
+      "association_rules": 0.125,
+      "popularity": 0.125
+    }
+  },
+  "metrics": [
+    {
+      "run_id": "depth10_k0",
+      "kind": "new",
+      "variant": "base",
+      "depth": 10,
+      "offset": 0,
+      "cohort": "all_primary",
+      "duplicates_prior_upload": "",
+      "users": 4030,
+      "map_at_5": 0.37323904052936313,
+      "precision_at_5": 0.4346898263027295,
+      "recall_at_5": 0.4346898263027295,
+      "hit_rate_at_5": 0.9106699751861043,
+      "users_with_hits": 3670,
+      "total_hits": 8759
+    },
+    {
+      "run_id": "depth10_k0",
+      "kind": "new",
+      "variant": "base",
+      "depth": 10,
+      "offset": 0,
+      "cohort": "template_primary",
+      "duplicates_prior_upload": "",
+      "users": 1150,
+      "map_at_5": 0.40583478260869565,
+      "precision_at_5": 0.468,
+      "recall_at_5": 0.468,
+      "hit_rate_at_5": 0.9382608695652174,
+      "users_with_hits": 1079,
+      "total_hits": 2691
+    }
+  ],
+  "variant": "base",
+  "cold_users": 43,
+  "code_hashes": {
+    "refinement_models.py": "b2615de2fb620f2a75a29230451980667ba6b8064b91821431f3c01218412389",
+    "run_refinement_study.py": "3b50c939e2e5f767d31e4eb0df301720ffbbadd9533dc75bbaaad681a3f26463",
+    "hybrid_models.py": "2a811a935f35935da14413214d272961665eb1ac1670e2d09b363850566cbdf6"
+  }
+}

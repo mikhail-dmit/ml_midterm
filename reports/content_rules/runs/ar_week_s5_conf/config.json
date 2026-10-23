@@ -1,0 +1,9 @@
+{
+  "id": "ar_week_s5_conf",
+  "method": "association_rules",
+  "baskets": "user_week",
+  "min_joint_count": 5,
+  "min_confidence": 0.1,
+  "score_metric": "confidence",
+  "history_weighting": "log1p"
+}

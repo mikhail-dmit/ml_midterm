@@ -1,0 +1,13 @@
+{
+  "submission_id": "submission_001",
+  "csv_path": "submissions/submission_001.csv",
+  "csv_sha256": "138b69c4dbb2d1aa97df390e5fc6e311eaa3838109c85d132d94a9aba5e56313",
+  "strategy": "rrf_mf_ppr_rules_k0",
+  "public_score": 0.43347,
+  "private_score": 0.41452,
+  "provenance": "User-supplied Kaggle result; no API score retrieval",
+  "recorded_at_utc": "2026-10-23T12:11:29.461073+00:00",
+  "screenshot_path": "submissions/Score for sub1.png",
+  "screenshot_sha256": "e87f755421639459d681936a8e45c8484df6bb6a68d06dee3fb95b6c295386d9",
+  "generation_manifest": "reports/final_11_30/summary.json"
+}

@@ -1,0 +1,231 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Input fingerprint unchanged: reports/interactions/validation_ground_truth.csv",
+      "passed": true,
+      "evidence": "56ffb954469b89a4f221b37c5907e9468a6e1de67f888eb5cc133e565320f5e3"
+    },
+    {
+      "check": "Input fingerprint unchanged: reports/interactions/validation_users.csv",
+      "passed": true,
+      "evidence": "f7a3710e758ba96a2454c79f46c584e0e51950c652200555f8166f7494a17e30"
+    },
+    {
+      "check": "Input fingerprint unchanged: artifacts/interactions/user_programme_interactions.parquet",
+      "passed": true,
+      "evidence": "8f9b93fa183e6c24df8d6812aded2fd9084b4f8c4e0deff8d72b06d61516ef9e"
+    },
+    {
+      "check": "Input fingerprint unchanged: artifacts/interactions/airings.parquet",
+      "passed": true,
+      "evidence": "e42b9199d3076e5727f9c3a27986ce3dd5070b323807dddd996a2b59f8fcaed3"
+    },
+    {
+      "check": "Training popularity agrees across airing and programme tables",
+      "passed": true,
+      "evidence": {
+        "qualified_airings": 316413,
+        "users": 4737,
+        "items": 2490
+      }
+    },
+    {
+      "check": "All fitted counts precede the validation cutoff",
+      "passed": true,
+      "evidence": 1589749200
+    },
+    {
+      "check": "Candidate pool and global ranking reconstructed independently",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "Candidate popularity scores and distinct-viewer counts match training",
+      "passed": true,
+      "evidence": 6384
+    },
+    {
+      "check": "Requested cohorts are fixed and nested",
+      "passed": true,
+      "evidence": {
+        "primary": 4030,
+        "template": 1150
+      }
+    },
+    {
+      "check": "All original truth has five IDs inside the shared pool",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "allow_repeats: all and only primary users predicted exactly once",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "allow_repeats: every prediction and per-user AP independently reproduced",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "max_AP_error_so_far": 5.551115123125783e-17
+      }
+    },
+    {
+      "check": "exclude_repeats: all and only primary users predicted exactly once",
+      "passed": true,
+      "evidence": 4030
+    },
+    {
+      "check": "exclude_repeats: every prediction and per-user AP independently reproduced",
+      "passed": true,
+      "evidence": {
+        "users": 4030,
+        "max_AP_error_so_far": 5.551115123125783e-17
+      }
+    },
+    {
+      "check": "all_primary / allow_repeats: cohort metrics and repeat diagnostics",
+      "passed": true,
+      "evidence": {
+        "exact_MAP_fraction": "42223/151125",
+        "users": 4030,
+        "map_at_5": 0.2793912324234905,
+        "total_hits": 7207,
+        "users_with_hits": 3524,
+        "precision_at_5": 0.35766749379652607,
+        "recall_at_5": 0.35766749379652607,
+        "hit_rate_at_5": 0.8744416873449131,
+        "truth_items_previously_watched": 11323,
+        "policy_oracle_map_ceiling": 1.0,
+        "users_all_truth_unreachable": 0
+      }
+    },
+    {
+      "check": "template_primary / allow_repeats: cohort metrics and repeat diagnostics",
+      "passed": true,
+      "evidence": {
+        "exact_MAP_fraction": "105331/345000",
+        "users": 1150,
+        "map_at_5": 0.3053072463768116,
+        "total_hits": 2227,
+        "users_with_hits": 1046,
+        "precision_at_5": 0.38730434782608697,
+        "recall_at_5": 0.38730434782608697,
+        "hit_rate_at_5": 0.9095652173913044,
+        "truth_items_previously_watched": 3561,
+        "policy_oracle_map_ceiling": 1.0,
+        "users_all_truth_unreachable": 0
+      }
+    },
+    {
+      "check": "all_primary / exclude_repeats: cohort metrics and repeat diagnostics",
+      "passed": true,
+      "evidence": {
+        "exact_MAP_fraction": "19873/403000",
+        "users": 4030,
+        "map_at_5": 0.049312655086848636,
+        "total_hits": 1502,
+        "users_with_hits": 1209,
+        "precision_at_5": 0.0745409429280397,
+        "recall_at_5": 0.0745409429280397,
+        "hit_rate_at_5": 0.3,
+        "truth_items_previously_watched": 11323,
+        "policy_oracle_map_ceiling": 0.43806451612903224,
+        "users_all_truth_unreachable": 674
+      }
+    },
+    {
+      "check": "template_primary / exclude_repeats: cohort metrics and repeat diagnostics",
+      "passed": true,
+      "evidence": {
+        "exact_MAP_fraction": "5397/115000",
+        "users": 1150,
+        "map_at_5": 0.04693043478260869,
+        "total_hits": 396,
+        "users_with_hits": 322,
+        "precision_at_5": 0.06886956521739131,
+        "recall_at_5": 0.06886956521739131,
+        "hit_rate_at_5": 0.28,
+        "truth_items_previously_watched": 3561,
+        "policy_oracle_map_ceiling": 0.38069565217391305,
+        "users_all_truth_unreachable": 243
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "cohort": "all_primary",
+      "policy": "allow_repeats",
+      "exact_MAP_fraction": "42223/151125",
+      "users": 4030,
+      "map_at_5": 0.2793912324234905,
+      "total_hits": 7207,
+      "users_with_hits": 3524,
+      "precision_at_5": 0.35766749379652607,
+      "recall_at_5": 0.35766749379652607,
+      "hit_rate_at_5": 0.8744416873449131,
+      "truth_items_previously_watched": 11323,
+      "policy_oracle_map_ceiling": 1.0,
+      "users_all_truth_unreachable": 0
+    },
+    {
+      "cohort": "template_primary",
+      "policy": "allow_repeats",
+      "exact_MAP_fraction": "105331/345000",
+      "users": 1150,
+      "map_at_5": 0.3053072463768116,
+      "total_hits": 2227,
+      "users_with_hits": 1046,
+      "precision_at_5": 0.38730434782608697,
+      "recall_at_5": 0.38730434782608697,
+      "hit_rate_at_5": 0.9095652173913044,
+      "truth_items_previously_watched": 3561,
+      "policy_oracle_map_ceiling": 1.0,
+      "users_all_truth_unreachable": 0
+    },
+    {
+      "cohort": "all_primary",
+      "policy": "exclude_repeats",
+      "exact_MAP_fraction": "19873/403000",
+      "users": 4030,
+      "map_at_5": 0.049312655086848636,
+      "total_hits": 1502,
+      "users_with_hits": 1209,
+      "precision_at_5": 0.0745409429280397,
+      "recall_at_5": 0.0745409429280397,
+      "hit_rate_at_5": 0.3,
+      "truth_items_previously_watched": 11323,
+      "policy_oracle_map_ceiling": 0.43806451612903224,
+      "users_all_truth_unreachable": 674
+    },
+    {
+      "cohort": "template_primary",
+      "policy": "exclude_repeats",
+      "exact_MAP_fraction": "5397/115000",
+      "users": 1150,
+      "map_at_5": 0.04693043478260869,
+      "total_hits": 396,
+      "users_with_hits": 322,
+      "precision_at_5": 0.06886956521739131,
+      "recall_at_5": 0.06886956521739131,
+      "hit_rate_at_5": 0.28,
+      "truth_items_previously_watched": 3561,
+      "policy_oracle_map_ceiling": 0.38069565217391305,
+      "users_all_truth_unreachable": 243
+    }
+  ],
+  "teacher_slide_arithmetic": {
+    "method_X": "11/12",
+    "method_Y": "8/15"
+  },
+  "example_user": "127680364314713816",
+  "example_AP_exact": {
+    "allow_repeats": "1/3",
+    "exclude_repeats": "1/5"
+  },
+  "per_user_AP_max_absolute_error": 5.551115123125783e-17,
+  "elapsed_seconds": 1.3419391249999535,
+  "method": "Independent Counter over training airing events, schedule-derived candidate pool, full prediction reconstruction, Fraction AP over hit positions; no evaluator/popularity helpers imported",
+  "student_personal_verification": "Not claimed; exact arithmetic and example contribution CSV are available for a later student check"
+}

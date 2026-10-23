@@ -1,0 +1,54 @@
+{
+  "config": {
+    "id": "h8_mf0375_ppr0625",
+    "mf_half_life": 8,
+    "ppr_half_life": 8,
+    "rules_half_life": null,
+    "pop_half_life": null,
+    "depth": 5,
+    "offset": 0,
+    "weights": {
+      "implicit_mf": 0.375,
+      "ppr": 0.625,
+      "association_rules": 0.125,
+      "popularity": 0.125
+    }
+  },
+  "variant": "mf8_ppr8_rulesraw_popraw",
+  "metrics": [
+    {
+      "run_id": "h8_mf0375_ppr0625",
+      "variant": "mf8_ppr8_rulesraw_popraw",
+      "kind": "new",
+      "cohort": "all_primary",
+      "duplicates_prior_upload": "",
+      "users": 4030,
+      "map_at_5": 0.37473118279569895,
+      "precision_at_5": 0.435682382133995,
+      "recall_at_5": 0.435682382133995,
+      "hit_rate_at_5": 0.9094292803970223,
+      "users_with_hits": 3665,
+      "total_hits": 8779
+    },
+    {
+      "run_id": "h8_mf0375_ppr0625",
+      "variant": "mf8_ppr8_rulesraw_popraw",
+      "kind": "new",
+      "cohort": "template_primary",
+      "duplicates_prior_upload": "",
+      "users": 1150,
+      "map_at_5": 0.4093797101449276,
+      "precision_at_5": 0.47321739130434787,
+      "recall_at_5": 0.47321739130434787,
+      "hit_rate_at_5": 0.9408695652173913,
+      "users_with_hits": 1082,
+      "total_hits": 2721
+    }
+  ],
+  "code_hashes": {
+    "recency_extension.py": "efb89179f7e29e78d3b07de11bb595a65dc8bd82bda99559c762ff33e928f2a4",
+    "run_recency_extension.py": "250118546c5ff254b7f46da08f5eb6828f3f39b858fda3cc2dcdeda107dd2460",
+    "refinement_models.py": "b2615de2fb620f2a75a29230451980667ba6b8064b91821431f3c01218412389",
+    "hybrid_models.py": "2a811a935f35935da14413214d272961665eb1ac1670e2d09b363850566cbdf6"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "config": {
+    "id": "rrf_mf_ppr_rules_k0",
+    "type": "rrf",
+    "offset": 0,
+    "weights": {
+      "implicit_mf": 0.5,
+      "ppr": 0.5,
+      "association_rules": 0.25
+    }
+  },
+  "metrics": [
+    {
+      "run_id": "rrf_mf_ppr_rules_k0",
+      "type": "rrf",
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.3735624483043838,
+      "precision_at_5": 0.43404466501240696,
+      "recall_at_5": 0.43404466501240696,
+      "hit_rate_at_5": 0.9086848635235732,
+      "users_with_hits": 3662,
+      "total_hits": 8746
+    },
+    {
+      "run_id": "rrf_mf_ppr_rules_k0",
+      "type": "rrf",
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.4076463768115942,
+      "precision_at_5": 0.46921739130434786,
+      "recall_at_5": 0.46921739130434786,
+      "hit_rate_at_5": 0.9365217391304348,
+      "users_with_hits": 1077,
+      "total_hits": 2698
+    }
+  ],
+  "inference_seconds": 1.6395285840008,
+  "actual_cold_users": 43,
+  "routing_slots": {
+    "rrf_control": 19935,
+    "cold_popularity": 215
+  },
+  "code_hashes": {
+    "semantic_hybrids.py": "e239d722394fa8f0c1a48ef114b1879e51e34de7e5e5c29ebbcb8d6cef4c3533",
+    "recommender_bundle.py": "c36e4129ff468ed760347f221e428cf59bc00755cdc2024a0e68ba03b9065dab",
+    "run_semantic_hybrids.py": "d2a0b1f2d6993933169ceb3cd7ccd3529fc70561aaa1fc68bf1a68c06b48f88e"
+  }
+}

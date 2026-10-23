@@ -1,0 +1,12 @@
+{
+  "id": "full10_t20__content_based",
+  "method": "content_based",
+  "shared_setting": {
+    "id": "full10_t20",
+    "window": "full10",
+    "start_local": "2020-03-09 00:00:00",
+    "end_local": "2020-05-18 00:00:00",
+    "threshold_percent": 20
+  },
+  "hyperparameters": "Frozen original selected configuration; no per-setting tuning"
+}

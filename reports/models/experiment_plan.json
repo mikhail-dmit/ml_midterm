@@ -1,0 +1,85 @@
+{
+  "seed": 20261023,
+  "selection_metric": "MAP@5 on all 4030 primary users; template cohort is reporting only",
+  "mf_checkpoints": [
+    5,
+    10,
+    15
+  ],
+  "initial": [
+    {
+      "id": "mf_f16_a1_r1",
+      "method": "implicit_mf",
+      "factors": 16,
+      "confidence_scale": 1.0,
+      "regularization": 1.0,
+      "weighting": "log1p",
+      "epochs": 15
+    },
+    {
+      "id": "mf_f16_a10_r1",
+      "method": "implicit_mf",
+      "factors": 16,
+      "confidence_scale": 10.0,
+      "regularization": 1.0,
+      "weighting": "log1p",
+      "epochs": 15
+    },
+    {
+      "id": "mf_f32_a10_r1",
+      "method": "implicit_mf",
+      "factors": 32,
+      "confidence_scale": 10.0,
+      "regularization": 1.0,
+      "weighting": "log1p",
+      "epochs": 15
+    },
+    {
+      "id": "ppr_raw_a050_log",
+      "method": "ppr",
+      "alpha": 0.5,
+      "normalization": "raw",
+      "weighting": "log1p"
+    },
+    {
+      "id": "ppr_raw_a085_log",
+      "method": "ppr",
+      "alpha": 0.85,
+      "normalization": "raw",
+      "weighting": "log1p"
+    },
+    {
+      "id": "ppr_raw_a095_log",
+      "method": "ppr",
+      "alpha": 0.95,
+      "normalization": "raw",
+      "weighting": "log1p"
+    }
+  ],
+  "diagnostic": [
+    {
+      "id": "mf_f16_logtarget_a1_r1",
+      "method": "implicit_mf",
+      "factors": 16,
+      "confidence_scale": 1.0,
+      "regularization": 1.0,
+      "weighting": "log1p",
+      "preference": "log1p",
+      "epochs": 15
+    },
+    {
+      "id": "ppr_raw_a050_count",
+      "method": "ppr",
+      "alpha": 0.5,
+      "normalization": "raw",
+      "weighting": "count"
+    },
+    {
+      "id": "ppr_cosine_a050_log",
+      "method": "ppr",
+      "alpha": 0.5,
+      "normalization": "cosine",
+      "weighting": "log1p"
+    }
+  ]
+}

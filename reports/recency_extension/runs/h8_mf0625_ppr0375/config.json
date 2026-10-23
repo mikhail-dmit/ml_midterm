@@ -1,0 +1,15 @@
+{
+  "id": "h8_mf0625_ppr0375",
+  "mf_half_life": 8,
+  "ppr_half_life": 8,
+  "rules_half_life": null,
+  "pop_half_life": null,
+  "depth": 5,
+  "offset": 0,
+  "weights": {
+    "implicit_mf": 0.625,
+    "ppr": 0.375,
+    "association_rules": 0.125,
+    "popularity": 0.125
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "seed": 20261023,
+  "thresholds_percent": [80, 50, 20],
+  "windows": [
+    {"id": "full10", "start_local": "2020-03-09 00:00:00", "end_local": "2020-05-18 00:00:00", "meaning": "All training weeks 11-20"},
+    {"id": "early4", "start_local": "2020-03-09 00:00:00", "end_local": "2020-04-06 00:00:00", "meaning": "Older four weeks 11-14; same four-calendar-week width as recent4"},
+    {"id": "recent4", "start_local": "2020-04-20 00:00:00", "end_local": "2020-05-18 00:00:00", "meaning": "Recent four weeks 17-20"}
+  ],
+  "fixed": {
+    "validation_truth": "Original >=80% weeks21-30 five-ID truth and numeric-ID tie policy; never regenerated",
+    "cohorts": [4030, 1150],
+    "candidates": 6384,
+    "repeats": "allowed",
+    "hyperparameters": "Freeze previously selected method settings, including MF 16 factors/log-count target/15 epochs; no per-setting retuning",
+    "metadata": "Keep original pre-May18 frozen CBF item vectors and IDF unchanged; only viewing-history window/threshold changes",
+    "segments": "Familiar/new and history bins remain defined by original strict full10 training for cross-setting comparisons",
+    "fallback": "Same setting's global training popularity for all methods; never drop newly cold users"
+  }
+}

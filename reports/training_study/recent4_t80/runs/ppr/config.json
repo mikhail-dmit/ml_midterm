@@ -1,0 +1,12 @@
+{
+  "id": "recent4_t80__ppr",
+  "method": "ppr",
+  "shared_setting": {
+    "id": "recent4_t80",
+    "window": "recent4",
+    "start_local": "2020-04-20 00:00:00",
+    "end_local": "2020-05-18 00:00:00",
+    "threshold_percent": 80
+  },
+  "hyperparameters": "Frozen original selected configuration; no per-setting tuning"
+}

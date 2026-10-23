@@ -1,0 +1,47 @@
+{
+  "config": {
+    "id": "slots_ppr3_pop2",
+    "type": "slots",
+    "favourite": "ppr",
+    "new": "popularity",
+    "familiar_slots": 3
+  },
+  "metrics": [
+    {
+      "run_id": "slots_ppr3_pop2",
+      "type": "slots",
+      "cohort": "all_primary",
+      "users": 4030,
+      "map_at_5": 0.3205086848635236,
+      "precision_at_5": 0.36813895781637723,
+      "recall_at_5": 0.36813895781637723,
+      "hit_rate_at_5": 0.9014888337468983,
+      "users_with_hits": 3633,
+      "total_hits": 7418
+    },
+    {
+      "run_id": "slots_ppr3_pop2",
+      "type": "slots",
+      "cohort": "template_primary",
+      "users": 1150,
+      "map_at_5": 0.34716231884057974,
+      "precision_at_5": 0.39304347826086955,
+      "recall_at_5": 0.39304347826086955,
+      "hit_rate_at_5": 0.9269565217391305,
+      "users_with_hits": 1066,
+      "total_hits": 2260
+    }
+  ],
+  "inference_seconds": 0.39085749999867403,
+  "actual_cold_users": 43,
+  "routing_slots": {
+    "familiar": 11806,
+    "new": 8129,
+    "cold_popularity": 215
+  },
+  "code_hashes": {
+    "semantic_hybrids.py": "e239d722394fa8f0c1a48ef114b1879e51e34de7e5e5c29ebbcb8d6cef4c3533",
+    "recommender_bundle.py": "c36e4129ff468ed760347f221e428cf59bc00755cdc2024a0e68ba03b9065dab",
+    "run_semantic_hybrids.py": "d2a0b1f2d6993933169ceb3cd7ccd3529fc70561aaa1fc68bf1a68c06b48f88e"
+  }
+}

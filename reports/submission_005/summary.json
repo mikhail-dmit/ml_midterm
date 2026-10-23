@@ -1,0 +1,78 @@
+{
+  "submission_id": "submission_005",
+  "selected_id": "rrf_mf_ppr_k0",
+  "selected_config": {
+    "id": "rrf_mf_ppr_k0",
+    "type": "rrf",
+    "offset": 0,
+    "weights": {
+      "implicit_mf": 0.5,
+      "ppr": 0.5
+    }
+  },
+  "submission_path": "submissions/submission_005.csv",
+  "submission_sha256": "8a688a1f5b149dcad51acbf651a69183f75eb15659c9c8d2d0873971e910656f",
+  "training": "Reuse identical weeks 11-30 fits; remove only the .25 rules term from 001",
+  "validation_source": {
+    "comparison": "reports/hybrids/comparison.csv",
+    "run_id": "rrf_mf_ppr_k0",
+    "all_primary": 0.3706153846153846,
+    "template_primary": 0.4058231884057971
+  },
+  "template_users": 1260,
+  "candidates": 6632,
+  "cold_users": 4,
+  "comparisons": [
+    {
+      "reference": "submission_001",
+      "changed_ordered_users": 725,
+      "changed_set_users": 406,
+      "order_only_users": 319,
+      "unchanged_users": 535,
+      "mean_shared_top5": 4.663492063492064,
+      "entered_user_item_pairs": 424
+    },
+    {
+      "reference": "submission_002",
+      "changed_ordered_users": 690,
+      "changed_set_users": 410,
+      "order_only_users": 280,
+      "unchanged_users": 570,
+      "mean_shared_top5": 4.6531746031746035,
+      "entered_user_item_pairs": 437
+    },
+    {
+      "reference": "submission_003",
+      "changed_ordered_users": 1071,
+      "changed_set_users": 690,
+      "order_only_users": 381,
+      "unchanged_users": 189,
+      "mean_shared_top5": 4.329365079365079,
+      "entered_user_item_pairs": 845
+    },
+    {
+      "reference": "submission_004",
+      "changed_ordered_users": 1073,
+      "changed_set_users": 674,
+      "order_only_users": 399,
+      "unchanged_users": 187,
+      "mean_shared_top5": 4.4,
+      "entered_user_item_pairs": 756
+    }
+  ],
+  "ablation_reference": "submission_001",
+  "kaggle_status": "Completed upload; returned scores supplied by user",
+  "created_csvs": [
+    "submissions/submission_005.csv"
+  ],
+  "code_hashes": {
+    "prepare_submission_005.py": "63860aa6641729c6e42cc0a4a8ef7dea150e3552f320b2c2fefeacfe324111f4",
+    "prepare_submission_002.py": "d04e69e0bbb1df0f881387a40b62130080f295ed3489c959f63bab1f23ea2458",
+    "hybrid_models.py": "2a811a935f35935da14413214d272961665eb1ac1670e2d09b363850566cbdf6"
+  },
+  "reported_kaggle_scores": {
+    "public": 0.43163,
+    "private": 0.41039,
+    "result_record": "reports/submission_005/kaggle_result.json"
+  }
+}

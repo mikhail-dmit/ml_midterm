@@ -1,0 +1,30 @@
+{
+  "purpose": "One further local-validation refinement around 006, using existing MF, PPR, rules and popularity only. Declare the entire grid before scoring.",
+  "selection": "Highest all_primary MAP@5 among thirteen new configurations whose full validation lists do not duplicate uploads 001-006; tie by config ID. Report 006 as fixed control. Template results and paired intervals are diagnostics only. No grid expansion after scores; no Kaggle score/CSV loaded by the selector.",
+  "protocol": "Unchanged strict >=80% truth, 4030 primary/1150 nested template users, 6384 candidates, repeats, denominator five, original method hyperparameters and seed.",
+  "seed": 20261023,
+  "bootstrap_resamples": 2000,
+  "semantics": {
+    "cf": "Model-specific mass-preserving half-life counts, as 006; raw binary PPR graph unchanged. Null means the original undecayed component.",
+    "rules": "Optional recency affects log-count antecedent query weights only, using >=80%-qualified airings. The same weekly mined rules matrix is reused; it is never remined with validation labels.",
+    "popularity": "Optional recency affects the RRF popularity voting list only, aggregated from >=50%-qualified airings. Original unweighted popularity remains the tie-break, positive-signal backfill and common cold fallback.",
+    "time": "Use last observed overlap to the applicable training cutoff; scale positive event weights globally to preserve each threshold's original qualifying-airing mass. All history and positive support retained. Same rule at May18 validation and July27 final cutoff."
+  },
+  "control": {"id": "control_006", "mf_half_life": 8, "ppr_half_life": 8, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+  "runs": [
+    {"id": "cf_h6", "mf_half_life": 6, "ppr_half_life": 6, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "cf_h12", "mf_half_life": 12, "ppr_half_life": 12, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "cf_h16", "mf_half_life": 16, "ppr_half_life": 16, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "mf_h8_ppr_raw", "mf_half_life": 8, "ppr_half_life": null, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "mf_raw_ppr_h8", "mf_half_life": null, "ppr_half_life": 8, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "mf_h4_ppr_h8", "mf_half_life": 4, "ppr_half_life": 8, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "mf_h8_ppr_h4", "mf_half_life": 8, "ppr_half_life": 4, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "h8_rules_query", "mf_half_life": 8, "ppr_half_life": 8, "rules_half_life": 8, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "h8_pop_vote", "mf_half_life": 8, "ppr_half_life": 8, "rules_half_life": null, "pop_half_life": 8, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "h8_rules_and_pop", "mf_half_life": 8, "ppr_half_life": 8, "rules_half_life": 8, "pop_half_life": 8, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "h8_mf0625_ppr0375", "mf_half_life": 8, "ppr_half_life": 8, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.625, "ppr": 0.375, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "h8_mf0375_ppr0625", "mf_half_life": 8, "ppr_half_life": 8, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.375, "ppr": 0.625, "association_rules": 0.125, "popularity": 0.125}},
+    {"id": "h8_rules01875_pop00625", "mf_half_life": 8, "ppr_half_life": 8, "rules_half_life": null, "pop_half_life": null, "depth": 5, "offset": 0, "weights": {"implicit_mf": 0.5, "ppr": 0.5, "association_rules": 0.1875, "popularity": 0.0625}}
+  ],
+  "limits": "Single repeatedly used temporal hold-out; diagnostics are conditional, not corrected for selection. Aggregate Kaggle feedback motivates the question but cannot choose a configuration. Only one new CSV is prepared."
+}

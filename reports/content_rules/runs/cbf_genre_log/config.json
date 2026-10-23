@@ -1,0 +1,11 @@
+{
+  "id": "cbf_genre_log",
+  "method": "content_based",
+  "family_weights": {
+    "category": 1.0,
+    "genre": 1.0
+  },
+  "idf": false,
+  "family_balance": true,
+  "history_weighting": "log1p"
+}

@@ -1,0 +1,13 @@
+{
+  "submission_id": "submission_003",
+  "csv_path": "submissions/submission_003.csv",
+  "csv_sha256": "aa81d12d12e4d640ed07404d269593d51883182e01bdcc8454e5d35d8417fc02",
+  "strategy": "ppr20_rerank_mf",
+  "public_score": 0.43042,
+  "private_score": 0.4126,
+  "provenance": "User-supplied Kaggle result; no API score retrieval",
+  "recorded_at_utc": "2026-10-23T12:42:37.056065+00:00",
+  "screenshot_path": "submissions/Score for sub3.png",
+  "screenshot_sha256": "944f92fc204eb4404a8d207008bf565d64012273ab530d2623c755de9c3605b8",
+  "generation_manifest": "reports/submission_003/summary.json"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "final_selected_by_user_experiments_closed",
+  "competition": "sweettv-tv-program-recommender",
+  "submission_id": "submission_007",
+  "csv_path": "submissions/submission_007.csv",
+  "csv_sha256": "8d3bc085cb0a830cbab5c68789470c608fd34bb840dffbe75e4dd43833f87d8c",
+  "public_score": 0.43707,
+  "private_score": 0.42472,
+  "score_provenance": "User report corroborated by inspected submissions/Score for sub7.png; exact record in submissions/results.json",
+  "screenshot_path": "submissions/Score for sub7.png",
+  "configuration": "reports/submission_007/config.json",
+  "training": "All weeks 11-30 for the uploaded CSV, eight-week recency MF/PPR; weekly rules and popularity unchanged",
+  "validation_configuration": "reports/recency_extension/runs/h8_rules01875_pop00625/config.json",
+  "validation_predictions": "reports/recency_extension/runs/h8_rules01875_pop00625/predictions.csv",
+  "decision": "User designated 007 as final best and explicitly stopped experiments. Subsequent work prepares report evidence only."
+}

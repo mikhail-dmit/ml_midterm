@@ -1,0 +1,12 @@
+{
+  "selection_rule": "Within the fixed 4030-user validation cohort, choose maximum/minimum nonzero original >=80% training-airing count; ties use ascending exact decimal user-ID string. No predictions/AP or validation behaviour beyond cohort eligibility are used.",
+  "users": {
+    "heavy": "13866173795451203812",
+    "light": "1026253314001693311"
+  },
+  "cohort_users": 4030,
+  "light_tie_count": 18,
+  "heavy_tie_count": 1,
+  "earlier_users_retained": true,
+  "scope": "Assistant-selected boundary examples, not representative sample or student-personal verification"
+}

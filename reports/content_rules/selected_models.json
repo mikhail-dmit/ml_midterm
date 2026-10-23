@@ -1,0 +1,54 @@
+{
+  "content_based": {
+    "run_id": "cbf_title_tfidf_count",
+    "metrics": [
+      {
+        "cohort": "all_primary",
+        "users": 4030,
+        "map_at_5": 0.2450016542597188,
+        "precision_at_5": 0.28014888337468985,
+        "recall_at_5": 0.28014888337468985,
+        "hit_rate_at_5": 0.7600496277915633,
+        "users_with_hits": 3063,
+        "total_hits": 5645
+      },
+      {
+        "cohort": "template_primary",
+        "users": 1150,
+        "map_at_5": 0.26950144927536235,
+        "precision_at_5": 0.3050434782608696,
+        "recall_at_5": 0.3050434782608696,
+        "hit_rate_at_5": 0.8121739130434783,
+        "users_with_hits": 934,
+        "total_hits": 1754
+      }
+    ],
+    "selection": "Highest all-primary MAP@5 only"
+  },
+  "association_rules": {
+    "run_id": "ar_week_s5_conf",
+    "metrics": [
+      {
+        "cohort": "all_primary",
+        "users": 4030,
+        "map_at_5": 0.3141778329197684,
+        "precision_at_5": 0.38550868486352363,
+        "recall_at_5": 0.38550868486352363,
+        "hit_rate_at_5": 0.8761786600496277,
+        "users_with_hits": 3531,
+        "total_hits": 7768
+      },
+      {
+        "cohort": "template_primary",
+        "users": 1150,
+        "map_at_5": 0.3365768115942029,
+        "precision_at_5": 0.4090434782608696,
+        "recall_at_5": 0.4090434782608696,
+        "hit_rate_at_5": 0.9078260869565218,
+        "users_with_hits": 1044,
+        "total_hits": 2352
+      }
+    ],
+    "selection": "Highest all-primary MAP@5 only"
+  }
+}
