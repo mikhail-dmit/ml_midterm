@@ -1,0 +1,3 @@
+% grep -E '^role|^heavy,.*,cbf,' reports/final_examples/method_metrics.csv
+role,user_id,method,method_label,hits_at_5,AP_at_5
+heavy,13866173795451203812,cbf,CBF,3,0.52
